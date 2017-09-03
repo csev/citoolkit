@@ -1,0 +1,4 @@
+<!-- file:130startbackup-->
+Go ahead and start the backup under
+<b> Start | Programs | Administrative Tools (Common) | Backup </b>
+

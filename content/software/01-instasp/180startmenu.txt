@@ -1,0 +1,2 @@
+<!-- file:180startmenu-->
+You can choose to place this somewhere else on the <b> Start</b> menu.  Most folks just leave it in the default location and press <b>Continue</b>.

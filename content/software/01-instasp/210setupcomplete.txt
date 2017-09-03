@@ -1,0 +1,2 @@
+<!-- file:210setupcomplete-->
+After a few extraneous, "Keep the existing version" messages, we should be all installed.

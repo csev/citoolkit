@@ -1,0 +1,4 @@
+<!-- file:120ftpnotwideopen-->
+Just to be sure, we try to log in as our example user and we can no longer perform write operations in the main directory.
+<p>
+Now we want to make a subdirectory which the user can use to upload information.

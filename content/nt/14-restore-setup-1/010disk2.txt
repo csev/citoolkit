@@ -1,0 +1,2 @@
+<!-- 010disk2.txt-->
+To start the process of installing NT, place setup disk 1 into the floppy drive and reboot the system.  After a few moments it will prompt you for setup disk 2.  Insert the disk and press <b>Enter</b>.

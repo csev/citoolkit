@@ -1,0 +1,4 @@
+<!-- file:110y2ksetup-->
+Navigate through the <b> i386 </b> and <b> update </b> subdirectories.  Launch the <b> y2ksetup </b> program.
+<p>
+Only two of the components of the service pack will be installed to fix known Y2K bugs.

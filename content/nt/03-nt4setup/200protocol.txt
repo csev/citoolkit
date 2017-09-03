@@ -1,0 +1,7 @@
+<!-- file:200protocol-->
+Now you select the networking protocols which this server will support.  TCP/IP is required.  NWlink would be used for interaction with Novell networks.  NetBEUI is use to interact with other Microsoft networking systems such as Window-95, Windows-98, and Windows-NT.
+<P>
+The suggestion is to de-select NWLink and select NetBEUI.
+<p>
+If you don't intend to share printers and files with other systems, feel free to de-select NetBEUI.
+

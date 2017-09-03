@@ -1,0 +1,85 @@
+<%@ Language=VBScript %>
+<% ' VI 6.0 Scripting Object Model Enabled %>
+<!--#include file="../_ScriptLibrary/pm.asp"-->
+<% if StartPageProcessing() Then Response.End() %>
+<FORM name=thisForm METHOD=post>
+<!-- #INCLUDE FILE="../adovbs.inc" -->
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+</HEAD>
+
+<BODY>
+<h2><font="Arial" size="+2"><b>Contents</font></b></h2>
+<%
+
+Set conn = Server.CreateObject("ADODB.Connection")
+conn.open "site","",""
+
+sql = "SELECT * FROM Messages WHERE ConferenceID = " & Request.QueryString("ConferenceID") & " AND ParentMessageID = 0"
+
+Set RecordSet1 = Server.CreateObject("ADODB.Recordset")
+conn.CursorLocation = adUseClient
+RecordSet1.Open sql, conn, adOpenKeyset, , adCmdText
+Set Recordset1.ActiveConnection = Nothing
+
+'Start formating of the list
+Response.Write vbcrlf & vbcrlf & "<dl><p>" & vbcrlf & vbcrlf
+
+call recurse_messages (RecordSet1)
+
+Recordset1.Close
+conn.close
+
+%>
+
+
+<script runat = server language=vbscript>
+
+sub recurse_messages(RecordSetMain)
+
+Dim Recordset2
+
+Set Recordset2 = RecordsetMain
+
+Do While (Not RecordSet2.eof) 
+    
+    Dim Recordset3
+    Dim RSusername
+    
+    sql = "SELECT FirstName, LastName from Users where USERID = " & Recordset2.fields("UserID")
+    
+    Set RSusername = Server.CreateObject("ADODB.Recordset")
+	RSusername.Open sql, conn, adOpenKeyset, , adCmdText
+      
+    Response.Write "<dt>" & "<b>" & "<a HREF=""http:Display_Message.asp?MessageID=" & Cint(Recordset2.fields("MessageID")) & """ target=message> "  & Recordset2.fields("MessageTitle") & "</a></b>"
+    
+    'set italics and display the user ID and Message Date
+    Response.Write "<i>  " & RSusername.fields("FirstName") & "  " & RSusername.fields("LastName") & " " & Recordset2.fields("MessageDate") & "</i></dt>"
+		
+	sql = "SELECT * FROM Messages WHERE ConferenceID = " & Request.QueryString("ConferenceID") & " AND ParentMessageID = " & Recordset2.fields("MessageID")
+
+	Set Recordset3 = Server.CreateObject("ADODB.Recordset")
+	Recordset3.Open sql, conn, adOpenKeyset, , adCmdText
+	
+	if Recordset3.RecordCount > 0 then
+	    Response.Write vbcrlf & "<dd><dl>"
+		call recurse_messages(Recordset3)
+		Response.Write "</dd></dl>" & vbcrlf & vbcrlf
+	End If	
+
+	Recordset2.moveNext
+		
+loop
+
+Recordset3.Close
+	
+end sub
+
+
+</script>
+</BODY>
+<% ' VI 6.0 Scripting Object Model Enabled %>
+<% EndPageProcessing() %>
+</FORM>
+</HTML>

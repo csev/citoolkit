@@ -1,0 +1,2 @@
+<!-- file:120setupbkup-->
+Files are backed up before they are changed to allow an uninstall.

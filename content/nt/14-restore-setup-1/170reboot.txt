@@ -1,0 +1,4 @@
+<!-- file:170reboot-->
+Once the copying is finished, you  will reboot the system so that you can continue to setup Windows-NT with the graphical interface.  
+<p>
+Make sure to remove the setup floppies.

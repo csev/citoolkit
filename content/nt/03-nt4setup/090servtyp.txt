@@ -1,0 +1,5 @@
+<!-- file:090servtyp-->
+Now we select the server type.  The answer to this is simple.
+If you are already running a domain then you probably are an experienced administrator and are not reading this documentation.
+<p>
+In most instances you will choose <b>Standalone server</b>.  It is not a good idea to run your web server on your primary or backup domain controller.  There are lots of reasons for this - two good ones are performance and security.

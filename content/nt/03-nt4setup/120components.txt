@@ -1,0 +1,4 @@
+<!-- file:120components-->
+This screen allows you to select the various components that are to be installed from the Windows NT CD-ROM.
+<p>
+This is a good time to remind you that this system is a server and you should avoid installing lots of little "workstation" gadgets.  The simpler the better on a server system.  (Just tell your boss to get you a decent desktop - it is necessary to keep the servers reliable.  Also tell your boss that your high performance desktop can be used as hardware backup for the server.   What boss could say "no" to that logic.)

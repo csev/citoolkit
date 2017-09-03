@@ -1,0 +1,4 @@
+<h2>Installing Visual Interdev 6.0 and FrontPage98</h2>
+This exercise shows how to install Visual Interdev and FrontPage.  The assumption is that you are installing these tools on a "client" system and not on the server.  Throughout the dialog, we talk of "client" and "server".
+
+If you only have one system, you can install these tools on the server.  They will work fine on the server.  However unless you have a good reason to put them on the server, it is best to leave them off.  The less things to go wrong on the server, the better.

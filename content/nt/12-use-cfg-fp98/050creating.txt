@@ -1,0 +1,2 @@
+<!-- file:050creating-->
+The web server is contacted and the web pages are created using the FrontPage extensions.  If you have mistyped the password or account name for the Administrator you will be prompted for it at this point.

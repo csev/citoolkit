@@ -1,0 +1,2 @@
+<!-- file:160copy-->
+Then setup copies the files from the CD-ROM to the hard disk.  This takes a couple of minutes unless you have a really slow CD-ROM.

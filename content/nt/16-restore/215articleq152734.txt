@@ -1,0 +1,9 @@
+<!-- file:215articleq152734-->
+Not only is the article promising, it describes our problem in exact detail and indicates that this problem occurs after the installation of Option Pack 4 but is not a critical problem.
+<p>
+This is a good example of how the Microsoft Knowledge base can be used to figure out problems.
+<p>
+Take a look for the phrase:
+<ul>
+<li>restore windows nt
+</ul>

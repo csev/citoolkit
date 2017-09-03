@@ -1,0 +1,3 @@
+<!-- file:231ie4connwiz-->
+The first time you start IE4, you will be shown the Connection Wizard.
+This is somewhat silly but only happens once.

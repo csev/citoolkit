@@ -1,0 +1,2 @@
+<!-- file:100components-->
+Scroll down.  Make sure that you have selected the indicated items before pressing <b>Continue</b>.  The important item is to make sure to include the <b>VID Documentation</b>.

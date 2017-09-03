@@ -1,0 +1,6 @@
+<!-- file:050ftpallowwrite-->
+In the <b> Home Directory </b> portion of the dialog, we can select that we want users to be able to write (or upload) to the FTP server.  So we select <b>Write</b>
+<p>
+Again, incoming FTP may not be required in this situation - if not, do not select "Write".
+<p>
+After the configuration changes have been made, exit the dialog by pressing <b>OK</b>.  You changes will be applied.

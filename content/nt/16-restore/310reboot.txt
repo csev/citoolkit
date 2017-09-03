@@ -1,0 +1,2 @@
+<!-- file:310reboot-->
+Of course, to make sure we reboot.

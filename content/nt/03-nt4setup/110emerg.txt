@@ -1,0 +1,2 @@
+<!-- file:110emerg-->
+An emergency repair disk is used as part of a disaster recovery setup.  You should click <b>Yes</b> here.  The disk will be produced much later in the process.

@@ -1,0 +1,6 @@
+<!-- file:050properties-->
+Then select <b>Internet Information Server</b>, <b>www</b> (or other host name),
+and the <b> Default Web Site</b>.  Once you open the <b> Default Web Site</b>
+you should see a list of files, directories, webs, and virtual directories.
+Navigate down until you find <b>community</b>.  Right click on <b>community</b> 
+and select <b>Properties</b>.

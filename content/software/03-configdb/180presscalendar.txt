@@ -1,0 +1,2 @@
+<!-- file:180presscalendar-->
+Back at the database welcome screen, we press <b> Calendar</b>.

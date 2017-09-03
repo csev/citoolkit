@@ -1,0 +1,9 @@
+<!-- file:110restorecsettings-->
+The parameters on this first restore (we will do 2) are important to get right.
+<p>
+Select <b> Restore Local Registry </b> and unselect <b> Restore File Permissions</b>.
+The reason is that because we do not have the security configured
+(the configuration is still on the tape).  
+Restoring permissions under an invalid security scheme is pretty pointless.
+<p>
+The <b>Verify</b> option is up to you.

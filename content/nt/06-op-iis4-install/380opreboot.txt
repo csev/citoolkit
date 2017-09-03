@@ -1,0 +1,4 @@
+<!-- file:380opreboot-->
+And you will have to reboot the system.
+<p>
+IIS 4.0 has been successfully installed.

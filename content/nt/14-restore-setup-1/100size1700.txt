@@ -1,0 +1,4 @@
+<!-- file:100size1700-->
+We now must specify the size of the C: partition.  
+<p>
+So we create an 1700 KB partition.

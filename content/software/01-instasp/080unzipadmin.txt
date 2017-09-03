@@ -1,0 +1,5 @@
+<!-- file:080unzipadmin-->
+<b>Installing the Toolkit Administration Tool</b>
+
+From the web or from the CD-ROM run the ZIP program on the Toolkit Administration tool.
+This tool creates databases and manages those databases.  You must extract the file to a temporary directory and run the <b> setup.exe</b> from that directory.

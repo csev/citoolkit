@@ -1,0 +1,2 @@
+<!-- file:100backtoadminpage-->
+Now you are back to the administration starting page.  Next we will create an event.

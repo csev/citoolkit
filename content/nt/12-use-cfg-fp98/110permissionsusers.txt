@@ -1,0 +1,4 @@
+<!-- file:110permissionsusers-->
+We move to the <b> Users </b> tab and see the existing permissions.  Administrator is the only account that can edit the web.  Looking at the bottom of the screen, anyone can view (browse) the web site materials.
+<p>
+We click on <b> Add </b> to add another user who is capable of editing the web site.

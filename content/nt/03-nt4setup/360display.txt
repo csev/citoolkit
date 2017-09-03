@@ -1,0 +1,4 @@
+<!-- file:360display-->
+Now we set the display characteristics.
+<p>
+For a server, you should leave the display alone and use the default VGA driver.  The colors look pretty bad, but remember - this is <i>not</i> a workstation.

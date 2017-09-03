@@ -1,0 +1,2 @@
+<!-- file:240restorecagain-->
+Now we will restore the <b> C: </b> material <i>again</i>.  This time, we are doing it within the proper security context reloaded from the tape so the files end up with the proper settings.

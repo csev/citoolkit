@@ -1,0 +1,2 @@
+<!-- file:100adminpw-->
+Now you will specify the Administrator password.  This should be a good password which is difficult to guess.  If this password gets out your system is very compromised.

@@ -1,0 +1,7 @@
+<!-- file:020extractto-->
+You must extract this information into a directory in your web hierarchy called 
+<b>Community</b> which will appear as 
+<b> http://localhost/community/</b>. In a standard configuration this would be
+<b> C:\InetPub\wwwroot\Community\</b> with the appropriate drive letter.
+In this example, you should extract to <b> C:\InetPub\wwwroot\</b>.  The <b> Community\ </b> 
+is part of the file name stored in the ZIP.

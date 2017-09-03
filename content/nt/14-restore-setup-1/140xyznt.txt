@@ -1,0 +1,2 @@
+<!-- file:140xyznt-->
+Next you select which directory the operating system will load into.  We want this to be <i> anything </i> other than  <b> \WINNT</b>.  It will be deleted later in the process, so pick your favorite name.

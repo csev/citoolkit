@@ -1,0 +1,4 @@
+<!-- file:250dhcp-->
+DHCP is a protocol which allows systems to be assigned IP addresses dynamically at boot time from a DHCP server.  It is generally not a good idea for a web server to have a DHCP provided address.
+<p>
+In some situations it may be a good idea to use DHCP but in 98% of the situations you should say <b>No</b>

@@ -1,0 +1,2 @@
+<!-- file:210requireeventapproval-->
+Alter the site configuration to require event approval.

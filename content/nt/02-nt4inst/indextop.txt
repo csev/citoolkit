@@ -1,0 +1,6 @@
+<h2>Initial setup of NT from floppy disk</h2>
+The first step in installing Windows NT is to boot from the setup floppies.  Insert Setup Disk 1 and boot the system.  If you are using a SCSI CD-ROM drive, you can insert the Windows NT Server CD in the CD-ROM and boot.
+
+The sequence is essentially the same from the CD or floppies except for the lack of any prompts for the floppy disks when coming from the CD.
+
+When this exercise is complete, the system will be rebooted and setup will continue in a graphical mode.

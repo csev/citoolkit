@@ -1,0 +1,3 @@
+<!-- file:200gotomore-->
+If we want to see more detail regarding this event, we use the drop-down box to select 
+<b>More Detail</b>.  

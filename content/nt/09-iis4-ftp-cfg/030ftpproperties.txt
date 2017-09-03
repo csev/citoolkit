@@ -1,0 +1,2 @@
+<!-- file:030ftpproperties-->
+If you go to the IIS and select the <b> www </b> host you see the IIS services running on that host.   To manage the FTP site, we right-click on the FTP site and select <b>Properties</b>.

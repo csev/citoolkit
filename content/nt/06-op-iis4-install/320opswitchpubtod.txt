@@ -1,0 +1,4 @@
+<!-- file:320opswitchpubtod-->
+Switch the location for the web and FTP files to the <b>D:</b> drive.
+<p>
+If you are planning to use FTP as the exclusive mechanism for uploading web files, you might want to point the FTP and Web servers to the same directory.

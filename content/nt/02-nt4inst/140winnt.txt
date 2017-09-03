@@ -1,0 +1,2 @@
+<!-- file:140winnt-->
+Next you select which directory the operating system will be loaded into.  This is <b> \WINNT </b> for most installations so press Enter.

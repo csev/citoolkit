@@ -1,0 +1,2 @@
+<!-- 020welc.txt-->
+This is the welcome screen for setup.  This is a very important screen.  If this were a repair installation, you would press <b>R</b> at this screen.  However we are doing a fresh install so we simply press <b>Enter</b>.

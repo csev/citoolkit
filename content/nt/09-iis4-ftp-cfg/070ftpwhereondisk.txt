@@ -1,0 +1,7 @@
+<!-- file:070ftpwhereondisk-->
+Just for yucks, we go and look for the directory on the system.
+it shows up on:
+<p>
+<b>D:\InetPub\ftproot\testme</b>
+<p>
+Go ahead and delete the directory and <b> QUIT </b> your ftp session.

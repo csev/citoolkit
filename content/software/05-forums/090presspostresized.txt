@@ -1,0 +1,2 @@
+<!-- file:090presspostresized-->
+We type our subject and message and press <b>Post</b>.

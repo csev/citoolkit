@@ -1,0 +1,2 @@
+<!-- file:180ie4nodesktop-->
+No, we don't want the ultra-slick windows desktop update.  We are, after all, a server.

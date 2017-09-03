@@ -1,0 +1,2 @@
+<!-- file:170adminmaingohome-->
+Now we have created an event, lets look at the event, so press <b>Home</b> at the top.

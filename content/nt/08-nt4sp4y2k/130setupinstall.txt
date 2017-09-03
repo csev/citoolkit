@@ -1,0 +1,2 @@
+<!-- file:130setupinstall-->
+And then new files are installed.

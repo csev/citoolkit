@@ -1,0 +1,2 @@
+<!-- file:170diskformatd-->
+To format the disk, we right-click and select <b>Format</b>

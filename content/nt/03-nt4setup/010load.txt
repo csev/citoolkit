@@ -1,0 +1,2 @@
+<!-- file:010load-->
+The system reboots and the initial NT screen shows up.  The delay is set to zero so it immediately continues the boot.

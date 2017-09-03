@@ -1,0 +1,1 @@
+Big surprise, we need to reboot.  After you reboot and log-in the data access components will be configured.  Leav the CD-ROM in the drive.

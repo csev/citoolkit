@@ -1,0 +1,4 @@
+<!-- file:130addevent2-->
+These fields are pretty self explanatory.
+
+The <b>Event Publish Date</b> allows you to put in a bunch of events which don't show up right away.  If you leave it blank, events show up immediately.

@@ -1,0 +1,2 @@
+<!-- file:085delpartpressl-->
+Still more dire warnings...  In case the enter key is stuck, you need to press <b>L</b> to actually delete the partition.

@@ -1,0 +1,4 @@
+<!-- file:180eventviewer-->
+Just because we are careful system administrators, we take a look at the Event Log.
+<p>
+Yikes, there appears to be a number of different messages.  Some are red, some are yellow, and some are blue.  We will take a look at the red and yellow messages.

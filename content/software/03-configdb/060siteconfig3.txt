@@ -1,0 +1,4 @@
+<!-- file:060siteconfig3-->
+In this screen, we see the copyright information.  By checking the copyright box and giving a path to a local file on the server, you can control the copyright statement on each page.  The copyright file will be included directly into the output pages near the end.  You can embed HTML information, such as a small image or a HREF  in this file.  But be careful not to do things which would cause syntax errors in the pages.
+
+The logo must be a URL.  You can use a local URL such as <b>/community/images/logo.gif</b> or you can use a fully qualified URL such as <b>http://....</b>.

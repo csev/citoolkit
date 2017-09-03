@@ -1,0 +1,4 @@
+<!-- file:040welcome-->
+Next, the Graphical setup executes and copies still more information from the CD-ROM to the hard disk.
+<p>
+Once the copy is complete setup says, "hello" and you press <b>Next</b>

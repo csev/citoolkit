@@ -1,0 +1,6 @@
+<h2>Restoring the Data</h2>
+We have come a long way through these exercises.  The only step which remains is to restore the data.  This turns out to be somewhat tricky.  We have a chicken and egg problem.  We need the security information on the tape to set the permissions on our files.  We need to restore file permissions in addition to restoring the files themselves.  The only solution is to do the restore of the <b>C:</b> data twice.
+
+There are several other wrinkles to the restore process so pay close attention.
+
+After the files are restored, we do some testing and debugging of a system "problem" which appears to have popped up using the Microsoft knowledge base.  The knowledge base is a very useful resource.  You might try looking up articles which reference <b>NTBACKUP</b> to get some information as to why we have so many steps in this process.

@@ -1,0 +1,2 @@
+<!-- file:040addingaforum-->
+Each forum has a name and description.  Enter these values and press <b>Save</b>.

@@ -1,0 +1,3 @@
+<!-- file:180addingevent-->
+So we fill in the information and save the event.
+Press <b>Home</b> and check the calendar.

@@ -1,0 +1,2 @@
+<!-- file:040oktoinstall4mmdriver-->
+When it finds it, it asks for permission to install it.  Press <b>OK</b> and it will install the driver.

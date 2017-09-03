@@ -1,0 +1,2 @@
+<!-- file:020cnvntfs-->
+Setup formats the C: as a FAT filesystem but on the first reboot it gets converted to NTFS as part of the boot process. This conversion does not take much time.

@@ -1,0 +1,2 @@
+<!-- file:080wwwstartnotepad-->
+On the server, run Notepad, select <b> File | Open</b> and navigate to the <b>D:\InetPub\wwwroot</b> directory.  Open the <b>default</b> file.

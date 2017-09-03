@@ -1,0 +1,6 @@
+<!-- file:010opwelc-->
+Insert the <b>Microsoft Windows NT 4.0 Option Pack</b> which comes with NT server
+CD-ROM.   It will either autostart or you will have to double click on the CD-ROM icon in My Computer.
+<p>
+Press <b>Install</b>
+

@@ -1,0 +1,2 @@
+<!-- file:160fprunsetup-->
+Explore into the directory <b>FRONTPAGE</b> and execute <b>setup.exe</b> by double clicking on the icon.

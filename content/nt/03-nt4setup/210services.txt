@@ -1,0 +1,2 @@
+<!-- file:210services-->
+We simply press <b>Next</b> on this screen.  While it might seem tempting to uncheck some of these, they are needed for the system to function both as a client and as a server in the network.  Even though this system's primary role is as a server, it needs to be a capable client on the network as well.

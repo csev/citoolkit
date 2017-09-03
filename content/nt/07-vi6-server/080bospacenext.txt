@@ -1,0 +1,4 @@
+<!-- file:080bospacenext-->
+This screen is verifying that we have sufficient space for the components we need.
+
+Hopefully in this day and age, with 16GB hard disks, space won't be a problem.

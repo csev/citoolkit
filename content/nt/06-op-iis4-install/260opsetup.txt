@@ -1,0 +1,2 @@
+<!-- file:260opsetup-->
+This is the welcome screen for IIS 4.0 setup.

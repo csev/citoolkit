@@ -1,0 +1,2 @@
+<!-- file:080hwlist-->
+This screen simply verifies the basic hardware.  Press <b>Enter</b> to continue.

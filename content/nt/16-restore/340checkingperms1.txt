@@ -1,0 +1,2 @@
+<!-- file:340checkingperms1-->
+Lets take a look at our FrontPage98 web on the server. We right-click and view properties.

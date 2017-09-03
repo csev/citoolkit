@@ -1,0 +1,3 @@
+<!-- file:220howtoremove-->
+This would not be a good time to actually remove this tool, but if you want to remove it later, it has installed an entry in
+<b> Start | Settings | Control Panel | Add/Remove Programs</b>.

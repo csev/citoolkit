@@ -1,0 +1,2 @@
+<!-- file:140ie4oktolaunch-->
+Again we navigate to the CD-ROM - then press <b>Install</b> in the initial screen.  Then we select Internet Explorer (x86).  Again, we get asked if this is OK with us, security wise.

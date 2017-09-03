@@ -1,0 +1,5 @@
+<!-- file:050userrights-->
+Under <b> Policy | User Rights</b>, you can change a variety of the rights that various users can have.  By default these are pretty lenient.
+You may want to restrict these somewhat.  This would be a good reason to create a group called "Network Users" (see User | New Local Group ) and then individually add those users to this group that you are willing to have come in over the network.  Then under User Rights, only the Administrators and Network User groups would be allowed to come in over the network.
+<p>
+To increase security, you might want to indicate that administrators can not come in over the network.  But you will then need physical access to the system to do many of the administrative chores.  Much of a security design is a balance between convienence and airtight security.

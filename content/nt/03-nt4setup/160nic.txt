@@ -1,0 +1,4 @@
+<!-- file:160nic-->
+Now we will install the software for the network interface card.  Because this is a server, about the only fancy hardware we have other than the disks is our network card.  (Remember - keep servers simple).  
+<p>
+Press <b>Select from list</b>

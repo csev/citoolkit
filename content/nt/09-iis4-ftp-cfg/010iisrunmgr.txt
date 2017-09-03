@@ -1,0 +1,3 @@
+<!-- file:010iisrunmgr-->
+First, run the Internet Service Manager available under
+<b>Start | Programs | Windows NT 4.0 Option Pack | Microsoft Internet Information Server | Internet Service Manager</b>

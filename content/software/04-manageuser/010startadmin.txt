@@ -1,0 +1,2 @@
+<!-- file:010startadmin-->
+We press <b>Manage Users</b> to add a new user.

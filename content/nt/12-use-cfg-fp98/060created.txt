@@ -1,0 +1,2 @@
+<!-- file:060created-->
+If all goes well, you have created a new web site.  Before we begin editing, lets take a little look at the security of the files on the server.

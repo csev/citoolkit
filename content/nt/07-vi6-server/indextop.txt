@@ -1,0 +1,7 @@
+<h3>Installing Visual Interdev 6.0 Server Components</h3>
+
+In this exercise, we will install the server components to suport Visual Interdev 6.0.  These components are extensions and upgrades to the IIS 4.0 and FrontPage98 Extensions to support the more sophisticated development environment used by VI 6.0.
+
+If you do not perform this esxercise, you may have problems with some more sophisticated web software packages.  One area which is upgraded is the javascript server side capabilities.
+
+This exercise covers the server components of VI 6.0.  A later exercise will cover the client components of VI 6.0.  

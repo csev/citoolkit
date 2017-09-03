@@ -1,0 +1,4 @@
+<!-- file:220add2001event-->
+Now we go back to <b>Home</b>, log in as <b>millsa</b>, go to <b>Manage Events</b> and add a new event.  Then we go to <b>Home</b> and check the calendar.
+
+(We are not showing all the steps - hopefully by now you can do that without help :) )

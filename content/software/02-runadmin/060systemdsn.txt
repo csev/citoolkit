@@ -1,0 +1,3 @@
+<!-- file:060systemdsn-->
+Look under <b> System DSN</b>.  Select <b>ctk_test</b> and press <b>Configure</b>
+to see how the DSN is put together.

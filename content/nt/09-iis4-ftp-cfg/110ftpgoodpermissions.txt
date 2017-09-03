@@ -1,0 +1,3 @@
+<!-- file:110ftpgoodpermissions-->
+This is the proper set of permissions for the
+<b> D:\InetPub\ftproot</b> directory.  Press <b>OK</b>.

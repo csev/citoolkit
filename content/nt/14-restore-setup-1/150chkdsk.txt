@@ -1,0 +1,2 @@
+<!-- file:150chkdsk-->
+Setup will optionally check your drives for integrity.  This step is often skipped by pressing <B> ESC</B>.

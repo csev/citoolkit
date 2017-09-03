@@ -1,0 +1,10 @@
+<h3>Managing Users</h3>
+In this exercise, we look at how users are added and managed in the system.  The purpose of allowing multiple users is the delegation of responsibility and the granting of permissions and access.
+
+Some example uses of these features:
+<ul>
+<li>Create an account to post to a forum
+<li>Create an account which can only add events
+<li>Use multiple accounts to implement an event approval process
+<li>Create multiple sub-administrators
+</ul>

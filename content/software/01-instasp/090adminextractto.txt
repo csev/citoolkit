@@ -1,0 +1,2 @@
+<!-- file:090adminextractto-->
+In this example, we will extract to <b>C:\TEMP\admininst\</b>.

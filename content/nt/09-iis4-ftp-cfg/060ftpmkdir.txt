@@ -1,0 +1,4 @@
+<!-- file:060ftpmkdir-->
+Next we test our newly reconfigured FTP server by starting an MS-DOS session and connecting to our FTP server.  We log in as example (Ann Example Person) with the appropriate password.
+<p>
+We use the <b> mkdir </b> command to create a directory called <b> testme </b> insure that we can write to the server.

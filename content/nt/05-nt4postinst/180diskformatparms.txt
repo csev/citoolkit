@@ -1,0 +1,3 @@
+<!-- file:180diskformatparms-->
+We select the parameters for the disk.  Make sure to select <B>NTFS</B>.  You should not 
+select compression.

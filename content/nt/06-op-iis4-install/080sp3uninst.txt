@@ -1,0 +1,2 @@
+<!-- file:080sp3uninst-->
+Now you are given the option to create an uninstall directory.  This directory will be used to store the pre-service-pack-3 files.  It is a good idea to create the backup directory.

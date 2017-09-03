@@ -1,0 +1,2 @@
+<!-- file:090servtyp-->
+Now we set the server type to <b>Standalone</b>

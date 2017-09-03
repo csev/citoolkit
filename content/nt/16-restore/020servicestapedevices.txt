@@ -1,0 +1,2 @@
+<!-- file:020servicestapedevices-->
+First we must install the proper driver for the tape drive.  We go to <b> Start | Settings | Control Panel | Tape Devices </b> and open it up

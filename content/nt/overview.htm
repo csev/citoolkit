@@ -1,0 +1,420 @@
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Win">
+  <TITLE>Overview of the NT Administration Tutorial</TITLE>
+</HEAD>
+<BODY>
+
+<P><A HREF="index.htm"><IMG SRC="logo.gif" ALIGN="RIGHT" BORDER="0"
+WIDTH="150" HEIGHT="123" NATURALSIZEFLAG="3"></A></P>
+
+<H2>NT Administration Tutorial Overview</H2>
+
+<P>This tutorial is in the form of an&nbsp; NT installation case
+study. This case study starts with a basic installation of NT,
+includes basic system administration tasks, installs and configures
+IIS 4.0, and installs FrontPage98.&nbsp;&nbsp; The tutorial is
+arranged into a number of modules.&nbsp; Each module includes
+step-by step instructions with screen shots starting with the
+initial boot screen.&nbsp; You can click on each image to see
+a larger version of the image.</P>
+
+<P>The outline of the tutorial is as follows:</P>
+
+<UL>
+  <LI><A HREF="01-nt4bios/index.htm">Booting the system and interacting
+  with BIOS</A>
+  <LI><A HREF="02-nt4inst/index.htm">Installing NT from floppies</A>
+  <LI><A HREF="03-nt4setup/index.htm">Setting up NT - Phase II</A>
+  <LI><A HREF="04-nt4up1/index.htm">Testing your NT Installation</A>
+  <LI><A HREF="05-nt4postinst/index.htm">Post Installation configuration
+  and administration</A>
+  <LI><A HREF="06-op-iis4-install/index.htm">Installing Windows
+  Option Pack and Internet Information Server V4.0</A>
+  <LI><A HREF="07-vi6-server/index.htm">Installing Visual Interdev
+  6.0 Server Components</A>
+  <LI><A HREF="08-nt4sp4y2k/index.htm">Patching Windows NT for
+  Y2K compliance</A>
+  <LI><A HREF="09-iis4-ftp-cfg/index.htm">Configuring and testing
+  FTP using IIS 4.0</A>
+  <LI><A HREF="10-iis4-www-cfg/index.htm">Configuring and testing
+  WWW using IIS 4.0</A>
+  <LI><A HREF="11-install-vi6-w98/index.htm">Installing Visual
+  Interdev 6.0 and FrontPage98 on a client system</A>
+  <LI><A HREF="12-use-cfg-fp98/index.htm">Configuring and using
+  FrontPage98</A>
+  <LI><A HREF="13-ntbackup/index.htm">Performing Backups</A>
+  <LI>Performing a full recovery after a system disaster
+  <UL>
+    <LI><A HREF="14-restore-setup-1/index.htm">Installing a minimal
+    NT - Step 1</A>
+    <LI><A HREF="15-restore-setup-2/index.htm">Installing a minimal
+    NT - Step 2</A>
+    <LI><A HREF="16-restore/index.htm">Recovering the NT data and
+    operating system</A>
+  </UL>
+</UL>
+
+<P>In this overview we will give a summary of each of the steps
+in the process.</P>
+
+<H2>Working with the BIOS</H2>
+
+<P>Typically, during the boot sequence you can press a key or
+key sequence to cause the boot process to be diverted into the
+CMOS configuration. CMOS contains stored configuration regarding
+how the system is to be booted. This information is stored in
+battery-backed up RAM so you do not need to make these changes
+each time the power is turned on. The settings available and the
+procedures for manipulating these settings vary widely between
+manufacturers. Some use graphical interfaces and others use simple
+text based interfaces.</P>
+
+<P>A system administrator should not be afraid of CMOS settings.
+Before putting a system into production, they need to know the
+proper settings in case the stored settings are lost. Often, there
+is a &quot;reset-to-factory-default&quot; option which may or
+may not result in the proper settings for your system.</P>
+
+<!-- 020cmstd.txt-->
+
+<P><A HREF="01-nt4bios/020cmstd.htm"><IMG SRC="01-nt4bios/020cmstd.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="50%" ALIGN="RIGHT" HEIGHT="50%" NATURALSIZEFLAG="0"> </A>This
+shows the more common BIOS settings. They include the date and
+time and the IDE disk drive configuration. Because this is a SCSI
+system, we have no IDE hard drives. In in 486 and earlier computers,
+you often had to know a &quot;drive number&quot;. In more recent
+IDE arrangements there is an &quot;auto-detect&quot; of the drive
+geometry. This BIOS even has a diagnostic mode where it will query
+the IDE drives and report the drive geometry. The drive geometry
+only applies to hard drives. CD-ROMs and drives like ZIP&#146;s
+generally do not need any drive geometry settings.</P>
+
+<P>On systems with a SCSI controller, there also may be a SCSI
+BIOS. The SCSI BIOS can often be used to run diagnostics or low-level
+format SCSI hard drives.</P>
+
+<P><BR CLEAR="ALL"></P>
+
+<H3>Initial setup of NT from floppy disk</H3>
+
+<P><A HREF="02-nt4inst/020welc.htm"><IMG SRC="02-nt4inst/020welc.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="50%" hieght="50%" ALIGN="RIGHT" HEIGHT="241" NATURALSIZEFLAG="2"></A></P>
+
+<P>The first step in installing Windows NT is to boot from the
+setup floppies. Insert Setup Disk 1 and boot the system. If you
+are using a SCSI CD-ROM drive, you can insert the Windows NT Server
+CD in the CD-ROM and boot.</P>
+
+<P>The sequence is essentially the same from the CD or floppies
+except for the lack of any prompts for the floppy disks when coming
+from the CD.</P>
+
+<P>When this exercise is complete, the system will be rebooted
+and setup will continue in a graphical mode</P>
+
+<P>The basic steps in this exercise include:</P>
+
+<UL>
+  <LI>NT Identifies hardware and installs appropriate drivers from
+  the floppies or CD-ROM
+  <LI>The hard disk is partitioned and formatted
+  <LI>Some initial files are copied form the CD-ROM to the hard
+  disk.
+  <LI>The system is rebooted
+</UL>
+
+<P>The next exercise continues the setup process in graphical
+mode.</P>
+
+<P><BR CLEAR="ALL"></P>
+
+<H2>Continued Setup in Graphical Mode</H2>
+
+<P><A HREF="03-nt4setup/040welcome.htm"><IMG SRC="03-nt4setup/040welcome.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="219" NATURALSIZEFLAG="2"></A></P>
+
+<P>Windows NT setup does as little of its setup as possible during
+the first phase. After the first phase is done, the system is
+rebooted from the hard disk. The first task is to convert the
+FAT formatted file system to NTFS. Then the system is rebooted
+again and a graphical user interface is used to continue setup.</P>
+
+<P>The steps in this process include:</P>
+
+<UL>
+  <LI>Conversion of the FAT filesystem to NTFS followed by a reboot
+  <LI>Naming of the computer
+  <LI>Entry of the CD Key and license values
+  <LI>Setting the server type and administrator password
+  <LI>Creating an emergency repair disk
+  <LI>Installing network drivers and configuring the network settings.
+  <LI>Setting the time zone and display parameters
+</UL>
+
+<P>When this exercise is complete, the system will be rebooted
+and NT will be up.</P>
+
+<P><BR CLEAR="ALL"></P>
+
+<H2>Testing NT After Installation</H2>
+
+<P><A HREF="04-nt4up1/030welcome.htm"><IMG SRC="04-nt4up1/030welcome.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="215" NATURALSIZEFLAG="2"></A></P>
+
+<P>If all goes well, NT will start up and present you with the
+startup screen.</P>
+
+<P>In this exercise, we will log-on and do some minimal testing
+to make sure things are working. If you experience problems in
+these simple tests, you need to solve those problems before continuing
+further.</P>
+
+<P>We test</P>
+
+<UL>
+  <LI>TCP/IP Networking
+  <LI>Check the Event Log
+</UL>
+
+<P>You may have problems with Interrupt Request values (IRQ's)
+or a conflict between two pieces of hardware. You may have improper
+drivers installed. This is the time to insure everything is clean.</P>
+
+<P><BR CLEAR="ALL"></P>
+
+<H2>Configuring the Running System</H2>
+
+<P><A HREF="05-nt4postinst/010usermanager.htm"><IMG SRC="05-nt4postinst/010usermanager.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="214" NATURALSIZEFLAG="2"></A></P>
+
+<P>Now the system is up and has passed some basic tests. In this
+exercise, we begin to configure the system and walk through some
+system administration tasks including:</P>
+
+<UL>
+  <LI>Create a User Account
+  <LI>Set Security Policies (The defaults are wide-open)
+  <LI>Format the <B>D:</B> partition
+  <LI>Use <B>regedit </B>to edit the registry
+</UL>
+
+<P>In a later exercise we will see a simpler way to create and
+format the <B>D:</B> partition without using <B>regedit</B>. Using
+<B>regedit</B> is included in this exercise as an example. <BR
+CLEAR="ALL"></P>
+
+<H2>Installing IIS 4.0</H2>
+
+<P><A HREF="06-op-iis4-install/010opwelc.htm"><IMG SRC="06-op-iis4-install/010opwelc.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="228" NATURALSIZEFLAG="2"></A></P>
+
+<P>The next task is to install Internet Information Server 4.0.
+This can come from several places. The Visual Interdev 6.0 CD
+has IIS 4.0 and recently purchased Windows NT 4.0 packages have
+an Option pack CD included. This example is based on the <B>Microsoft
+Windows NT 4.0 Option Pack</B> which comes with NT server.</P>
+
+<P>There are three basic steps in this process:</P>
+
+<UL>
+  <LI>Installing Service Pack 3
+  <LI>Installing Internet Explorer 4.0
+  <LI>Installing Internet Information Server 4.0
+</UL>
+
+<P>We will reboot the system between each of the steps. <BR CLEAR="ALL"></P>
+
+<H2>Installing the Y2K Service Pack</H2>
+
+<P><A HREF="08-nt4sp4y2k/010webpage.htm"><IMG SRC="08-nt4sp4y2k/010webpage.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="214" NATURALSIZEFLAG="2"></A></P>
+
+<P>Next we will download and install portions of Service Pack
+4. We need to do this to get some Y2K fixes. You should consult
+the Microsoft web site to see if there are additional Y2K patches
+or service packs at the time you are installing the system.</P>
+
+<P>First we download the service pack, then extract it and install
+two of the four components contained in the service pack. <BR
+CLEAR="ALL"></P>
+
+<H2>Configuring and Testing FTP</H2>
+
+<P><A HREF="09-iis4-ftp-cfg/020iis4mmc.htm"><IMG SRC="09-iis4-ftp-cfg/020iis4mmc.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="159" NATURALSIZEFLAG="2"></A></P>
+
+<P>Now we will configure and test the FTP service. This short
+exercise is a very brief introduction to the FTP service but should
+give you a good outline of how FTP works.<BR CLEAR="ALL"></P>
+
+<H2>Configuring and Testing WWW</H2>
+
+<P><A HREF="10-iis4-www-cfg/020wwwpropwebsite.htm"><IMG SRC="10-iis4-www-cfg/020wwwpropwebsite.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="313" NATURALSIZEFLAG="2"></A></P>
+
+<P>In this exercise, we configure and test the World-Wide-Web
+portion of IIS 4.0. We look at the properties of the web server,
+make a few simple changes, and then explore the directory structure
+of the web space. <BR CLEAR="ALL"></P>
+
+<H2>Installing Visual Interdev 6.0 and FrontPage98</H2>
+
+<P><A HREF="11-install-vi6-w98/005setup.htm"><IMG SRC="11-install-vi6-w98/005setup.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="257" NATURALSIZEFLAG="2"></A></P>
+
+<P>This exercise shows how to install Visual Interdev and FrontPage.
+The assumption is that you are installing these tools on a &quot;client&quot;
+system and not on the server.</P>
+
+<P>If you only have one system, you can install these tools on
+the server. They will work fine on the server. However unless
+you have a good reason to put them on the server, it is best to
+leave them off. The less things to go wrong on the server, the
+better. <BR CLEAR="ALL"></P>
+
+<H2>Using and Configuring FrontPage98</H2>
+
+<P><A HREF="12-use-cfg-fp98/010createnewweb.htm"><IMG SRC="12-use-cfg-fp98/010createnewweb.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="307" NATURALSIZEFLAG="2"></A></P>
+
+<P>In this exercise, we will configure and use FrontPage 98 on
+the client system. Throughout the exercise we will look at how
+the actions on the client affect the files and permissions on
+the server.</P>
+
+<P>We use the <B>Administrator</B> account to create a FrontPage
+web and then delegate authoring permission to an end-user account
+which was created in an earlier exercise. Then we use FrontPage
+to make some (very simple) edits on our web site.</P>
+
+<P>In this exercise, the goal is to see how FrontPage (on a client)
+and IIS (on the server) interact and work together. The goal is
+not to teach you the ins and outs of FrontPage. <BR CLEAR="ALL"></P>
+
+<H2>Backing Up Windows NT</H2>
+
+<P><A HREF="13-ntbackup/150backingupc.htm"><IMG SRC="13-ntbackup/150backingupc.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="262" NATURALSIZEFLAG="2"></A></P>
+
+<P>The next four exercises are designed to simulate the loss of
+a disk and the need to restore all of the data.&nbsp; This may
+seem like it should be simple, but when using the backup software
+which comes with NT, it takes quite a bit of effort to get it
+right. We demonstrate NT backup because it comes with NT and we
+do not know which backup solution you will select.</P>
+
+<P>The steps in the backup exercise include:</P>
+
+<UL>
+  <LI>Creating a repair disk
+  <LI>Stopping the necessary services so open files can be backed
+  up
+  <LI>Backing up and verifying the contents of the C: and D: drives
+</UL>
+
+<P>You may choose to purchase a third-party backup system. A third-party
+backup system often will have different procedures. For example,
+some third party backup systems can backup open files and have
+their own floppy-based restore process. If you use a third party
+backup, follow those instructions.</P>
+
+<P><B>Important:</B> Regardless of whether or not you use NT backup,
+it is very important that you go through an complete backup-recovery
+cycle with a disk-format in between. Before you put the system
+into production, you must shake out the problems that you might
+encounter. There is no reason to complicate a stressful situation
+by completely losing all of your user's data after being down
+for two weeks. <BR CLEAR="ALL"></P>
+
+<H2>Minimal NT Install - Part 1</H2>
+
+<P><A HREF="14-restore-setup-1/020welc.htm"><IMG SRC="14-restore-setup-1/020welc.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="204" NATURALSIZEFLAG="2"></A></P>
+
+<P>In this exercise, we are going to destroy a perfectly good
+working system and begin the process to restore it from tape.</P>
+
+<P>As part of setup we will repartition and reformat the disk
+to simulate the loss of the disk.</P>
+
+<P>To access the tape, we must perform a minimal install, and
+then reload the tapes. There are subtle differences between our
+minimal installation and a standard installation. Those differences
+will be noted as we go through the next two exercises.</P>
+
+<P>Like the initial installation, this installation is broken
+into two parts. The first part is the non-graphical installation
+from the floppies (or SCSI CD-ROM) and the second part is the
+graphical installation and configuration of the system. <BR CLEAR="ALL"></P>
+
+<H2>Minimal NT Installation - Part 2</H2>
+
+<P><A HREF="15-restore-setup-2/010load.htm"><IMG SRC="15-restore-setup-2/010load.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="208" NATURALSIZEFLAG="2"></A></P>
+
+<P>Continuing with our restore exercise, we have rebooted after
+the initial floppy-based setup. First the system boots and converts
+the file system from FAT to NTFS. Then the system reboots again
+and performs the graphical setup and configuration.</P>
+
+<P>Because we only need a subset of NT to work to access the tapes,
+this procedure is somewhat abbreviated compared to the first exercise.
+We don't even install networking support.</P>
+
+<P>We partition the disks slightly differently than in the earlier
+exercise. This technique is the better approach than the approach
+used in the first installation. This exercise is a better example
+of how your system should be installed. The earlier exercise using
+<B>regedit</B> to move the CD-ROM letter is a less preferred solution.
+<BR CLEAR="ALL"></P>
+
+<H2>Restoring the Data</H2>
+
+<P><A HREF="16-restore/130restorecomplete.htm"><IMG SRC="16-restore/130restorecomplete.gif"
+BORDER="0" ALT="Click Here for a large version of the image" 
+WIDTH="320" ALIGN="RIGHT" HEIGHT="261" NATURALSIZEFLAG="2"></A></P>
+
+<P>The only step which remains is to restore the data. This turns
+out to be somewhat tricky. We have a chicken and egg problem.
+We need the security information on the tape to set the permissions
+on our files. We need to restore file permissions in addition
+to restoring the files themselves. The only solution is to do
+the restore of the <B>C:</B> data twice.</P>
+
+<P>There are several other wrinkles to the restore process so
+pay close attention.</P>
+
+<P>After the files are restored, we do some testing and debugging
+of a system &quot;problem&quot; which appears to have popped up
+using the Microsoft knowledge base. The knowledge base is a very
+useful resource. You might try looking up articles which reference
+<B>NTBACKUP</B> to get some information as to why we have so many
+steps in this process. <BR CLEAR="ALL"></P>
+
+<H2>Conclusion</H2>
+
+<P>once you complete the exercises in this tutorial, you will
+have a broad introduction to installing and performing basic administration
+functions on an NT system. Before you are comfortable in a production
+environment, you need to gain more knowledge by purchasing books,
+taking classes, or simply doing more testing.</P>
+
+<P>Congratulations on getting this far.
+
+</BODY>
+</HTML>

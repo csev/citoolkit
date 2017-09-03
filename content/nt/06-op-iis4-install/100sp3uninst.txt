@@ -1,0 +1,2 @@
+<!-- file:100sp3uninst-->
+First the files to be changed are backed up to the uninstall directory.

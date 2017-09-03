@@ -1,0 +1,85 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h2>Testing NT After Installation</h2>
+If all goes well, NT will start up and present you with the startup screen.
+<p>
+In this exercise, we will log-on and do some minimal testing to make sure things are working.  If you experience problems in these simple tests, you need to solve those problems before continuing further.
+<p>
+You may have problems with Interrupt Request values (IRQ's) or a conflict between two pieces of hardware.  You may have improper drivers installed.  This is the time to insure everything is clean.
+<BR CLEAR=ALL><HR>
+<A NAME=010ctrlalt> </a>
+<A HREF=010ctrlalt.htm>
+<IMG SRC=010ctrlalt.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010ctrlalt-->
+It is a good idea to wait a minute or so, listening to disk activity before you log right in the first time.  Even though it appears as though NT is all the way up, in reality it is still bringing up services such as the web server, etc.
+<p>
+As NT brings up services, they may experience problems. These problems will cause dialog boxes to come up.  Write down the contents of the dialog boxes and press <b>OK</b>
+<p>
+After the disk activity subsides,
+press <B>CTRL-ALT-DEL</b> to bring up the login dialog.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020login> </a>
+<A HREF=020login.htm>
+<IMG SRC=020login.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020login-->
+At the login dialog you enter the Administrator password and press <B>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030welcome> </a>
+<A HREF=030welcome.htm>
+<IMG SRC=030welcome.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030welcome-->
+Congratulations, you are logged in to your brand new NT system.
+<p>
+At this point, you should also wait a few moments to let the disk activity subside.  You may see more dialog boxes.
+<p>
+If by this point you have not seen any dialog boxes, you are in pretty good shape.
+But before we get too happy, we should do a little testing.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040ping> </a>
+<A HREF=040ping.htm>
+<IMG SRC=040ping.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040ping-->
+First test the networking.  Use the <b>ping</b> command to ping a known IP address.
+<p>
+If ping does not work, you are in bad shape.  You need to diagnose this problem.  This would be a good time to use a working system connected to the same network to run ping and compare results.  Try pinging another system on the LAN in addition to trying to ping
+systems across the Internet.
+<p>
+Another useful command to diagnose networking is <b> tracert</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050event> </a>
+<A HREF=050event.htm>
+<IMG SRC=050event.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050event-->
+Check the event log under
+<b> Start | Programs | Administrative Tools (Common) | Event Viewer</b>.
+<p>
+The event log is a very useful tool - if you had any problems during boot, you may be able to get additional details in the event log.
+<p>
+The event log can also help you identify security problems and a number of other system problems.
+<p>
+Events are coded in the event log by a color code.  Blue events are for your information only.  In a later exercise we will see some "non-blue" events.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

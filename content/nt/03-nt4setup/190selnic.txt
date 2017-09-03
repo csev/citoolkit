@@ -1,0 +1,2 @@
+<!-- file:190selnic-->
+Once the NIC driver setup is complete, you tell NT to use the driver.

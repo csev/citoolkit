@@ -1,0 +1,2 @@
+<!-- file:060inscd-->
+At this point NT has sufficient drivers to communicate with the CD-ROM so it continues its installation from the CD-ROM.  Insert the CD-ROM and press <B>Enter</b>

@@ -1,0 +1,303 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h2>Configuring the Running System</h2>
+Now the system is up and has passed some basic tests.  In this exercise, we begin to configure the system and walk through some system administration tasks including:
+<ul>
+<li>Create a User Account
+<li>Set Security Policies (The defaults are wide-open)
+<li>Format the <b>D:</b> partition
+<li>Use <b> regedit </b> to edit the registry
+</ul>
+In a later exercise we will see a simpler way to create and format the <B>D:</b>
+partition without using <b> regedit</b>.  Using <b> regedit</b> is included in this exercise as an example.
+<BR CLEAR=ALL><HR>
+<A NAME=010usermanager> </a>
+<A HREF=010usermanager.htm>
+<IMG SRC=010usermanager.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010usermanager-->
+The first of our post-installation tasks is to create a user account.
+<p>
+Use
+<b>Start | Program | Administrative Tools (Common) | User Manager</b>.
+Within User Manager run <B> User | New User</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020newuser> </a>
+<A HREF=020newuser.htm>
+<IMG SRC=020newuser.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020newuser-->
+Type in the name and account for the new user.  Set the initial password (twice).
+<p>
+Also, uncheck the "Change password at next log-in".  If this user is to use FTP only, they have no way to change their password and this will prevent them from using FTP.
+<p>
+You may want to create some groups and use those groups to control who can and cannot use various services.  This tutorial will not cover those techniques.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030renameadmin> </a>
+<A HREF=030renameadmin.htm>
+<IMG SRC=030renameadmin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030renameadmin-->
+Some system administrators suggest that you rename the <b>Administrator</b> account.  This makes it slightly harder for a hacker to gain administrator access to your system.
+<p>
+This step is optional.  It is found in User manager under <b> User | Rename</b>.
+<p>
+P.S. the name used in this example "root" - is just about as bad - so choose another administrator account name
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040accountpolicy> </a>
+<A HREF=040accountpolicy.htm>
+<IMG SRC=040accountpolicy.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040accountpolicy-->
+You need to set some account policies.  These can be found under
+<b> Policies | Account</b>.  The default settings are probably too lenient.
+<p>
+The settings shown here are probably more typical.  (You may have to click on the image to enlarge it)
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050userrights> </a>
+<A HREF=050userrights.htm>
+<IMG SRC=050userrights.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050userrights-->
+Under <b> Policy | User Rights</b>, you can change a variety of the rights that various users can have.  By default these are pretty lenient.
+You may want to restrict these somewhat.  This would be a good reason to create a group called "Network Users" (see User | New Local Group ) and then individually add those users to this group that you are willing to have come in over the network.  Then under User Rights, only the Administrators and Network User groups would be allowed to come in over the network.
+<p>
+To increase security, you might want to indicate that administrators can not come in over the network.  But you will then need physical access to the system to do many of the administrative chores.  Much of a security design is a balance between convienence and airtight security.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060auditpolicy> </a>
+<A HREF=060auditpolicy.htm>
+<IMG SRC=060auditpolicy.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060auditpolicy-->
+Under <b> Policies | Audit</b> we again see a very lenient default setting.  By default there is no auditing.  A more reasonable setting is shown in this example (you may have to enlarge to see detail).
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070dskfirsttime> </a>
+<A HREF=070dskfirsttime.htm>
+<IMG SRC=070dskfirsttime.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070dskfirsttime-->
+Next we will make some disk adjustments which include creating a D: partition. This is done by running
+<b> Start | Programs | Administrative Tools (Common) | Disk Manager</b>.
+The first time this is run, a small dialog box comes up.  Press <b>OK</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080diskadmin> </a>
+<A HREF=080diskadmin.htm>
+<IMG SRC=080diskadmin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080diskadmin-->
+This is the disk administrator.  We can see the C: partition and empty space on the hard-drive.  We can also see the CD-ROM drive at the D: drive letter.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090diskcdassign> </a>
+<A HREF=090diskcdassign.htm>
+<IMG SRC=090diskcdassign.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090diskcdassign-->
+First we must move the CD-ROM to a new drive.  We right-click and select <b>Assign Drive Letter</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100diskcdletter> </a>
+<A HREF=100diskcdletter.htm>
+<IMG SRC=100diskcdletter.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100diskcdletter-->
+We select that the CD-ROM is to be the <b>E:</b> drive.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110diskletternow> </a>
+<A HREF=110diskletternow.htm>
+<IMG SRC=110diskletternow.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110diskletternow-->
+We are given the option to have this be done immediately - we select <b>Yes</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120createdrived> </a>
+<A HREF=120createdrived.htm>
+<IMG SRC=120createdrived.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120createdrived-->
+The CD-ROM has been moved to E: so we can assign a drive letter to the unassigned space on our hard drive.  Use right-click and select <b>Create</b> to create a partition.
+<p>
+Note: We could have simply made this the E: drive and saved some effort.  But this approach leads us to demonstrate a few other techniques.  Feel free to simply make this the E: drive in your installation.  But then a few things will be slightly different later in the tutorial.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130diskntfsok> </a>
+<A HREF=130diskntfsok.htm>
+<IMG SRC=130diskntfsok.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:130diskntfsok-->
+This is creating an NTFS partition - it asks us if we are cool with that.   Say Yes to NTFS!
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140diskpartsize> </a>
+<A HREF=140diskpartsize.htm>
+<IMG SRC=140diskpartsize.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140diskpartsize-->
+We fill in the partition size.  By default it is using the remaining space on the hard drive and has precomputed the size for us. We accept this value.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150diskcommitchange> </a>
+<A HREF=150diskcommitchange.htm>
+<IMG SRC=150diskcommitchange.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150diskcommitchange-->
+Now we must make the changes permanent - right click on the new partition and select
+<b> Commit Changes Now... </b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=155diskareyousure> </a>
+<A HREF=155diskareyousure.htm>
+<IMG SRC=155diskareyousure.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:155diskareyousure-->
+Yes, we are sure.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160diskdorsidk> </a>
+<A HREF=160diskdorsidk.htm>
+<IMG SRC=160diskdorsidk.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160diskdorsidk-->
+This should only take a moment - it is just updating the partition table.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170diskformatd> </a>
+<A HREF=170diskformatd.htm>
+<IMG SRC=170diskformatd.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170diskformatd-->
+To format the disk, we right-click and select <b>Format</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=180diskformatparms> </a>
+<A HREF=180diskformatparms.htm>
+<IMG SRC=180diskformatparms.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:180diskformatparms-->
+We select the parameters for the disk.  Make sure to select <B>NTFS</B>.  You should not
+select compression.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=190diskformatting> </a>
+<A HREF=190diskformatting.htm>
+<IMG SRC=190diskformatting.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:190diskformatting-->
+Disk formatting may take a few minutes depending on the size and speed of the disk.  When formatting is complete, exit the Disk Manager.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=200startrunregedit> </a>
+<A HREF=200startrunregedit.htm>
+<IMG SRC=200startrunregedit.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:200startrunregedit-->
+Now that we are done making and moving disks, there is a little clean-up.  The registry still believes that we installed NT from the <b>D:</b> drive. We just moved the CD-ROM to the E: drive.  We need to clean up this little mess or we will keep getting dialogs as we reconfigure NT and it needs little bits of information off the CD.  It just means that we need to use Browse each time.  But this is inconvenient.  And it gives us a good excuse to use <b>regedit</b>.
+<p>
+<b>Warning:</b>
+Regedit is the system administrator's friend and enemy.  It is the entire configuration of NT - so you can fix anything or break anything.  So be careful.
+<p>
+To run RegEdit, use
+<b> Start | Run | regedit | OK</b>.
+<p>
+P.S.  If we had formatted our new disk space as E:, we would not have to do this step.  Later in another exercise we will show a different technique for creating the C and D drives.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=210editfindi386> </a>
+<A HREF=210editfindi386.htm>
+<IMG SRC=210editfindi386.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:210editfindi386-->
+We search for values in the registry which start with <B> D:\</B>.  Those are the values which point to the former CD-ROM location.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=220searchingregistry> </a>
+<A HREF=220searchingregistry.htm>
+<IMG SRC=220searchingregistry.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:220searchingregistry-->
+The program searches the registry...
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=230foundsystempath> </a>
+<A HREF=230foundsystempath.htm>
+<IMG SRC=230foundsystempath.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:230foundsystempath-->
+Each time, it finds a value which matches, it stops its search.  To edit the value, double click on the key (highlighted in this example).
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=240changesystempath> </a>
+<A HREF=240changesystempath.htm>
+<IMG SRC=240changesystempath.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:240changesystempath-->
+Then you are presented a dialog box to change the value.  Carefully change the D: to E: and press OK.  Then press <b>F3</b> to search for the next occurrence.  When it is found change that value until you have caught all the values.
+<p>
+There should be about 5 values which match "D:" after a fresh install.  This procedure will not work so well after a wide range of other software packages are installed.
+<p>
+Once this is all done, it would be a good time for a reboot and a quick test of the disk drives, CD-ROM and networking.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

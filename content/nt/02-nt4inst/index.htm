@@ -1,0 +1,197 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h2>Initial setup of NT from floppy disk</h2>
+The first step in installing Windows NT is to boot from the setup floppies.  Insert Setup Disk 1 and boot the system.  If you are using a SCSI CD-ROM drive, you can insert the Windows NT Server CD in the CD-ROM and boot.
+<P>
+The sequence is essentially the same from the CD or floppies except for the lack of any prompts for the floppy disks when coming from the CD.
+<P>
+When this exercise is complete, the system will be rebooted and setup will continue in a graphical mode.
+<BR CLEAR=ALL><HR>
+<A NAME=010disk2> </a>
+<A HREF=010disk2.htm>
+<IMG SRC=010disk2.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 010disk2.txt-->
+To start the process of installing NT, place setup disk 1 into the floppy drive and reboot the system.  After a few moments it will prompt you for setup disk 2.  Insert the disk and press enter.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020welc> </a>
+<A HREF=020welc.htm>
+<IMG SRC=020welc.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 020welc.txt-->
+This is the welcome screen for setup.  This is a very important screen.  If this were a repair installation, you would press <b>R</b> at this screen.  However we are doing a fresh install so we simply press <b>Enter</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030detect> </a>
+<A HREF=030detect.htm>
+<IMG SRC=030detect.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 030detect.txt-->
+At this point NT has absolutely no idea what hardware is installed on your system.  It needs to autodetect the hardware which is installed.  This will take a few minutes.  NT will load a lot of different drivers to see if those drivers can auto detect the hardware.  As part of the process it will prompt you for disk 3 which contains the drivers.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040disk3> </a>
+<A HREF=040disk3.htm>
+<IMG SRC=040disk3.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040disk3-->
+Insert disk 3 and press enter.  NT will test for the various controllers and load the proper drivers.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050found> </a>
+<A HREF=050found.htm>
+<IMG SRC=050found.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050found-->
+In this example, it has found an Adaptec SCSI controller and an IDE controller.  Because the CD-ROM is connected via IDE, it will load the drivers for IDE.
+<P>
+Assuming that there are no other storage drivers needed, generally click on enter to continue. Drivers for the network cards will be loaded later in the process.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060inscd> </a>
+<A HREF=060inscd.htm>
+<IMG SRC=060inscd.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060inscd-->
+At this point NT has sufficient drivers to communicate with the CD-ROM so it continues its installation from the CD-ROM.  Insert the CD-ROM and press <b>Enter</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070agree> </a>
+<A HREF=070agree.htm>
+<IMG SRC=070agree.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070agree-->
+You must read the license agreement, pressing page-down for each screen.  At the last screen you press <b>F8</b> to accept the license agreement.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080hwlist> </a>
+<A HREF=080hwlist.htm>
+<IMG SRC=080hwlist.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080hwlist-->
+This screen simply verifies the basic hardware.  Press <b>Enter</b> to continue.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090partition> </a>
+<A HREF=090partition.htm>
+<IMG SRC=090partition.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090partition-->
+Given that we are starting from scratch, we must partition the disk.  In our example, we will ultimately create two partitions on the disk.
+<ul>
+<li>A C: partition for software
+<li>A D: partition for data
+</ul>
+By separating these we can separately backup and restore our data and operating system.  It is not required that you separate these, but it is recommended.
+<p>
+You also might encounter this screen in the process of rebuilding a system.  In that case you may need to delete and recreate partitions.  Each situation will be different.
+<p>
+We press <B>C</B> to create a new partition.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100size1800> </a>
+<A HREF=100size1800.htm>
+<IMG SRC=100size1800.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100size1800-->
+We now must specify the size of the C: partition.  Initially, the C: partition must be below 2GB even though NTFS supports larger filesystems.  The partition is initially formatted using FAT and then converted to NTFS as part of the install process.  With NTFS, partitions can be increased in size as long as there is space available.  Unfortunately, the size of the C: partition cannot easily be increased.
+<p>
+So we create an 1800 KB partition.  Setting the partition size should only take a moment.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110instpart> </a>
+<A HREF=110instpart.htm>
+<IMG SRC=110instpart.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110instpart-->
+When the partition size is set, we are brought back to the partition screen.  Now we simply press enter to install on the partition we just created.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120ntfsfmt> </a>
+<A HREF=120ntfsfmt.htm>
+<IMG SRC=120ntfsfmt.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120ntfsfmt-->
+Now we will indicate that our C: partition will be formatted using NTFS.  For a dedicated server there is no other choice.  FAT is primarily used to allow dual booting between Windows-95 and Windows-NT.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130format> </a>
+<A HREF=130format.htm>
+<IMG SRC=130format.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+Formatting the disk will take several minutes..
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140winnt> </a>
+<A HREF=140winnt.htm>
+<IMG SRC=140winnt.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140winnt-->
+Next you select which directory the operating system will be loaded into.  This is <b> \WINNT </b> for most installations so press Enter.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150chkdsk> </a>
+<A HREF=150chkdsk.htm>
+<IMG SRC=150chkdsk.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150chkdsk-->
+Setup will optionally check your drives for integrity.  This step is often skipped by pressing <B> ESC</B>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160copy> </a>
+<A HREF=160copy.htm>
+<IMG SRC=160copy.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160copy-->
+Then setup copies the files from the CD-ROM to the hard disk.  This takes a couple of minutes unless you have a really slow CD-ROM.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170reboot> </a>
+<A HREF=170reboot.htm>
+<IMG SRC=170reboot.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170reboot-->
+Once the copying is finished, you  will reboot the system so that you can continue to setup Windows-NT with the graphical interface.
+<p>
+Make sure to remove the setup floppies.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

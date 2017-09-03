@@ -1,0 +1,4 @@
+<!-- file:310finish-->
+The network installation and configuration is much simpler when you are not connected.
+<p>
+Press <b>Finish</b>, but as you will soon see we are still not done.

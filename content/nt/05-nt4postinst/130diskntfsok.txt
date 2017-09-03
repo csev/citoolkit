@@ -1,0 +1,2 @@
+<!-- file:130diskntfsok-->
+This is creating an NTFS partition - it asks us if we are cool with that.   Say Yes to NTFS!

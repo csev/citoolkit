@@ -1,0 +1,2 @@
+<!-- file:300verifydcomplete-->
+There is far less data on <b>D:</b> so the restore and verify completes rather quickly.

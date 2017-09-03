@@ -1,0 +1,2 @@
+<!-- file:200ie4directory-->
+Generally it is safest to let the products install where they want to go.  Once you click <b>Next</b> and installation will (finally) begin.

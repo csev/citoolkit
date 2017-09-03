@@ -1,0 +1,5 @@
+<!-- file:360display-->
+Now we (don't) set the display characteristics.
+<p>
+This whole process can actually can be done pretty quickly once you have done it a few times.
+

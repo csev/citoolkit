@@ -1,0 +1,2 @@
+<!-- file:040disk3-->
+Insert disk 3 and press enter.  NT will test for the various controllers and load the proper drivers.

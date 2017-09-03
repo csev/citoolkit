@@ -1,0 +1,4 @@
+<!-- file:190backupd-->
+Once the tape is inserted and ready, select D: and press <b> Backup</b>.  Select <b> Verify After Backup</b> and press <b> OK</b> to begin the backup.
+<p>
+Perhaps this is not a good time to bring this up, but some DAT tape drives do not like you to keep pressing their buttons.  For example, once you press the eject button wait a while.  Don't just keep pressing it.  It takes a few moments for the tape drives to respond to these requests.  If you keep pressing the button (trying to hurry it up) you may get the tape drive hung.  Usually a power cycle clears things up.. But why risk it?

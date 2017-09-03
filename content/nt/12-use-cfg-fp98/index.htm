@@ -1,0 +1,219 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h2>Using and Configuring FrontPage98</h2>
+In this exercise, we will configure and use FrontPage 98 on the client system.  Throughout the exercise we will look at how the actions on the client affect the files and permissions on the server.
+<P>
+We use the <b>Administrator</b> account to create a FrontPage web and then delegate authoring permission to an end-user account which was created in an earlier exercise.  Then we use FrontPage to make some (very simple) edits on our web site.
+<P>
+In this exercise, the goal is to see how FrontPage (on a client) and IIS (on the server) interact and work together.  The goal is not to teach you the ins and outs of FrontPage.
+<BR CLEAR=ALL><HR>
+<A NAME=005serverwwwroot> </a>
+<A HREF=005serverwwwroot.htm>
+<IMG SRC=005serverwwwroot.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:005serverwwwroot-->
+First, for reference we look at the contents of the directory
+<b> D:\InetPub\wwwroot</b>.  This is the directory that the new FrontPage98 web will be created in later steps.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=010createnewweb> </a>
+<A HREF=010createnewweb.htm>
+<IMG SRC=010createnewweb.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010createnewweb-->
+Start Microsoft FrontPage98 on the client.  Indicate that would like to create a new frontpage web and press <b> OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020myweb> </a>
+<A HREF=020myweb.htm>
+<IMG SRC=020myweb.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020myweb-->
+Select <b> One Page Web </b> and then press <b> Change </b> to edit the URL of the new web.  Enter the address (Domain or IP) of the server and add the name of the web and press <b>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030oktocreate> </a>
+<A HREF=030oktocreate.htm>
+<IMG SRC=030oktocreate.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030oktocreate-->
+Then press <b>OK</b> again to create the web.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040needadmin> </a>
+<A HREF=040needadmin.htm>
+<IMG SRC=040needadmin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040needadmin-->
+To create a new web we need Administrator permission.  Once the web is created we will delegate the permission to edit the web to a non-administrator account.
+<p>
+If you would like to allow other accounts to create and administer webs, use the FrontPage Server Administrator on the NT server.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050creating> </a>
+<A HREF=050creating.htm>
+<IMG SRC=050creating.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050creating-->
+The web server is contacted and the web pages are created using the FrontPage extensions.  If you have mistyped the password or account name for the Administrator you will be prompted for it at this point.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060created> </a>
+<A HREF=060created.htm>
+<IMG SRC=060created.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060created-->
+If all goes well, you have created a new web site.  Before we begin editing, lets take a little look at the security of the files on the server.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070servernewdir> </a>
+<A HREF=070servernewdir.htm>
+<IMG SRC=070servernewdir.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070servernewdir-->
+Note that a new subdirectory - <b> myweb </b> exists on the server.  We right-click to take a look at the properties.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080servernewdirperms> </a>
+<A HREF=080servernewdirperms.htm>
+<IMG SRC=080servernewdirperms.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080servernewdirperms-->
+These permissions on the server are somewhat interesting.  Everyone has Full Control of the directory.  This means that any valid account logged into to the server can do anything to these files.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090toolspermissions> </a>
+<A HREF=090toolspermissions.htm>
+<IMG SRC=090toolspermissions.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090toolspermissions-->
+To alter the permissions, we go back to the client in FrontPage98 and go to <b> Tools | Permissions</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100uniqueapply> </a>
+<A HREF=100uniqueapply.htm>
+<IMG SRC=100uniqueapply.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100uniqueapply-->
+First, we indicate that this web will use different permissions than its parent web.  We also must press <b>Apply</b> to cause these changes to be permanent before we do the next step.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110permissionsusers> </a>
+<A HREF=110permissionsusers.htm>
+<IMG SRC=110permissionsusers.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110permissionsusers-->
+We move to the <b> Users </b> tab and see the existing permissions.  Administrator is the only account that can edit the web.  Looking at the bottom of the screen, anyone can view (browse) the web site materials.
+<p>
+We click on <b> Add </b> to add another user who is capable of editing the web site.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120addexampleupdateok> </a>
+<A HREF=120addexampleupdateok.htm>
+<IMG SRC=120addexampleupdateok.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120addexampleupdateok-->
+Now we select <b> example </b> on the left and press <b> Add>> </b> and indicate that these users can "Author and browse this web".  Then press <b>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130servernewperms> </a>
+<A HREF=130servernewperms.htm>
+<IMG SRC=130servernewperms.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:130servernewperms-->
+Back on the server, checking the permissions on the subdirectory, the permissions for <b> example </b> have been added.
+<P>
+If you prefer, you can change the <b> Everyone </b> access to Read and Execute.  This permission does not affect web use, only local (or NT network file sharing) access.
+<P>
+If you have a directory which only has content (such as .htm files) you may not need Execute permission.  If you have a directory which contains executable material such as scripts, you may want to have Execute permission without Read permission.  It is a good general practice to keep security as tight as possible in a production system.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140exitandrestartfp> </a>
+<A HREF=140exitandrestartfp.htm>
+<IMG SRC=140exitandrestartfp.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140exitandrestartfp-->
+Now exit and restart FrontPage98.  Ask to open the existing web by pressing <b>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150authorpermission> </a>
+<A HREF=150authorpermission.htm>
+<IMG SRC=150authorpermission.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150authorpermission-->
+Now we only need "author" permission.  Instead of using the administrator account, we can use our <b> example </b> account to access the site.
+<p>
+Using this approach, each web can be maintained by a different set of users.  The Administrator creates and configures each new web on the server.  Then the author permission is delegated to the particular set of authors for each web.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160wecanauthor> </a>
+<A HREF=160wecanauthor.htm>
+<IMG SRC=160wecanauthor.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160wecanauthor-->
+This is the contents of the (very simple) web.  Click on <b> Default.htm </b> to edit the file.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170helloworldandsave> </a>
+<A HREF=170helloworldandsave.htm>
+<IMG SRC=170helloworldandsave.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170helloworldandsave-->
+This is the FrontPage98 editor.  This is a powerful tool for creating web sites.  Many books have been written on how to use this program.  In this tutorial, we have exactly one slide.  So as you might expect, this is a rather abbreviated overview of editing web pages :).
+<p>
+Enter the text "Hello World" and press <b> Save </b> (The little floppy disk icon).  The act of saving the file also updates the file on the server.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=180helloinbrowser> </a>
+<A HREF=180helloinbrowser.htm>
+<IMG SRC=180helloinbrowser.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:180helloinbrowser-->
+Just to make sure that we updated the site, access the URL in the browser.  The URL in this example is
+<b> http://192.168.1.10/myweb/</b>
+<p>
+Congratulations, you know just enough about FrontPage98 to be dangerous.  Probably time to go get a good book.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

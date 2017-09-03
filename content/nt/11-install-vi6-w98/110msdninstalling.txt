@@ -1,0 +1,2 @@
+<!-- file:110msdninstalling-->
+Setup will copy the proper files to your hard disk.

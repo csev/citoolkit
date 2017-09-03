@@ -1,0 +1,442 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h2>Restoring the Data</h2>
+We have come a long way through these exercises.  The only step which remains is to restore the data.  This turns out to be somewhat tricky.  We have a chicken and egg problem.  We need the security information on the tape to set the permissions on our files.  We need to restore file permissions in addition to restoring the files themselves.  The only solution is to do the restore of the <b>C:</b> data twice.
+<P>
+There are several other wrinkles to the restore process so pay close attention.
+<P>
+After the files are restored, we do some testing and debugging of a system "problem" which appears to have popped up using the Microsoft knowledge base.  The knowledge base is a very useful resource.  You might try looking up articles which reference <b>NTBACKUP</b> to get some information as to why we have so many steps in this process.
+<BR CLEAR=ALL><HR>
+<A NAME=010mycomputer> </a>
+<A HREF=010mycomputer.htm>
+<IMG SRC=010mycomputer.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010mycomputer-->
+After NT comes up and we log in as the Administrator, we see a very simple NT installation without any networking.   The drives are not even shared.
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020servicestapedevices> </a>
+<A HREF=020servicestapedevices.htm>
+<IMG SRC=020servicestapedevices.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020servicestapedevices-->
+First we must install the proper driver for the tape drive.  We go to <b> Start | Settings | Control Panel | Tape Devices </b> and open it up
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030makingdriverlist> </a>
+<A HREF=030makingdriverlist.htm>
+<IMG SRC=030makingdriverlist.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030makingdriverlist-->
+On this particular system the <b> Tape Devices</b> control panel element goes off looking for the proper driver.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040oktoinstall4mmdriver> </a>
+<A HREF=040oktoinstall4mmdriver.htm>
+<IMG SRC=040oktoinstall4mmdriver.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040oktoinstall4mmdriver-->
+When it finds it, it asks for permission to install it.  Press <b>OK</b> and it will install the driver.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050driverinstalled> </a>
+<A HREF=050driverinstalled.htm>
+<IMG SRC=050driverinstalled.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050driverinstalled-->
+This shows that the driver was successfully installed.
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060diskadminfirsttime> </a>
+<A HREF=060diskadminfirsttime.htm>
+<IMG SRC=060diskadminfirsttime.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060diskadminfirsttime-->
+Now we want to format the D: drive.  Remember that we created the partition
+during setup.
+<p>
+Run <b> Start | Programs | Administrative Tools (Common) | Disk Administrator </b>
+<p>
+The first time the disk administrator it does some initial setup.  Press <b>OK</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070diskadmininitial> </a>
+<A HREF=070diskadmininitial.htm>
+<IMG SRC=070diskadmininitial.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070diskadmininitial-->
+This is how the Disk Administrator starts.  Note that the D: drive is partitioned (not formatted) and the CD-ROM is already the E: drive.
+<p>
+That was sure a lot easier than the registry editing gymnastics we performed earlier.  But at least you know both ways.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080diskadminformat> </a>
+<A HREF=080diskadminformat.htm>
+<IMG SRC=080diskadminformat.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080diskadminformat-->
+To format D: we right-click and select <b> Format</b>.
+Set the file system to NTFS and press <b> Start</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=095diskadmindone> </a>
+<A HREF=095diskadmindone.htm>
+<IMG SRC=095diskadmindone.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:095diskadmindone-->
+The format takes a few minutes and when it is complete, we exit the program.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100restorecstart> </a>
+<A HREF=100restorecstart.htm>
+<IMG SRC=100restorecstart.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100restorecstart-->
+This is the start-up screen for the <b>Backup</b> program.
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110restorecsettings> </a>
+<A HREF=110restorecsettings.htm>
+<IMG SRC=110restorecsettings.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110restorecsettings-->
+The parameters on this first restore (we will do 2) are important to get right.
+<p>
+Select <b> Restore Local Registry </b> and unselect <b> Restore File Permissions</b>.
+The reason is that because we do not have the security configured
+(the configuration is still on the tape).
+Restoring permissions under an invalid security scheme is pretty pointless.
+<p>
+The <b>Verify</b> option is up to you.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120yesreplacefiles> </a>
+<A HREF=120yesreplacefiles.htm>
+<IMG SRC=120yesreplacefiles.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120yesreplacefiles-->
+Yes, you do want to replace the files.  Interestingly, the pointer to which directory used for booting is stored in the file <b> C:\BOOT.INI</b>.  It is on the restore tape so as we restore the system, the default boot will be switched from <b> C:\XYZNT </b> to <b> C:\WINNT</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130restorecomplete> </a>
+<A HREF=130restorecomplete.htm>
+<IMG SRC=130restorecomplete.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:130restorecomplete-->
+This gives us a clue that our next step should be a reboot.
+  We exit the backup program at this point.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140reboot> </a>
+<A HREF=140reboot.htm>
+<IMG SRC=140reboot.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140reboot-->
+What else - reboot
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150checkoutdisk> </a>
+<A HREF=150checkoutdisk.htm>
+<IMG SRC=150checkoutdisk.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150checkoutdisk-->
+We come back up, log in and take a look at the disks.  Now we have both <b> WINNT</b> and an <b>XYZNT</b>.  But because we rebooted, everything in WINNT is active and the XYZNT data can be removed.
+<p>
+Simply highlight <b> XYZNT </b> and press <b>Shift-Delete</b>.  We don't even want to bother putting this into the recycle bin.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160deletexyznt> </a>
+<A HREF=160deletexyznt.htm>
+<IMG SRC=160deletexyznt.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160deletexyznt-->
+Yes, we do.  It has served us well but now it is time to move on.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170xyzallgone> </a>
+<A HREF=170xyzallgone.htm>
+<IMG SRC=170xyzallgone.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170xyzallgone-->
+The <b> XYZNT</b> directory has been removed.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=180eventviewer> </a>
+<A HREF=180eventviewer.htm>
+<IMG SRC=180eventviewer.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:180eventviewer-->
+Just because we are careful system administrators, we take a look at the Event Log.
+<p>
+Yikes, there appears to be a number of different messages.  Some are red, some are yellow, and some are blue.  We will take a look at the red and yellow messages.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=190eventdcom> </a>
+<A HREF=190eventdcom.htm>
+<IMG SRC=190eventdcom.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:190eventdcom-->
+We double click on the red event and it appears to be about <b> IISADMIN</b>.  We go back to the event log and notice that it started well before our backup and restore.
+<p>
+On a hunch, we decide to check out the www.microsoft.com site to see if there is anything in the knowledge base.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=200microsoftsearch> </a>
+<A HREF=200microsoftsearch.htm>
+<IMG SRC=200microsoftsearch.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:200microsoftsearch-->
+We go to the Microsoft and select <b> Search </b> from the main page.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=205searching> </a>
+<A HREF=205searching.htm>
+<IMG SRC=205searching.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:205searching-->
+We query for the string <B> IISADMIN instance already running </b> asking the search to examine the Knowledge Base and look for articles with all of the four words in the article.  Then we press <b> Search</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=210serachresults> </a>
+<A HREF=210serachresults.htm>
+<IMG SRC=210serachresults.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:210serachresults-->
+We get two articles.  The first article looks promising so we click on it to view the article.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=215articleq152734> </a>
+<A HREF=215articleq152734.htm>
+<IMG SRC=215articleq152734.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:215articleq152734-->
+Not only is the article promising, it describes our problem in exact detail and indicates that this problem occurs after the installation of Option Pack 4 but is not a critical problem.
+<p>
+This is a good example of how the Microsoft Knowledge base can be used to figure out problems.
+<p>
+Take a look for the phrase:
+<ul>
+<li>restore windows nt
+</ul>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=220eventwww> </a>
+<A HREF=220eventwww.htm>
+<IMG SRC=220eventwww.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:220eventwww-->
+We take a look at one of the "yellow" events.  These occur
+because the material on the <b> D:</b> drive has not yet been restored.
+<p>
+Next we will proceed to restore the data.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=230reboot> </a>
+<A HREF=230reboot.htm>
+<IMG SRC=230reboot.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:230reboot-->
+This is a good time for a reboot - just to make sure all of the vestiges of <b> XYZNT</b> are gone.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=240restorecagain> </a>
+<A HREF=240restorecagain.htm>
+<IMG SRC=240restorecagain.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:240restorecagain-->
+Now we will restore the <b> C: </b> material <i>again</i>.  This time, we are doing it within the proper security context reloaded from the tape so the files end up with the proper settings.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=250restorecsettings> </a>
+<A HREF=250restorecsettings.htm>
+<IMG SRC=250restorecsettings.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:250restorecsettings-->
+The settings in this second restore are important.  We do <b>not</b> restore the registry, but we do restore file permissions and do a verify after the restore is complete.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=270verifyofciscomplete> </a>
+<A HREF=270verifyofciscomplete.htm>
+<IMG SRC=270verifyofciscomplete.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:270verifyofciscomplete-->
+The verify completes.  We eject the back up tape for the <b>C:</b> material.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=280restoreofd> </a>
+<A HREF=280restoreofd.htm>
+<IMG SRC=280restoreofd.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:280restoreofd-->
+We insert the tape containing the data from the <b>D:</b> drive and select <b>Restore</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=290restoredsettings> </a>
+<A HREF=290restoredsettings.htm>
+<IMG SRC=290restoredsettings.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:290restoredsettings-->
+The restore settings for this restore are also important.  There is no registry on <b>D:</b> so we restore permissions and verify the restore.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=300verifydcomplete> </a>
+<A HREF=300verifydcomplete.htm>
+<IMG SRC=300verifydcomplete.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:300verifydcomplete-->
+There is far less data on <b>D:</b> so the restore and verify completes rather quickly.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=310reboot> </a>
+<A HREF=310reboot.htm>
+<IMG SRC=310reboot.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:310reboot-->
+Of course, to make sure we reboot.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=320checkingusers> </a>
+<A HREF=320checkingusers.htm>
+<IMG SRC=320checkingusers.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:320checkingusers-->
+We check our user configurations.  All of the accounts and passwords are the same as before we restored the system.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=330checkingevents> </a>
+<A HREF=330checkingevents.htm>
+<IMG SRC=330checkingevents.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:330checkingevents-->
+We look at the <b> Event Viewer</b>.  The pesky DCOM message is there but the problems with FTP and WWW have been resolved.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=340checkingperms1> </a>
+<A HREF=340checkingperms1.htm>
+<IMG SRC=340checkingperms1.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:340checkingperms1-->
+Lets take a look at our FrontPage98 web on the server. We right-click and view properties.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=350checkingperms2> </a>
+<A HREF=350checkingperms2.htm>
+<IMG SRC=350checkingperms2.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:350checkingperms2-->
+The permissions are as we left them with Administrator and example.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=360checkingmyweb> </a>
+<A HREF=360checkingmyweb.htm>
+<IMG SRC=360checkingmyweb.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:360checkingmyweb-->
+Let us see if the web site can be retrieved in a browser  - yes, it can.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=370checkingfrontpage> </a>
+<A HREF=370checkingfrontpage.htm>
+<IMG SRC=370checkingfrontpage.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:370checkingfrontpage-->
+On our client system, we bring up FrontPage98 and using the <b> example </b> account, we can load, modify and save a page in the <b>myweb</b> area.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=380checkingmywebagain> </a>
+<A HREF=380checkingmywebagain.htm>
+<IMG SRC=380checkingmywebagain.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:380checkingmywebagain-->
+We updated the page using FrontPage98, lo and behold it appears on the web.
+<p>
+At this point, you have been given a broad introduction to installing and performing basic functions on an NT system.  Before you are comfortable in a production environment, you need to gain more knowledge by purchasing books, taking classes, or simply doing more testing.
+<p>
+Congratulations on getting this far.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

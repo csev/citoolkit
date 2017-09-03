@@ -1,0 +1,4 @@
+<h2>Continued Setup in Graphical Mode</h2>
+Windows NT setup does as little of its setup as possible during the first phase.  After the first phase is done, the system is rebooted from the hard disk.  The first task is to convert the FAT formatted file system to NTFS.  Then the system is rebooted again and a graphical user interface is used to continue setup.
+
+When this exercise is complete, the system will be rebooted and NT will be up.

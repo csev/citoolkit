@@ -1,0 +1,4 @@
+<!-- file:110servicesstopiisadmin-->
+Stop the <b> IISADMIN </b> service which will also stop the FTP and Web services.
+<p>
+These services are down at this time - the system will not respond to web requests during this backup.  The services must be restarted or the system must be rebooted before these services will be available.

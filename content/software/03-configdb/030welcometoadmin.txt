@@ -1,0 +1,4 @@
+<!-- file:030welcometoadmin-->
+This is the starting page for the on-line administrator.  You are presented with the different database areas which you can administer.  A navigation bar across the top allows quick navigation back up to top level pages.
+
+We will first look at <b>Site Configuration</b>

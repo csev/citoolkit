@@ -1,0 +1,2 @@
+<!-- file:100diskcdletter-->
+We select that the CD-ROM is to be the <b>E:</b> drive.

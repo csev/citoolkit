@@ -1,0 +1,2 @@
+<!-- file:020rdiskemerg-->
+We press <b> Yes </b> to copy the repair information onto a floppy disk.

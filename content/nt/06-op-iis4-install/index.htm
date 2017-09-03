@@ -1,0 +1,455 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h2>Installing IIS 4.0</h2>
+The next task is to install Internet Information Server 4.0.  This can come from several places.  The Visual Interdev 6.0 CD has IIS 4.0 and recently purchased Windows NT 4.0 packages have an Option pack CD included.  This example is based on the <b>Microsoft Windows NT 4.0 Option Pack</b> which comes with NT server.
+<P>
+There are three basic steps in this process:
+<ul>
+<li>Installing Service Pack 3
+<li>Installing Internet Explorer 4.0
+<li>Installing Internet Information Server 4.0
+</ul>
+<P>
+We will reboot the system between each of the steps.
+<BR CLEAR=ALL><HR>
+<A NAME=010opwelc> </a>
+<A HREF=010opwelc.htm>
+<IMG SRC=010opwelc.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010opwelc-->
+Insert the <b>Microsoft Windows NT 4.0 Option Pack</b> which comes with NT server
+CD-ROM.   It will either autostart or you will have to double click on the CD-ROM icon in My Computer.
+<p>
+Press <b>Install</b>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020opinstall> </a>
+<A HREF=020opinstall.htm>
+<IMG SRC=020opinstall.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020opinstall-->
+This install takes three steps because there are prerequisites to IIS 4.0.
+<ul>
+<li>Install Service Pack 3 for NT (Later for Y2K we will go to Service Pack 4)
+<li>Install Internet Explorer 4.0
+<li>Install IIS 4.0
+</ul>
+So you launch each in turn by navigating to the CD-ROM.  The installs are done from a web browser.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030opopensp3ok> </a>
+<A HREF=030opopensp3ok.htm>
+<IMG SRC=030opopensp3ok.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030opopensp3ok-->
+Because we are executing from a browser, there may be a couple of "security warnings".  Just say <b>Open</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040sp3extract> </a>
+<A HREF=040sp3extract.htm>
+<IMG SRC=040sp3extract.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040sp3extract-->
+The service pack installer will verify, then extract the service pack.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050sp3setup> </a>
+<A HREF=050sp3setup.htm>
+<IMG SRC=050sp3setup.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050sp3setup-->
+At this screen you only have one option - so press <b>Next</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060sp3eula> </a>
+<A HREF=060sp3eula.htm>
+<IMG SRC=060sp3eula.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060sp3eula-->
+You must read and accept the end user license agreement.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070sp3install> </a>
+<A HREF=070sp3install.htm>
+<IMG SRC=070sp3install.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070sp3install-->
+Because we are installing this service pack for the first time, we do not have the option to uninstall the service pack.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080sp3uninst> </a>
+<A HREF=080sp3uninst.htm>
+<IMG SRC=080sp3uninst.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080sp3uninst-->
+Now you are given the option to create an uninstall directory.  This directory will be used to store the pre-service-pack-3 files.  It is a good idea to create the backup directory.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090sp3finish> </a>
+<A HREF=090sp3finish.htm>
+<IMG SRC=090sp3finish.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090sp3finish-->
+When you press <b>Next</b>, the service pack will be installed.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100sp3uninst> </a>
+<A HREF=100sp3uninst.htm>
+<IMG SRC=100sp3uninst.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100sp3uninst-->
+First the files to be changed are backed up to the uninstall directory.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110sp3copying> </a>
+<A HREF=110sp3copying.htm>
+<IMG SRC=110sp3copying.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110sp3copying-->
+Then the new versions of the files are copied from the CD-ROM
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120sp3skip40> </a>
+<A HREF=120sp3skip40.htm>
+<IMG SRC=120sp3skip40.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120sp3skip40-->
+This dialog comes up because you have the 128-bit (more secure) North America security in your existing NT installation.  The Service pack is an international version with weaker 40-bit security.
+<p>
+You should not replace the file, you should keep your old file so press <b> Skip</b>.
+<p>
+Note - we will get a new version of this file when we install the North American version of Service Pack 4 later in the process.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130sp3reboot> </a>
+<A HREF=130sp3reboot.htm>
+<IMG SRC=130sp3reboot.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:130sp3reboot-->
+We have reconfigured the system so -  guess what - we have to reboot.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140ie4oktolaunch> </a>
+<A HREF=140ie4oktolaunch.htm>
+<IMG SRC=140ie4oktolaunch.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140ie4oktolaunch-->
+Again we navigate to the CD-ROM - then press <b>Install</b> in the initial screen.  Then we select Internet Explorer (x86).  Again, we get asked if this is OK with us, security wise.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150ie4setup> </a>
+<A HREF=150ie4setup.htm>
+<IMG SRC=150ie4setup.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150ie4setup-->
+This is the welcome screen for IE4 setup.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160ie4eula> </a>
+<A HREF=160ie4eula.htm>
+<IMG SRC=160ie4eula.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160ie4eula-->
+Again you have to accept the end-user license.  (even the French parts).  Press <b>Next</b>
+and voila' we are at the installation option screen.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170ie4stdinst> </a>
+<A HREF=170ie4stdinst.htm>
+<IMG SRC=170ie4stdinst.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170ie4stdinst-->
+At this screen we select the <b>Standard</b> option.  Remember - this is a server not a workstation.  We don't need a bunch of multimedia players and netmeeting clients.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=180ie4nodesktop> </a>
+<A HREF=180ie4nodesktop.htm>
+<IMG SRC=180ie4nodesktop.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:180ie4nodesktop-->
+No, we don't want the ultra-slick windows desktop update.  We are, after all, a server.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=190ie4country> </a>
+<A HREF=190ie4country.htm>
+<IMG SRC=190ie4country.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:190ie4country-->
+Even though we are a server, we select our country for active content.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=200ie4directory> </a>
+<A HREF=200ie4directory.htm>
+<IMG SRC=200ie4directory.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:200ie4directory-->
+Generally it is safest to let the products install where they want to go.  Once you click <b>Next</b> and installation will (finally) begin.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=210ie4installing> </a>
+<A HREF=210ie4installing.htm>
+<IMG SRC=210ie4installing.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:210ie4installing-->
+Installation takes several steps and can take a few minutes.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=220ie4reboot> </a>
+<A HREF=220ie4reboot.htm>
+<IMG SRC=220ie4reboot.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:220ie4reboot-->
+Setup closes all the open programs to perform its configuration.  Next we will be rebooting so it is not a big deal to close all the programs.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=230ie4reboot2> </a>
+<A HREF=230ie4reboot2.htm>
+<IMG SRC=230ie4reboot2.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:230ie4reboot2-->
+Again, we reboot to complete the Internet Explorer 4 installation.
+<p>
+Next up, the installation of IIS 4.0
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=231ie4connwiz> </a>
+<A HREF=231ie4connwiz.htm>
+<IMG SRC=231ie4connwiz.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:231ie4connwiz-->
+The first time you start IE4, you will be shown the Connection Wizard.
+This is somewhat silly but only happens once.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=235ie4iamwired> </a>
+<A HREF=235ie4iamwired.htm>
+<IMG SRC=235ie4iamwired.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:235ie4iamwired-->
+Select the option that the network is already set up, thank you.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=237ie4wizdidnothing> </a>
+<A HREF=237ie4wizdidnothing.htm>
+<IMG SRC=237ie4wizdidnothing.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:237ie4wizdidnothing-->
+Finally we click <b>Finish</b> and never see this wizard again.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=240opinstall> </a>
+<A HREF=240opinstall.htm>
+<IMG SRC=240opinstall.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:240opinstall-->
+Again, navigate the CD-ROM to the install screen for the option pack.  Now we execute the installation of IIS 4.0 (x86).
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=250opoktorun> </a>
+<A HREF=250opoktorun.htm>
+<IMG SRC=250opoktorun.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:250opoktorun-->
+Again we are prompted if it is OK to run the program.
+<p>
+You can check the box so it stops prompting you  but that probably is <i>not</i>
+a good idea (especially on a server).
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=260opsetup> </a>
+<A HREF=260opsetup.htm>
+<IMG SRC=260opsetup.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:260opsetup-->
+This is the welcome screen for IIS 4.0 setup.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=270opeula> </a>
+<A HREF=270opeula.htm>
+<IMG SRC=270opeula.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:270opeula-->
+You must agree to the End User License agreement.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=280opinstallcustom> </a>
+<A HREF=280opinstallcustom.htm>
+<IMG SRC=280opinstallcustom.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:280opinstallcustom-->
+Select custom installation.  We will alter some of the "typical" settings.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=290opiissubcomponents> </a>
+<A HREF=290opiissubcomponents.htm>
+<IMG SRC=290opiissubcomponents.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:290opiissubcomponents-->
+Navigate down through <B> Internet Information Server (IIS) </b> by selecting it and pressing <b> Show Subcomponents</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=300opnosmtp> </a>
+<A HREF=300opnosmtp.htm>
+<IMG SRC=300opnosmtp.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:300opnosmtp-->
+Uncheck <B> SMTP Service </B> and make sure the <b> NNTP </B> Services is also unchecked.  Then press <b>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=310opiissubcomponents2> </a>
+<A HREF=310opiissubcomponents2.htm>
+<IMG SRC=310opiissubcomponents2.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:310opiissubcomponents2-->
+After we have altered the settings, press <b>Next</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=320opswitchpubtod> </a>
+<A HREF=320opswitchpubtod.htm>
+<IMG SRC=320opswitchpubtod.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:320opswitchpubtod-->
+Switch the location for the web and FTP files to the <b>D:</b> drive.
+<p>
+If you are planning to use FTP as the exclusive mechanism for uploading web files, you might want to point the FTP and Web servers to the same directory.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=330opmts> </a>
+<A HREF=330opmts.htm>
+<IMG SRC=330opmts.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:330opmts-->
+Leave the program files in their default location.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=340opadminlocal> </a>
+<A HREF=340opadminlocal.htm>
+<IMG SRC=340opadminlocal.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:340opadminlocal-->
+A conservative choice is to have all administration be local.  If the system will not be readily accessible you can designate an account to do remote administration - typically this is the Administrator account (unless you have renamed it).
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=350opindexlocation> </a>
+<A HREF=350opindexlocation.htm>
+<IMG SRC=350opindexlocation.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:350opindexlocation-->
+The index server indexes across multiple data sources.  It will index across the FTP and Web directories.  But you do need to switch it to <b>D:</b>.  Once
+you press <b>Next</b> on this screen, then installation will actually begin.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=360opinstalling> </a>
+<A HREF=360opinstalling.htm>
+<IMG SRC=360opinstalling.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:360opinstalling-->
+This installation takes some time.  It may take around five minutes before it completes.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=370opfinish> </a>
+<A HREF=370opfinish.htm>
+<IMG SRC=370opfinish.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:370opfinish-->
+Press <B>Finish</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=380opreboot> </a>
+<A HREF=380opreboot.htm>
+<IMG SRC=380opreboot.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:380opreboot-->
+And you will have to reboot the system.
+<p>
+IIS 4.0 has been successfully installed.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

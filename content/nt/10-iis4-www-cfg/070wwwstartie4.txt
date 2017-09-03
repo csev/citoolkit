@@ -1,0 +1,5 @@
+<!-- file:070wwwstartie4-->
+Much like in FTP we will do a little test to make sure we understand how IIS is configured.  Open a web browser and point to our new web server.  Locally, you can use the URL http://www/.
+<p>
+If you do not yet have DNS set up, you may need to use an IP address in the URL such as 
+http://192.168.1.10/.

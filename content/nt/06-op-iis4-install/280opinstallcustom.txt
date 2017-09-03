@@ -1,0 +1,2 @@
+<!-- file:280opinstallcustom-->
+Select custom installation.  We will alter some of the "typical" settings.

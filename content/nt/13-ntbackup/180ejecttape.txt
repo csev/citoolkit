@@ -1,0 +1,7 @@
+<!-- file:180ejecttape-->
+Use <b> Operations | Eject Tape </b> to switch tapes between backups.
+<p>
+Then insert the tape to be used for the backup of D:
+<p>
+Label the tape that you just backed C: up on to.
+ 

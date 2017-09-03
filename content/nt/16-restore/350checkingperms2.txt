@@ -1,0 +1,2 @@
+<!-- file:350checkingperms2-->
+The permissions are as we left them with Administrator and example.

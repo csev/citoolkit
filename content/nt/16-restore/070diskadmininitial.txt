@@ -1,0 +1,4 @@
+<!-- file:070diskadmininitial-->
+This is how the Disk Administrator starts.  Note that the D: drive is partitioned (not formatted) and the CD-ROM is already the E: drive.
+<p>
+That was sure a lot easier than the registry editing gymnastics we performed earlier.  But at least you know both ways.

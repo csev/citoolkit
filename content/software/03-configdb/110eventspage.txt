@@ -1,0 +1,4 @@
+<!-- file:110eventspage-->
+This is the starting page for events.  You can do a number of things here.  If you have event approval turned on, you will be presented with a list of events to be approved on this screen.
+
+At this point, we will simply create a new event.  Since we have event approval turned off, the event will immediately show up.

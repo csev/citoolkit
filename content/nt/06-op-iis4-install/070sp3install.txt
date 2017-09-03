@@ -1,0 +1,2 @@
+<!-- file:070sp3install-->
+Because we are installing this service pack for the first time, we do not have the option to uninstall the service pack.

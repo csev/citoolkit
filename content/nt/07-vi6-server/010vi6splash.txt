@@ -1,0 +1,4 @@
+<!-- file:010vi6splash-->
+This is the splash screen for the Visual Interdev 6.0 installation.  Thissame installation process is used for boith the server components and the client components of VI 6.0.
+
+Press <b>Next</b>.

@@ -1,0 +1,4 @@
+<!-- file:240loginasadmin-->
+Now go back to <b>Home</b>, then to <b>Administration</b>, and log in as <b>admin</b>. 
+(This could be a non-admin account as long as it was granted the <b>Approve Events</b> role).
+

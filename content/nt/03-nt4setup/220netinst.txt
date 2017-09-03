@@ -1,0 +1,2 @@
+<!-- file:220netinst-->
+Now we have specified the software components for networking.  Next, networking will be started so we can configure it.

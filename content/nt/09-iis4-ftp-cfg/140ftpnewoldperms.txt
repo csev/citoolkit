@@ -1,0 +1,2 @@
+<!-- file:140ftpnewoldperms-->
+Initially it inherits its permissions from its parent directory.  We press <b>Add</b> to give our example user permission on the directory.

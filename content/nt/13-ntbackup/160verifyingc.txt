@@ -1,0 +1,4 @@
+<!-- file:160verifyingc-->
+After the backup is complete the tape will be rewound and the verify will be performed.
+<p>
+Verify reads the tape, and for each file on the tape checks to see if it matches the disk copy of the file.  Verify will <i>not</i> detect missing files.  You must scroll through the backup log to find missing files.

@@ -1,0 +1,2 @@
+<!-- file:220ie4reboot-->
+Setup closes all the open programs to perform its configuration.  Next we will be rebooting so it is not a big deal to close all the programs.

@@ -1,0 +1,4 @@
+<!-- file:040startiisadmin-->
+Run the IIS Administrator using
+<b>Start | Programs | Windows NT 4.0 Option Pack | 
+Microsoft Internet Information Server | Internet Service Manager </b>

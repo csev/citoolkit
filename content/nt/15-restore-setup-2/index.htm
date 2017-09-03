@@ -1,0 +1,192 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h2>Minimal NT Installation - Part 2</h2>
+Continuing with our restore exercise, we have rebooted after the initial floppy-based setup.
+First the system boots and converts the file system from FAT to NTFS.  Then the system
+reboots again and performs the graphical setup and configuration.
+<P>
+Because we only need a subset of NT to work to access the tapes, this procedure is somewhat abbreviated compared to the first exercise.  We don't even install networking support.
+<P>
+We partition the disks slightly differently than in the earlier exercise.  This technique is the better approach than the approach used in the first installation.
+<BR CLEAR=ALL><HR>
+<A NAME=010load> </a>
+<A HREF=010load.htm>
+<IMG SRC=010load.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010load-->
+The system reboots and the initial NT screen shows up.  The delay is set to zero so it immediately continues the boot.
+<p>
+NT Setup formats the C: as a FAT filesystem but on this reboot it gets converted to NTFS as part of the boot process. This conversion does not take much time.  Then the system gets rebooted again.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040welcome> </a>
+<A HREF=040welcome.htm>
+<IMG SRC=040welcome.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040welcome-->
+Next, the Graphical setup executes and copies still more information from the CD-ROM to the hard disk.
+<p>
+Once the copy is complete setup says, "hello" and you press <b>Next</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050name> </a>
+<A HREF=050name.htm>
+<IMG SRC=050name.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050name-->
+You must enter the description of the server and the organization who runs the server.  This is NOT the computer name - that will be specified later.  these fields are intended to be descriptive (i.e. for humans to read).
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060cdkey> </a>
+<A HREF=060cdkey.htm>
+<IMG SRC=060cdkey.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060cdkey-->
+Now you must enter the CD-Key from the back of the CD-Case.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070license> </a>
+<A HREF=070license.htm>
+<IMG SRC=070license.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070license-->
+Next, you specify the number of users your license covers.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080compname> </a>
+<A HREF=080compname.htm>
+<IMG SRC=080compname.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080compname-->
+Enter the computer name.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090servtyp> </a>
+<A HREF=090servtyp.htm>
+<IMG SRC=090servtyp.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090servtyp-->
+Now we set the server type to <b>Standalone</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100adminpw> </a>
+<A HREF=100adminpw.htm>
+<IMG SRC=100adminpw.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100adminpw-->
+Now you will specify the Administrator password.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110emerg> </a>
+<A HREF=110emerg.htm>
+<IMG SRC=110emerg.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110emerg-->
+We do <b> not </b> want an emergency repair disk at this point.  It would be <i>especially</i> bad to overwrite the emergency repair disk which we produced as part of our backup.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120components> </a>
+<A HREF=120components.htm>
+<IMG SRC=120components.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120components-->
+Because this is a temporary installation, accept the defaults.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130netsetup> </a>
+<A HREF=130netsetup.htm>
+<IMG SRC=130netsetup.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:130netsetup-->
+Now we move into the network configuration phase of the setup.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140notwired> </a>
+<A HREF=140notwired.htm>
+<IMG SRC=140notwired.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140notwired-->
+This screen is asking the nature of your network connection.  Since this is a temporary installation, we will not bother to set up any form of networking.
+<p>
+However if the restore needs the network, you will have to install and configure networking.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=310finish> </a>
+<A HREF=310finish.htm>
+<IMG SRC=310finish.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:310finish-->
+The network installation and configuration is much simpler when you are not connected.
+<p>
+Press <b>Finish</b>, but as you will soon see we are still not done.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=350timezone> </a>
+<A HREF=350timezone.htm>
+<IMG SRC=350timezone.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:350timezone-->
+Now we set the timezone for the computer using the drop-down box.
+<p>
+You can also set this using the cursor keys.  Try hitting the cursor-up key a few times.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=360display> </a>
+<A HREF=360display.htm>
+<IMG SRC=360display.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:360display-->
+Now we (don't) set the display characteristics.
+<p>
+This whole process can actually can be done pretty quickly once you have done it a few times.
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=380restart> </a>
+<A HREF=380restart.htm>
+<IMG SRC=380restart.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:380restart-->
+Now you are asked to restart the computer.  Now we have a "minimal" functional NT installation.  All that just to talk to a tape drive.
+<p>
+This might be a good time to remind you that some third party backup solutions (read $$) have a floppy based restore which is much cleaner than this multi-step process.
+<p>
+But ah well - think of how much you have learned.  With that in mind, we proceed on our quest to  get our long-lost data back.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

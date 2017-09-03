@@ -1,0 +1,257 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<H2>Minimal NT Install - Part 1</h2>
+In this exercise, we are going to destroy a perfectly good working system and restore it from tape.
+<p>
+To access the tape, we must perform a minimal install, and then reload the tapes.
+There are subtle differences between our minimal installation and a standard installation. Those differences will be noted as we go through the exercise.
+<p>
+Like the initial installation, this installation is broken into two parts.  The first part is the non-graphical installation from the floppies (or SCSI CD-ROM) and the second part is the graphical installation and configuration of the system.
+<BR CLEAR=ALL><HR>
+<A NAME=010disk2> </a>
+<A HREF=010disk2.htm>
+<IMG SRC=010disk2.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 010disk2.txt-->
+To start the process of installing NT, place setup disk 1 into the floppy drive and reboot the system.  After a few moments it will prompt you for setup disk 2.  Insert the disk and press <b>Enter</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020welc> </a>
+<A HREF=020welc.htm>
+<IMG SRC=020welc.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 020welc.txt-->
+This is the welcome screen for setup.  This is a very important screen. Even though we are "restoring", we are currently doing a fresh install so we simply press enter.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030detect> </a>
+<A HREF=030detect.htm>
+<IMG SRC=030detect.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 030detect.txt-->
+At this point NT has absolutely no idea what hardware is installed on your system.  It needs to autodetect the hardware which is installed.  This will take a few minutes.  NT will load a lot of different drivers to see if those drivers can auto detect the hardware.  As part of the process it will prompt you for disk 3 which contains the drivers.  Insert disk 3 and press enter.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040disk3> </a>
+<A HREF=040disk3.htm>
+<IMG SRC=040disk3.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040disk3-->
+Insert disk 3 and press enter.  NT will test for the various controllers and load the proper drivers.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050found> </a>
+<A HREF=050found.htm>
+<IMG SRC=050found.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050found-->
+In this example, it has found an Adaptec SCSI controller and an IDE controller.  Because the CD-ROM is connected via IDE, it will load the drivers for IDE.
+<P>
+Assuming that there are no other storage drivers needed, generally click on <B>Enter</b>
+to continue.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060inscd> </a>
+<A HREF=060inscd.htm>
+<IMG SRC=060inscd.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060inscd-->
+At this point NT has sufficient drivers to communicate with the CD-ROM so it continues its installation from the CD-ROM.  Insert the CD-ROM and press <B>Enter</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070agree> </a>
+<A HREF=070agree.htm>
+<IMG SRC=070agree.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070agree-->
+You must read the license agreement, pressing page-down for each screen.  At the last screen you press <b>F8</b> to accept the license agreement.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080hwlist> </a>
+<A HREF=080hwlist.htm>
+<IMG SRC=080hwlist.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080hwlist-->
+This screen simply verifies the basic hardware.  Press <b>Enter</b> to continue.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=082twopartitions> </a>
+<A HREF=082twopartitions.htm>
+<IMG SRC=082twopartitions.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:082twopartitions-->
+Because this is a completely configured system, we see two partitions (C: and D:).  Even though it seems a terrible waste - first, we must delete these partitions.  (Remember it is for science and education)
+<p>
+Select the first partition and press <b>D</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=083delpart1> </a>
+<A HREF=083delpart1.htm>
+<IMG SRC=083delpart1.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:083delpart1-->
+There is a bunch of dire warnings, but we will "press on" by pressing on the <b> Enter</b> key.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=085delpartpressl> </a>
+<A HREF=085delpartpressl.htm>
+<IMG SRC=085delpartpressl.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:085delpartpressl-->
+Still more dire warnings...  In case the enter key is stuck, you need to press <b>L</b> to actually delete the partition.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=087delpart2> </a>
+<A HREF=087delpart2.htm>
+<IMG SRC=087delpart2.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:087delpart2-->
+We must perform the same steps to delete the second partition.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090partition> </a>
+<A HREF=090partition.htm>
+<IMG SRC=090partition.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090partition-->
+Now we have a "brand new" disk.  Unlike the first time we installed NT, we will create both the <b>C:</b> and the <b>D:</b>  partitions on the disk at this time.
+<p>
+You will find this approach makes things much simpler later.  The drive letters will be correct from the beginning and the steps need to format <b>D:</b> will be much simpler.  We did it the other way in the first exercise as an example.
+We press <B>C</B> to create a new partition.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100size1700> </a>
+<A HREF=100size1700.htm>
+<IMG SRC=100size1700.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100size1700-->
+We now must specify the size of the C: partition.
+<p>
+So we create an 1700 KB partition.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=102createpart2> </a>
+<A HREF=102createpart2.htm>
+<IMG SRC=102createpart2.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:102createpart2-->
+Now we cursor down to the second entry to create the second partition.  Press <b> Enter</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=104part2size> </a>
+<A HREF=104part2size.htm>
+<IMG SRC=104part2size.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:104part2size-->
+It computes the remaining size available on the disk as a default.  We accept the default and press <b>Enter</b>.  Because this will be formatted later using the <b>Disk Administration</b> utility, it does not have to be less than 2GB.
+<p>
+Recall that the <b>C:</b> partition is initially formatted as FAT and converted to NTFS as part of a later Setup step.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110instpart> </a>
+<A HREF=110instpart.htm>
+<IMG SRC=110instpart.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110instpart-->
+Now we see both partitions.  Lets install an operating system on <b>C:</b>.  This is done by cursoring to it and pressing <b>Enter</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120ntfsfmt> </a>
+<A HREF=120ntfsfmt.htm>
+<IMG SRC=120ntfsfmt.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120ntfsfmt-->
+Now we will select that our C: partition will be formatted using NTFS.  (Remember formatted as FAT, converted to NTFS)
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130format> </a>
+<A HREF=130format.htm>
+<IMG SRC=130format.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+Formatting the disk will take several minutes..
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140xyznt> </a>
+<A HREF=140xyznt.htm>
+<IMG SRC=140xyznt.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140xyznt-->
+Next you select which directory the operating system will load into.  We want this to be <i> anything </i> other than  <b> \WINNT</b>.  It will be deleted later in the process, so pick your favorite name.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150chkdsk> </a>
+<A HREF=150chkdsk.htm>
+<IMG SRC=150chkdsk.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150chkdsk-->
+Setup will optionally check your drives for integrity.  This step is often skipped by pressing <B> ESC</B>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160copy> </a>
+<A HREF=160copy.htm>
+<IMG SRC=160copy.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160copy-->
+Then Setup copies the files from the CD-ROM to the hard disk.  This takes a couple of minutes unless you have a really slow CD-ROM.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170reboot> </a>
+<A HREF=170reboot.htm>
+<IMG SRC=170reboot.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170reboot-->
+Once the copying is finished, you  will reboot the system so that you can continue to setup Windows-NT with the graphical interface.
+<p>
+Make sure to remove the setup floppies.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

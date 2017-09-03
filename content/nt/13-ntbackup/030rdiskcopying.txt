@@ -1,0 +1,6 @@
+<!-- file:030rdiskcopying-->
+Now the repair information is being copied onto the disk.  Unfortunately if this process runs out of space on the floppy it does so silently.
+<p>
+It is not a bad idea to go into MS-DOS and do a directory listing on <b> C:\WINNT\REPAIR\ </b> to see how much information is in the directory and see whether or not it will fit on a floppy.
+<p>
+Quite often when you are repairing a system, the repair information can be used from the hard disk.  The floppy is generally a last resort.

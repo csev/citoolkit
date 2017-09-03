@@ -1,0 +1,19 @@
+<!-- file:200versionconf-->
+<CENTER>
+<A HREF=210setupcomplete.htm>
+<IMG SRC=200versionconf.gif BORDER=0>
+</A>
+<P><FORM>
+<A HREF=190installingcaladmin.htm>Prev</a>
+<A HREF=210setupcomplete.htm>Next</a>
+<A HREF=index.htm#200versionconf>Index</a>
+</FORM></CENTER><P>
+<!-- file:200versionconf-->
+This is an example of a file-related complaint.
+<p>
+Most of the complaints are files which were provided by Microsoft.  In this example, we are looking at the file <b> MSREPL35.DLL</b>.  The key is that these files have version and date information.  Typically files are included in a setup package in case they were missing on the destination system.  In <i>this</i> setup package, the only critical DLL is <b> ODBCTool.DLL</b>.  Generally it is quite safe to keep the existing DLLs on your system.
+<p>
+So for this prompt we want to keep the existing file, so we press <b>Keep</b>.
+<p>
+Normally, these DLLs change quite slowly so these version conflicts hardly ever occur.  But with Windows NT 4.0 and the Y2K problem, many new versions of these files (especially database related files) are released as one or another small bug is fixed.  Generally the versions in the latest service pack are the very best versions.  So it is quite important to re-run your service packs after installation of a program in case the setup process inadvertently dropped you back a level in some DLL.  After Y2K settles down, there will be far less conflicts between setup packages and service packs.  ;)
+<!-- Copyright 1999, Library of Michigan Foundation -->

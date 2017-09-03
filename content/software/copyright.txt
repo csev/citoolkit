@@ -1,0 +1,10 @@
+'  Copyright (C) 1999  Library of Michigan Foundation
+'
+'  This software program may be used in non-commercial applications
+'   without further permission from the copyright owner as long as this
+'  copyright notice is maintained and prominently displayed.
+'
+'  THIS PRODUCT IS DISTRIBUTED WITHOUT WARRANTY
+'  OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING
+'  IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS
+'  FOR A PARTICULAR PURPOSE.

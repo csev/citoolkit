@@ -1,0 +1,6 @@
+<!-- file:120sp3skip40-->
+This dialog comes up because you have the 128-bit (more secure) North America security in your existing NT installation.  The Service pack is an international version with weaker 40-bit security.
+<p>
+You should not replace the file, you should keep your old file so press <b> Skip</b>.
+<p>
+Note - we will get a new version of this file when we install the North American version of Service Pack 4 later in the process.

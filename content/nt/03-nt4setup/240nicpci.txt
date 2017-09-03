@@ -1,0 +1,4 @@
+<!-- file:240nicpci-->
+This dialog comes from the LINKSYS driver.
+<p>
+We indicate that the card is a PCI card.

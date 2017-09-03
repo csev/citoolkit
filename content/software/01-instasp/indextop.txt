@@ -1,0 +1,21 @@
+<h3>Installing the Community Toolkit Software</h3>
+This software is written using Visual Interdev 6.0, and 
+Active Server Pages.
+<h3>Outline</h3>
+This documentation covers several steps required to install the toolkit
+software.
+<ul>
+<li>Installing the Active Server Pages in your web server space
+<li>Altering some IIS (Internet Information Server) properties
+<li>Installing the Toolkit Administrator to create and remove databases
+<li>Upgrading your Microsoft scripting libraries
+</ul>
+<h3>Prerequisites</h3>
+The pre-requisites for this software include:
+<ul>
+<li>Windows NT Version 4.0
+<li>IIS 4.0
+<li>Service Pack 4.0 preferred
+</ul>
+Please install these tools before starting.
+<p>

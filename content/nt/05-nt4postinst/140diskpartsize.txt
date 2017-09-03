@@ -1,0 +1,2 @@
+<!-- file:140diskpartsize-->
+We fill in the partition size.  By default it is using the remaining space on the hard drive and has precomputed the size for us. We accept this value.

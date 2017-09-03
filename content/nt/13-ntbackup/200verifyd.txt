@@ -1,0 +1,8 @@
+<!-- file:200verifyd-->
+Once the backup of D: has been completed and verified, you are done with this exercise.
+<p>
+The next exercise is to re-format your hard drive and restore the system from tapes.  While it may be tempting to leave well enough alone, there is no time like the present to practice these skills.
+<p>
+Later when the system has been in production for a few months, folks won't have much of a sense of humor while you polish your restore skills.
+<p>
+It is good to do it once while not under pressure.  Then when you are under pressure you at least know that you have done it once.

@@ -1,0 +1,7 @@
+<!-- file:040ping-->
+First test the networking.  Use the <b>ping</b> command to ping a known IP address.
+<p>
+If ping does not work, you are in bad shape.  You need to diagnose this problem.  This would be a good time to use a working system connected to the same network to run ping and compare results.  Try pinging another system on the LAN in addition to trying to ping
+systems across the Internet.
+<p>
+Another useful command to diagnose networking is <b> tracert</b>.

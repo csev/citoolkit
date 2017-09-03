@@ -1,0 +1,2 @@
+<!-- file:140exitandrestartfp-->
+Now exit and restart FrontPage98.  Ask to open the existing web by pressing <b>OK</b>.

@@ -1,0 +1,2 @@
+<!-- file:260adminaddmonth-->
+We change the site information to allow the <b>Month</b> view.  We scroll down to the bottom and update the site information.

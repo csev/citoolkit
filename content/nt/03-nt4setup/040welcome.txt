@@ -1,0 +1,2 @@
+<!-- file:040welcome-->
+Once the copy is complete setup says, "hello" and you press <b>Next</b>

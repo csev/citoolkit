@@ -1,0 +1,2 @@
+<h2>Configuring and Testing FTP</h2>
+Now we will configure and test the FTP service.  This exercise is a very brief introduction to the FTP service but should give you a good outline of how FTP works.

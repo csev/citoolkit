@@ -1,0 +1,4 @@
+<!-- file:230nicid-->
+This dialog comes from the LINKSYS driver.
+<p>
+We skip the Ethernet ID setting because we only have one Ethernet card.

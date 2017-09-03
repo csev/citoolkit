@@ -1,0 +1,2 @@
+<!-- file:070bocustom-->
+We will do a <b>Custom</b> installation.  Even though we will not change any of the options, it is nice to see them.

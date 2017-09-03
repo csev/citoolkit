@@ -1,0 +1,6 @@
+<!-- file:130servernewperms-->
+Back on the server, checking the permissions on the subdirectory, the permissions for <b> example </b> have been added.
+
+If you prefer, you can change the <b> Everyone </b> access to Read and Execute.  This permission does not affect web use, only local (or NT network file sharing) access.
+
+If you have a directory which only has content (such as .htm files) you may not need Execute permission.  If you have a directory which contains executable material such as scripts, you may want to have Execute permission without Read permission.  It is a good general practice to keep security as tight as possible in a production system.

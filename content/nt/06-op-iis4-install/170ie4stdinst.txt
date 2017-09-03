@@ -1,0 +1,2 @@
+<!-- file:170ie4stdinst-->
+At this screen we select the <b>Standard</b> option.  Remember - this is a server not a workstation.  We don't need a bunch of multimedia players and netmeeting clients.

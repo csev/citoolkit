@@ -1,0 +1,2 @@
+<!-- file:110boinstalling-->
+This installation actually takes some time.  It might be a good time to get a cup of coffee.  If you are installing IIS 4.0 at the same time, this phase can take 20 minutes.  One wonders <i>exactly</i> what is going on for all that time?

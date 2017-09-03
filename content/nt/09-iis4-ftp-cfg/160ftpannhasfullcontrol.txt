@@ -1,0 +1,2 @@
+<!-- file:160ftpannhasfullcontrol-->
+This is how the permissions should look.

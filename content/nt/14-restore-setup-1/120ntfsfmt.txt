@@ -1,0 +1,2 @@
+<!-- file:120ntfsfmt-->
+Now we will select that our C: partition will be formatted using NTFS.  (Remember formatted as FAT, converted to NTFS)

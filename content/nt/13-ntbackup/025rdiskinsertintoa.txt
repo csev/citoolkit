@@ -1,0 +1,2 @@
+<!-- file:025rdiskinsertintoa-->
+This floppy will be reformatted <i> each </i> time this process is performed.  RDISK is not taking any chances.

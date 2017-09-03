@@ -1,0 +1,6 @@
+<!-- file:190foundevent-->
+And indeed our event has made it.
+
+This shows how one particular task can be given to a user without giving them full administration capabilities.
+
+Next we will do a short example demonstrating the event approval process.

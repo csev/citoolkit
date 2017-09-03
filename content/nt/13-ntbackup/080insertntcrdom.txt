@@ -1,0 +1,2 @@
+<!-- file:080insertntcrdom-->
+Slick how it prompts with the proper driver letter for the CD-ROM - good thing we learned <b> regedit </b> earlier in a previous exercise.

@@ -1,0 +1,3 @@
+<!-- file:130restorecomplete-->
+This gives us a clue that our next step should be a reboot.
+  We exit the backup program at this point.

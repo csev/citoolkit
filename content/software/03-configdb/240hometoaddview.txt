@@ -1,0 +1,2 @@
+<!-- file:240hometoaddview-->
+Back are the database welcome page, we press <b>Administration</b>.

@@ -1,0 +1,3 @@
+<!-- file:030aspextracted-->
+If you navigate into <b> C:\InetPub\wwwroot\Community\</b> you will see the files
+which you have just extracted.

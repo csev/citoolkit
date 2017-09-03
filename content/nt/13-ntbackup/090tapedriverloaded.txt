@@ -1,0 +1,3 @@
+<!-- file:090tapedriverloaded-->
+The tape driver has been successfully loaded - exit the dialog by pressing <b> OK </b>.
+

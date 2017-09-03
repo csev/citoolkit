@@ -1,0 +1,4 @@
+<!-- file:190eventdcom-->
+We double click on the red event and it appears to be about <b> IISADMIN</b>.  We go back to the event log and notice that it started well before our backup and restore.
+<p>
+On a hunch, we decide to check out the www.microsoft.com site to see if there is anything in the knowledge base.

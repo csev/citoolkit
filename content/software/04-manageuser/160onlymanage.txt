@@ -1,0 +1,2 @@
+<!-- file:160onlymanage-->
+Note that the menu only shows us the capability to manage events because of our limited permissions.  Press <b>Manage Events</b>.

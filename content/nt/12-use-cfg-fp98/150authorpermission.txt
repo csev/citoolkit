@@ -1,0 +1,4 @@
+<!-- file:150authorpermission-->
+Now we only need "author" permission.  Instead of using the administrator account, we can use our <b> example </b> account to access the site.
+<p>
+Using this approach, each web can be maintained by a different set of users.  The Administrator creates and configures each new web on the server.  Then the author permission is delegated to the particular set of authors for each web.

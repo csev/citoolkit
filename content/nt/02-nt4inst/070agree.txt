@@ -1,0 +1,2 @@
+<!-- file:070agree-->
+You must read the license agreement, pressing page-down for each screen.  At the last screen you press <b>F8</b> to accept the license agreement.

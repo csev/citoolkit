@@ -1,0 +1,10 @@
+<h2>Configuring the Running System</h2>
+Now the system is up and has passed some basic tests.  In this exercise, we begin to configure the system and walk through some system administration tasks including:
+<ul>
+<li>Create a User Account
+<li>Set Security Policies (The defaults are wide-open)
+<li>Format the <b>D:</b> partition
+<li>Use <b> regedit </b> to edit the registry
+</ul>
+In a later exercise we will see a simpler way to create and format the <B>D:</b>
+partition without using <b> regedit</b>.  Using <b> regedit</b> is included in this exercise as an example.

@@ -1,0 +1,2 @@
+<!-- file:140runsetupagain-->
+Once the system is up again, we run <b> setup.exe</b> again.

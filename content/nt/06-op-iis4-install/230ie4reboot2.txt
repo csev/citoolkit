@@ -1,0 +1,4 @@
+<!-- file:230ie4reboot2-->
+Again, we reboot to complete the Internet Explorer 4 installation.
+<p>
+Next up, the installation of IIS 4.0

@@ -1,0 +1,9 @@
+<!-- file:080compname-->
+Now you specify the computer name.  To keep your life simple, we suggest that his name should be used both for the Windows networking name for the computer and for the TCP/IP domain name for the computer. 
+<p>
+For example, on the local area network, this computer will be known as <B>WWW</B> in the 
+<B>TOOLKIT</b> workgroup (we will set the workgroup name later).  On the Internet, the computer will be named <b> www.toolkit.net</b> (we will set the domain suffix later).
+<p>
+Having these two computer names the same is a good idea.  As Microsoft seems to be embracing TCP/IP and the Internet domain name system, in the future this might even be a better idea.
+<p>
+If you are skilled, feel free to make these names different.

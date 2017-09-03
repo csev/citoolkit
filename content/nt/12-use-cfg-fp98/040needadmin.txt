@@ -1,0 +1,4 @@
+<!-- file:040needadmin-->
+To create a new web we need Administrator permission.  Once the web is created we will delegate the permission to edit the web to a non-administrator account.
+<p>
+If you would like to allow other accounts to create and administer webs, use the FrontPage Server Administrator on the NT server.

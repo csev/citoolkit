@@ -1,0 +1,2 @@
+<!-- file:010launchwinzip-->
+Once you have downloaded the ZIP file for the Community Toolkit ASP code from the web or have located it on the CD, you use a ZIP program to open the file.  To continue we press <b> Extract</b>.

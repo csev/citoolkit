@@ -1,0 +1,2 @@
+<!-- file:310finish-->
+Again, we are finished with a phase of network setup.  Press <b>Finish</b>, but as you will soon see we are still not done.

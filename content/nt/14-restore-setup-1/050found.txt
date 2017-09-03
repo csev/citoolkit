@@ -1,0 +1,5 @@
+<!-- file:050found-->
+In this example, it has found an Adaptec SCSI controller and an IDE controller.  Because the CD-ROM is connected via IDE, it will load the drivers for IDE.
+
+Assuming that there are no other storage drivers needed, generally click on <B>Enter</b>
+to continue.

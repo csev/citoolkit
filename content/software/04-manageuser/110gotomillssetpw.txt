@@ -1,0 +1,2 @@
+<!-- file:110gotomillssetpw-->
+This same form is used to reset a user's password.  Use the drop-down to goto the <b>millsa</b> account.

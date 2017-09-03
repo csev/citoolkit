@@ -1,0 +1,2 @@
+<!-- file:190installingcaladmin-->
+Now it will copy the toolkit administration software.   As setup progresses, you may get a dialog box based on a file in use or a version mismatch.

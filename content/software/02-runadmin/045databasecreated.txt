@@ -1,0 +1,7 @@
+<!-- file:045databasecreated-->
+This is what it should look like when complete.  It has added a database, a DSN, and 
+four ASP files. 
+
+The toolkit administration tool actually does some pretty basic things.  In a sense
+all of its tasks <i>could</i> be done by hand.  To help you get an idea of where things are stored (in case you have to do some debugging), 
+we will look around to see what the tool has actually done.

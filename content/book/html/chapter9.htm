@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Chapter 9: Web Site and Server Maintenance</TITLE>
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<U><FONT FACE="Arial Narrow" SIZE=6><P ALIGN="JUSTIFY"><A NAME="_Toc453559296"><A NAME="_Toc453652745">Chapter 9: Web Site and Server Maintenance</A></A></P>
+</U></FONT><FONT FACE="Arial Narrow" SIZE=5><P ALIGN="JUSTIFY"></P>
+</FONT><FONT FACE="Garamond"><P ALIGN="JUSTIFY">As this book goes to press, the Web has just passed a milestone, with over five million Web servers online today.  This chapter helps you make choices as you launch another Web site into the mix. When you embark upon a Web-based community information (CI) project, the most basic question you face is where you will host your content. Before assuming that you will run your own general-purpose Web server on your own premises, you will want to consider alternatives: </P>
+<P ALIGN="JUSTIFY"></P>
+
+<UL>
+<P ALIGN="JUSTIFY"><LI>Running on someone else’s server, either by payment for services or as part of an existing relationship (e.g. your library cooperative). </LI></P>
+<P ALIGN="JUSTIFY"><LI>Hiring someone else to house and administer your own server on their premises.</LI></P></UL>
+
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">One survey finds that <I>nine out of ten </I>Web sites are hosted externally from the site’s premises.  So let’s first consider reasons why you might want to find space on an external server instead of running your own:</P>
+<P ALIGN="JUSTIFY"></P>
+
+<UL>
+<P ALIGN="JUSTIFY"><LI>You and your staff are freed from having to develop expertise in server administration; you can concentrate on content and on authoring technology, and leave the server technology to others.</LI></P>
+<P ALIGN="JUSTIFY"><LI>You need not worry about backing up your server data.</LI></P>
+<P ALIGN="JUSTIFY"><LI>You don’t have to worry about when to install the latest version of Web server software or the newest server operating system.</LI></P>
+<P ALIGN="JUSTIFY"><LI>You don’t have to carry a beeper that goes off Sunday at midnight.</LI></P>
+<P ALIGN="JUSTIFY"><LI>You do not have to have a direct connection to the Internet.</LI></P></UL>
+
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">The option of hiring someone else to run your server on their premises is a good middle ground choice in many cases.  Here, you own the server and all software and content on the server, but you simply choose to house it at another location.  </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">The &quot;virtual host&quot; concept is another option that offers some of the benefits of owning your own server but typically at a much lower cost.  Under a virtual host scenario, you share a single physical server with one or more other content publishers.  However, you are assigned your own domain name, and your Web content appears at the root of that domain name, so that your users cannot tell whether you have your own server or not.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Because a virtual host divides a multi-thousand-dollar server box up among a number of users – from a handful of virtual sites to a dozen or more – the service provider can afford to charge each virtual site much less than you’d have to pay if you ran your own server.  You also avoid the capital expenditure of buying the server up-front, exchanging that cost for rental of the shared server, typically on a monthly or annual basis.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">With virtual hosting, you typically have some access to the server to run your own CGI scripts, but the service provider may demand the right to inspect all scripts before they are installed.  You may or may not be able to choose the server extensions (such as FrontPage extensions) or middleware tools you prefer.  Many virtual host services provide an upgrade path from basic HTML to FrontPage to CGI scripts to full database support.  Fees also vary based on the amount of traffic your site generates.  You will want to evaluate the upgrade path and potential future cost tiers before you make a deal with your vendor.  Here is an example of the services comparison chart offered by one host content service, Superb.net:</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY"><IMG SRC="Image14.gif" WIDTH=338 HEIGHT=237>&nbsp;    <IMG SRC="Image15.gif" WIDTH=338 HEIGHT=237></P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Host content services that offer full detailed charts such as this one make it easy to compare various service levels and to evaluate upgrade options.  Many smaller ISPs may offer similar services, but may not have sufficient virtual host business to cause them to post such a detailed service comparison chart.  If a local ISP or other organization offers an ad-hoc quote for virtual host service, be sure you get the quote in writing.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">The global nature of the Web makes it possible for you to choose a content hosting vendor potentially anywhere on the global Internet.  In practice, you will want to consider geographic proximity of the service provider, as well as the speed and level of congestion of Internet links between your main body of users and the remote provider.  There is no single rule of thumb here: it is possible for a host content service 2000 miles away to provide better service than a local ISP; it is also possible for the remote service to offer dreadfully slow page download times due to distance and congestion.  Performance can vary dramatically with time of day. You may want to test performance on more than one service before you go into production.  </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">On the other hand, if you choose to run your own server on your own premises, or if you choose a local ISP to host your content, and, if the server has good connectivity to the fabric of the Internet in your area, you can expect to deliver good service locally. Since most of your users will for the most part by definition be members of your local community, you can be confident you are serving them well.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Whether you want to have an external service provider run your own server, or whether you want to pursue the virtual host option, you have a number of choices as to who might host your content: </P>
+<P ALIGN="JUSTIFY"></P>
+
+<UL>
+<P ALIGN="JUSTIFY"><LI>Your library cooperative</LI></P>
+<P ALIGN="JUSTIFY"><LI>A library service organization such as The Library Network (TLN)</LI></P>
+<P ALIGN="JUSTIFY"><LI>A local Internet service provider</LI></P>
+<P ALIGN="JUSTIFY"><LI>A local unit of government or school system with its own Web presence</LI></P>
+<P ALIGN="JUSTIFY"><LI>A statewide service provider (for instance, in Michigan, Merit is such a provider)</LI></P>
+<P ALIGN="JUSTIFY"><LI>A telephone or cable company that has entered the Internet and Web content hosting businesses (e.g. Ameritech, AT&amp;T, TCI, Media One, Time-Warner).</LI></P>
+<P ALIGN="JUSTIFY"><LI>A national host content service (e.g. Mindspring, Intermedia, Superb.net, IMC Online).</LI></P></UL>
+
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">If your server is housed off-premises, you will need to ensure that your own staff has adequate access to the server for posting new and updated content.  In many cases, dial-up access may be adequate for this purpose.  However, if you’re hosting graphical or multimedia content, or databases, you probably want a faster connection than dial-up – perhaps ISDN or a cable modem is for you.</P>
+<P ALIGN="JUSTIFY"></P>
+</FONT><B><FONT FACE="Arial Narrow" SIZE=4><P ALIGN="JUSTIFY"><A NAME="_Toc453559297"><A NAME="_Toc453652746">Server &quot;Co-Location&quot;</A></A></P>
+</B></FONT><FONT FACE="Garamond"><P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Many ISPs offer server &quot;co-location&quot; – which simply means that your server is housed on their premises, located alongside servers belonging to other clients.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Under this scenario, either you can hire the ISP to administer the server, or you can take on some or all of the server administration responsibilities yourself.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Here are reasons why you might choose server co-location over running a server on your premises:</P>
+<P ALIGN="JUSTIFY"></P>
+
+<UL>
+<P ALIGN="JUSTIFY"><LI>The ISP has faster or more reliable connectivity to the greater Internet.</LI></P>
+<P ALIGN="JUSTIFY"><LI>The ISP has a better physical environment for the server – better environmental conditions, better security, etc.</LI></P>
+<P ALIGN="JUSTIFY"><LI>The ISP can perform regular tasks, such as backup, restarts after failure, or security monitoring, on a 24 hour basis.</LI></P></UL>
+
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Co-location differs from the virtual host option.  Under co-location, typically you buy and own the server hardware.  Under the virtual host option, typically you rent a share of the server resources under your own domain name.</P>
+<P ALIGN="JUSTIFY"></P>
+</FONT><B><FONT FACE="Arial Narrow" SIZE=4><P ALIGN="JUSTIFY"><A NAME="_Toc453559298"><A NAME="_Toc453652747">External Service Provider Caveats</A></A></P>
+</B></FONT><FONT FACE="Garamond"><P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">You need to do some up-front research and negotiation before you decide to put your content on an external server.  Here are some caveats:</P>
+<P ALIGN="JUSTIFY"></P>
+
+<UL>
+<P ALIGN="JUSTIFY"><LI>Have a clear agreement that states that you own your own intellectual property: the content that you put on the Web site, the domain name you register, etc.</LI></P>
+<P ALIGN="JUSTIFY"><LI>Make sure you have access to server log information, including all raw data, and that you can access this data as frequently as you want.  Many commercial host content services charge extra for access to the logs.  You may be willing to pay the fees, but be sure they are within your budget.</LI></P></UL>
+
+<P>Be sure you understand all fees in general.  For instance, many service providers charge more if you exceed certain monthly bandwidth limitations.  These costs can surprise you, especially if you begin by serving small HTML documents, then at</P></FONT></BODY>
+</HTML>

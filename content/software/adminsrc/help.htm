@@ -1,0 +1,89 @@
+<h2>Calendar Administator</h2>
+The purpose of this software is to manage the necessary files and system entries for a toolkit database.
+These files fall into roughly three categories:
+<ul>
+<li>The database which stores the site information and the the events
+<li>A system DSN (Data Set Name) which allows the ASP code to access the database
+<li>Several ASP files which are the entry points into the particular calendar
+</ul>
+The basic functions in the program are to <b> Add Database </b> and <b> Remove Database</b>.
+You can also use this tool to reset the administrator password as well.
+<h3>Quick Overview</h3>
+This utility is an important part of the setup and installation of the toolkit software.
+After the ASP code has been properly installed, you must create the events database
+to begin.  The steps to do this are as follows:
+<ul>
+<li>Look at the screen - look at the fields which are yellow.  The first time you run the
+program, the <b> ASP Library Path </b> and <b> Production Database Path </b> will most likely be yellow.  They will be created when the first database is added and should 
+be white after the database add is complete.  If the 
+<b> Path to the distribution  mdb files </b> is yellow, that is bad and the process will most likely not work.  See the directory details below.
+<li>Enter the user version of the name - <b>Romeo District Library</b> - this will be displayed on the top of many pages.  It should be descriptive - but not too long.
+<li>Enter a short name - this will be used to create files and URLs so it should be short and consist of letters and numbers - for example <b> rdl</b>
+<li>
+The press <b> Add Database</b>.  After some machinations, it should add
+a DSN called <b>ctk_rdl</b>, a database file called <b>rdl.mdb</b>, 
+and four .asp files.  It will prompt you for an administrator password for the database.
+<li>
+When this is complete,
+the following URLS will exist:
+<pre>
+http://localhost/community/start/index.asp
+http://localhost/community/start/rdl.asp
+http://localhost/community/start/rdl-admin.asp
+http://localhost/community/start/rdl-calendar.asp
+http://localhost/community/start/rdl-forum.asp
+</pre>
+(With "rdl" replaced with the "short" name you chose).
+These URLS can be embedded in your other pages to jump to 
+the selector page, admin page, calendar page, and forum page 
+respectively.  
+<li>To test success, open a browser and point to the <b>rdl.asp</b> URL.
+If the page shows up with the proper library name, then this
+process has been successful.
+<li>
+Next, go to the Adminsitration page and get things set-up.  The administrator
+account is "admin" and whatever password you set during this process creation.
+</ul>
+If message boxes appear during the process, read them carefully.  The first time
+the program is run, it will want to create the directories 
+<B> C:\InetPub\databases\community\ </b> and 
+<b> C:\InetPub\wwwroot\community\start\</b>.  You should press "OK" in answer to these prompts.
+<h3>Directories</h3>
+This program operates in three directories - in this section, we describe what should be found in each directory.
+<ul>
+<li>
+<b> Path to the distribution mdb files </b> - This directory is created as part of the installation process. Its typical value is
+<b> C:\Program Files\CalendarAdmin\</b>.  This directory contains many files but for the purposes of this tool, we only care about the file <b> base.mdb</b>.  This is an Access file 
+with the "default" configuration for a database.  During creation, a copy of this file
+is placed in the production database path.  If you want to change the defaults for all 
+new libraries, open this file in Access and <b>carefully</b> change the values.
+<li>
+<b> Production Database Path </b> - This dirctory is where an Access database will be stored for each separate database.  The short name is used to form the file name.  The typical value for this directory is <B> C:\InetPub\databases\community\</b>.  It is VERY importanrt
+that this directory be backed up.  If you move your site to a new server, this MDB contains all the information (events, forums, and configuration) for your site.  The first time you add a database this directory may need to be created.
+<li>
+<b> ASP Library Path </b> - This path is typically 
+<b> C:\InetPub\wwwroot\community\start\</b>.  This needs to be in the web server space
+for the rest of the ASP files for the community toolkit.  The <b> start </b> directory
+needs to be a subdirectory at the same level as the <b> Admin</b> and other directories.
+The name <b> start</b> can be anything that you want, but then the URLs will also change.
+</ul>
+<h3>DataSet Names</h3>
+For the ASP code to "find" the Access databases, the system needs to have <b>Data Set Names</b> to link them up.  You can look at the dataset names under
+<b> Start | Settings | Control Panel | ODBC32 </b>.  The Adinistration tool lists the current and new DSN's in a window so you can verify that the files operate properly. 
+<p>
+DSNs used with the commmunity toolkit use the prefix <b>ctk_</b> so you can readily identify them in the data set name list.  Using ODBC32, you can look at the contents of these data set names.  They really are just a link to the appropriate MDB file and an indication that these are access files.
+<h3>Operation of Calendar Administrator</h3>
+Other than a nifty graphical interface and some error checking, the operation of this program is actually pretty simple.  The operations could be done manually without using the tool at all.
+To create a database, the following steps are taken:
+<ul>
+<li>Create the two destination directories if necessary
+<li>Copy the <b>base.mdb</b> ino the database directory
+<li>Create the System DSN
+<li>Create the four .asp files, which point to the proper system DSN and link to the main
+ASP code
+<li>Open the new databse file and set the admin password
+</ul>
+Deleting the database simply goes through and removes the files.
+<p>
+If you are having problems, take a look at the 
+<a href=notes.htm>notes</a> for this product.

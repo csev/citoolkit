@@ -1,0 +1,9 @@
+<!-- file:100extracted-->
+The service pack is extracted into four subdirectories.
+<ul>
+<li>Service Pack 4 for NT (i386)
+<li>Data Access Components (mdac)
+<li>Internet Explorer 4.01 (msie401) - we already have this installed from the option pack
+<li>The ssx materials
+</ul>
+The Y2K setup will use the <b>i386</b> and <b>mdac</b> materials.

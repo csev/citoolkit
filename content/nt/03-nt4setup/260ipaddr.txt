@@ -1,0 +1,4 @@
+<!-- file:260ipaddr-->
+Since you are not using DHCP for your addressing you must pre-configure the IP address, Netmask, and gateway address.  These values should be available from your network administrator.
+<p>
+Next we configure the Domain Name System.

@@ -1,0 +1,4 @@
+<!-- file:170havedisk-->
+You are presented with a list of the network cards that NT knows about already.  This list is also in the "NT Hardware Compatibility Guide".  By selecting a network card from that list, you can simplify the installation of the network card.
+<p>
+In this case we have a LINKSYS LNEPCI2 card which is not on the list so we press <b>Have Disk</b>.

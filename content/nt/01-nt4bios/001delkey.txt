@@ -1,0 +1,3 @@
+<!-- 001delkey.txt-->
+For this particular motherboard,  you press DEL during the first 10 seconds of the boot sequence  to go to the CMOS Setting screen.  Some systems use F2 while others use F9 or F10.
+

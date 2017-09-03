@@ -1,0 +1,2 @@
+<!-- file:060vi6launchbackofc-->
+The components we are interested are part of BackOffice. We select <b>Launch backOffice Installation Wizard</b> and press <b>Install</b> (don't press <b>Next</b>).

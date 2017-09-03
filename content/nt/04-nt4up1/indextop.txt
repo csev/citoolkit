@@ -1,0 +1,6 @@
+<h2>Testing NT After Installation</h2>
+If all goes well, NT will start up and present you with the startup screen.  
+<p>
+In this exercise, we will log-on and do some minimal testing to make sure things are working.  If you experience problems in these simple tests, you need to solve those problems before continuing further.
+<p>
+You may have problems with Interrupt Request values (IRQ's) or a conflict between two pieces of hardware.  You may have improper drivers installed.  This is the time to insure everything is clean.

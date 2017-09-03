@@ -1,0 +1,7 @@
+<!-- file:040ftpanonymous-->
+The FTP Properties are shown in a tabbed dialog box.  The first property window that we will work with is the  
+<b> Security Accounts </b> portion.
+<p>
+We will turn <i> off </i> the anonymous FTP.  Anonymous FTP does not use a password and is used to distribute materials to folks on the Internet.  If you want Anonymous FTP, leave it enabled.  Otherwise it is an unnecessary security hole.
+<p>
+When you turn off anonymous FTP, users must enter an account and password.  Because the official FTP protocol does not support any type of encrypted password, those passwords will be transmitted in plaintext across the net.  While this sounds like a big security hole, it is no different than any other FTP server on the Internet.

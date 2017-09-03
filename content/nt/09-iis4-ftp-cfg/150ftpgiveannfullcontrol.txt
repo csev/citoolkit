@@ -1,0 +1,4 @@
+<!-- file:150ftpgiveannfullcontrol-->
+First press <b> Show Users </b> so the users appear in the top window.  then scroll down the top window until you find "Ann Example Person" and press <b>Add</b>.
+<p>
+Then at the bottom use the drop down to give Ann "Full Control" and press <b>OK</b>.

@@ -1,0 +1,394 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h3>A Walkthrough of Your First Use of the Calendar</h3>
+In this exercise, we configure our system, create a calendar event, and then look at the events using the various views.
+<P>
+Then we make a slight reconfiguration of the system to see another view of the data.
+<P>
+<BR CLEAR=ALL><HR>
+<A NAME=010startexplorer> </a>
+<A HREF=010startexplorer.htm>
+<IMG SRC=010startexplorer.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010startexplorer-->
+To begin to work with your database, enter the URL
+<P>
+<b>http://hostname/community/start/test.asp</b>
+<P>
+Where "hostname" is the address of your system
+<P>
+You will be brought to the starting page for the database and be presented with the choice to go into the calendar, forums, or administration.  First we will explore administration.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020adminlogin> </a>
+<A HREF=020adminlogin.htm>
+<IMG SRC=020adminlogin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020adminlogin-->
+At this screen you log into the system with the admin account and the password specified in the database creation step.  You should change your passwords regularly and an account will be locked if more than 4 bad password attempts occur in a row.  The admin account can unlock any other account.  If the admin account gets locked, you must physically visit the server and use the toolkit administration tool.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030welcometoadmin> </a>
+<A HREF=030welcometoadmin.htm>
+<IMG SRC=030welcometoadmin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030welcometoadmin-->
+This is the starting page for the on-line administrator.  You are presented with the different database areas which you can administer.  A navigation bar across the top allows quick navigation back up to top level pages.
+<P>
+We will first look at <b>Site Configuration</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040siteconfig1> </a>
+<A HREF=040siteconfig1.htm>
+<IMG SRC=040siteconfig1.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040siteconfig1-->
+The form for site configuration is quite long.  We will view it in parts.
+<P>
+In the first part, you have the basic site information with name, phone, etc.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050siteconfig2> </a>
+<A HREF=050siteconfig2.htm>
+<IMG SRC=050siteconfig2.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050siteconfig2-->
+In this next site configuration screen, we continue with the basic information.  We have the URL for the organization's home page which is shown on the main start page.  Later we will have a URL for the <b> Home </b> button on each calendar page.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060siteconfig3> </a>
+<A HREF=060siteconfig3.htm>
+<IMG SRC=060siteconfig3.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060siteconfig3-->
+In this screen, we see the copyright information.  By checking the copyright box and giving a path to a local file on the server, you can control the copyright statement on each page.  The copyright file will be included directly into the output pages near the end.  You can embed HTML information, such as a small image or a HREF  in this file.  But be careful not to do things which would cause syntax errors in the pages.
+<P>
+The logo must be a URL.  You can use a local URL such as <b>/community/images/logo.gif</b> or you can use a fully qualified URL such as <b>http://....</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070calinfo> </a>
+<A HREF=070calinfo.htm>
+<IMG SRC=070calinfo.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070calinfo-->
+In this section, we set the calendar formatting and control information.
+<P>
+<b>Default Mode:</b> The default mode the event calendar will appear
+for a user. Big Month, Month, List.
+<P>
+<b>Allow List, BigMonth, Month View </b>: You can use these to customize the types of views that your users can select.  You need to select at least one and include default view as one of those selected.
+<P>
+<b>Number of items per page</b>: The number of event items displayed
+per page by default.
+<P>
+<b>Support Audience Type:</b> Yes/No. Enable support for
+audience types.(e.g., children, families, seniors, etc.).
+<P>
+<b>Support Event Type:</b> Yes/No. Enable support for event
+types. (e.g., meeting, concert, storytime, school, etc)
+<P>
+<b>Require Approval of Event:</b> Yes/No. Require approval of
+new events.   If this is not checked, events will appear as soon as they are submitted.
+<P>
+<b>Send Email to all approvers?:</b> Send an email message to ALL
+approvers when an event is awaiting approval.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080security> </a>
+<A HREF=080security.htm>
+<IMG SRC=080security.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080security-->
+<b>Only Allow Site Admin at local computer? </b>:  Yes/No.
+If yes, all site administration must take place on the server.
+<P>
+<b>Only Allow User Admin at local computer?:</b> Yes/No.
+If yes, all user administration must take place on the server.
+<P>
+<b>Number of attempts before account is locked out:</b> The number of
+failed login attempts before the account is locked.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090siteconfig6> </a>
+<A HREF=090siteconfig6.htm>
+<IMG SRC=090siteconfig6.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090siteconfig6-->
+<b>Site Custom Field #1:</b> A field that can be defined by the site
+-- used in the calendar to prompt for additional information about events. (e.g., if
+<b>language</b> were used as a custom field, then events where Spanish (or
+French) is primarily spoken could be grouped.
+<P>
+<b>Site Custom Field #2</b>: A field that can be defined by the site
+-- used in the calendar to prompt for additional information about events.
+<P>
+<b>Site Custom Field #3:</b> A field that can be defined by the site
+-- used in the calendar to prompt for additional information about events.
+<P>
+<b>Home Button URL (bottom of Calendar pages):</b> Home URL for the
+organizations web presence.This is only used if the organization has an existing
+web site.  If this is set to "None" the <b>Home</b> button will not be shown.  If this is not set (default), the <b>Home</b> button will point to the
+main start page for the database showing the user the choices of calendar, forum, or administration.
+<P>
+When you have filled in the information for this form, press the
+<b>Change Site Information</b> button.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100backtoadminpage> </a>
+<A HREF=100backtoadminpage.htm>
+<IMG SRC=100backtoadminpage.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100backtoadminpage-->
+Now you are back to the administration starting page.  Next we will create an event.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110eventspage> </a>
+<A HREF=110eventspage.htm>
+<IMG SRC=110eventspage.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110eventspage-->
+This is the starting page for events.  You can do a number of things here.  If you have event approval turned on, you will be presented with a list of events to be approved on this screen.
+<P>
+At this point, we will simply create a new event.  Since we have event approval turned off, the event will immediately show up.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120addevent1> </a>
+<A HREF=120addevent1.htm>
+<IMG SRC=120addevent1.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120addevent1-->
+Much like the site configuration, the events have a significant number of fields.  You don't need to fill in any other than <b>Event Date</b> and <b>Event Name</b>.
+<P>
+Most fields are free-form and not parsed at all except for the <b> Event Date</b>.  This means that you have great flexibility but also plenty of opportunity to make a mistake :).
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130addevent2> </a>
+<A HREF=130addevent2.htm>
+<IMG SRC=130addevent2.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:130addevent2-->
+These fields are pretty self explanatory.
+<P>
+The <b>Event Publish Date</b> allows you to put in a bunch of events which don't show up right away.  If you leave it blank, events show up immediately.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140addevent3> </a>
+<A HREF=140addevent3.htm>
+<IMG SRC=140addevent3.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140addevent3-->
+Again, most fields are self-explanatory.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150addevent4> </a>
+<A HREF=150addevent4.htm>
+<IMG SRC=150addevent4.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150addevent4-->
+URL fields allow you to specify a URL for the event.  These are not checked for accuracy in any way.  They appear when the user requests more detail.
+<P>
+The <b>URL Name for Addtl Info</b> field is not a URL - it is the text which appears as the hypertext link for the additional information URL.  A simple way to use this would be to set it to "click here".  You probably will come up with a more creative use of it.  You could actually make it an <b>img</b> tag.  Just make sure to close the tag.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160saveevent> </a>
+<A HREF=160saveevent.htm>
+<IMG SRC=160saveevent.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160saveevent-->
+In this, we see the <b>Event Type</b> and <b>Audience Type</b>.  These will only appear if they are enabled in the site configuration.
+<P>
+We also see the three locally customizable fields.  We have not yet set these so they are blank.
+<P>
+When done, press <b>Save Event</b> and you will be taken back to the main events menu.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170adminmaingohome> </a>
+<A HREF=170adminmaingohome.htm>
+<IMG SRC=170adminmaingohome.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170adminmaingohome-->
+Now we have created an event, lets look at the event, so press <b>Home</b> at the top.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=180presscalendar> </a>
+<A HREF=180presscalendar.htm>
+<IMG SRC=180presscalendar.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:180presscalendar-->
+Back at the database welcome screen, we press <b> Calendar</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=190viewlist> </a>
+<A HREF=190viewlist.htm>
+<IMG SRC=190viewlist.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:190viewlist-->
+We see our event in the default view - List View.  The event is shown in the <b>Short Detail</b> view.
+<P>
+We can jump to different dates using the drop-downs across the top.  We can put in a search string in the field provided.  The <b>Go</b> button is pressed to execute these requests.  At the far left, you can switch views.
+<P>
+At the bottom, we have the "Home" button.  Again, you can configure where this button goes.  By default it goes to the database welcome screen.  You can suppress the button completely or go to any URL that you like.
+<P>
+If we had <b> Event Type </b> and/or <b>Audience</b> enabled, they would also appear at the top and be used as search options.
+<P>
+This page looks forward from the starting date specified and continues searching for events until it finds a full page.  If there are more events, the user is presented with <b> Next 10 Events</b> and <b>Previous 10 Events</b> buttons.
+<P>
+This view has the advantage that it will look quite far into the future for events.  It is the best view for searching.  People can find a rodeo three years in the future with this page.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=200gotomore> </a>
+<A HREF=200gotomore.htm>
+<IMG SRC=200gotomore.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:200gotomore-->
+If we want to see more detail regarding this event, we use the drop-down box to select
+<b>More Detail</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=210moredetail> </a>
+<A HREF=210moredetail.htm>
+<IMG SRC=210moredetail.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:210moredetail-->
+The screen refreshes and we see the same information with more detail.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=220gotobigmonth> </a>
+<A HREF=220gotobigmonth.htm>
+<IMG SRC=220gotobigmonth.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:220gotobigmonth-->
+We can switch our view even more dramatically by going to the <b>Big Month</b> view. (If you recall, we set List to be default, allowed List and Big Month, and disallowed Month View).
+<P>
+The view is switched the moment you release the button on the drop-down.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=230viewbigmonth> </a>
+<A HREF=230viewbigmonth.htm>
+<IMG SRC=230viewbigmonth.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:230viewbigmonth-->
+The Big Month view is designed to look like a calendar.  Each day is a hyper-link back to List View.  This view also prints quite well.
+At the bottom is the drop-down for view and the <b>Home</b> button.
+<P>
+Now we will reconfigure the site configuration a bit so we go down to the bottom and press the <b>Home</b> button.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=240hometoaddview> </a>
+<A HREF=240hometoaddview.htm>
+<IMG SRC=240hometoaddview.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:240hometoaddview-->
+Back are the database welcome page, we press <b>Administration</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=250adminlogin> </a>
+<A HREF=250adminlogin.htm>
+<IMG SRC=250adminlogin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:250adminlogin-->
+Again, we log-in with the admin account.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=260adminaddmonth> </a>
+<A HREF=260adminaddmonth.htm>
+<IMG SRC=260adminaddmonth.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:260adminaddmonth-->
+We change the site information to allow the <b>Month</b> view.  We scroll down to the bottom and update the site information.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=270calgotomonth> </a>
+<A HREF=270calgotomonth.htm>
+<IMG SRC=270calgotomonth.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:270calgotomonth-->
+We navigate through the database welcome page to the calendar.  Again it shows up in List view.  But when we select the views, we have a new option.  We select the <b> Month </b>
+view and release the button.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=280viewmonth> </a>
+<A HREF=280viewmonth.htm>
+<IMG SRC=280viewmonth.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:280viewmonth-->
+Now we are shown a split-screen view of the calendar with a small monthly calendar on the left and a display of the events on the right.
+<P>
+This is the low-detail view, we can see more detail by clicking on the <b> More Detail</b>
+button.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=290viewmonthdetails> </a>
+<A HREF=290viewmonthdetails.htm>
+<IMG SRC=290viewmonthdetails.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:290viewmonthdetails-->
+Much like in list, the details are expanded.  We can see things like the photo in the URL
+and a hot-link to a map to the fireworks.
+<BR CLEAR=ALL>
+<hr>
+This concludes our walkthrough of the calendar portion of the toolkit software.
+<P>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

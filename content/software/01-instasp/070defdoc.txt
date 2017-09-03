@@ -1,0 +1,4 @@
+<!-- file:070defdoc-->
+Under the <b> Documents </b> add <b> index.asp </b> as a default document.
+
+Press <b>Apply</b>  and <b>OK</b> 

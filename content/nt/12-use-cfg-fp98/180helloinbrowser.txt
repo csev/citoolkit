@@ -1,0 +1,5 @@
+<!-- file:180helloinbrowser-->
+Just to make sure that we updated the site, access the URL in the browser.  The URL in this example is 
+<b> http://192.168.1.10/myweb/</b>
+<p>
+Congratulations, you know just enough about FrontPage98 to be dangerous.  Probably time to go get a good book.

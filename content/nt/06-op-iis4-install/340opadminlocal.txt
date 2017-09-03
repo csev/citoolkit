@@ -1,0 +1,3 @@
+<!-- file:340opadminlocal-->
+A conservative choice is to have all administration be local.  If the system will not be readily accessible you can designate an account to do remote administration - typically this is the Administrator account (unless you have renamed it).
+

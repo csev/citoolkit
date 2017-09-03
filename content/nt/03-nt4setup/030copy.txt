@@ -1,0 +1,2 @@
+<!-- file:030copy-->
+Next, the graphical setup executes and copies still more information from the CD-ROM to the hard disk.

@@ -1,0 +1,8 @@
+<!-- file:010startexplorer-->
+To begin to work with your database, enter the URL
+
+<b>http://hostname/community/start/test.asp</b>
+
+Where "hostname" is the address of your system
+
+You will be brought to the starting page for the database and be presented with the choice to go into the calendar, forums, or administration.  First we will explore administration.

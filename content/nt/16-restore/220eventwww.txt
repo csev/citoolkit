@@ -1,0 +1,5 @@
+<!-- file:220eventwww-->
+We take a look at one of the "yellow" events.  These occur
+because the material on the <b> D:</b> drive has not yet been restored.
+<p>
+Next we will proceed to restore the data.

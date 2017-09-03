@@ -1,0 +1,2 @@
+<!-- file:080servernewdirperms-->
+These permissions on the server are somewhat interesting.  Everyone has Full Control of the directory.  This means that any valid account logged into to the server can do anything to these files.

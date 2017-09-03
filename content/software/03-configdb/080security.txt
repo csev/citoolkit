@@ -1,0 +1,9 @@
+<!-- file:080security-->
+<b>Only Allow Site Admin at local computer? </b>:  Yes/No.
+If yes, all site administration must take place on the server.
+
+<b>Only Allow User Admin at local computer?:</b> Yes/No.
+If yes, all user administration must take place on the server.
+
+<b>Number of attempts before account is locked out:</b> The number of
+failed login attempts before the account is locked.

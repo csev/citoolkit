@@ -1,0 +1,2 @@
+<!-- file:020adminhello-->
+We select <b>Manage Forums</b>.

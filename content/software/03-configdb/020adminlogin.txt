@@ -1,0 +1,2 @@
+<!-- file:020adminlogin-->
+At this screen you log into the system with the admin account and the password specified in the database creation step.  You should change your passwords regularly and an account will be locked if more than 4 bad password attempts occur in a row.  The admin account can unlock any other account.  If the admin account gets locked, you must physically visit the server and use the toolkit administration tool.

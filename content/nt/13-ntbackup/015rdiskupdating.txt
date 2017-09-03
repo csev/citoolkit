@@ -1,0 +1,4 @@
+<!-- file:015rdiskupdating-->
+Update Repair Info copies critical system configuration information into a directory called <b> C:\WINNT\REPAIR</B>.  We do this so the repair information gets copied onto our backups.  In a moment this information will also be copied onto a floppy disk as well.
+
+This repair information contains the accounts and password for the system so the repair floppy and backup tapes need to be kept in a physically secure location.

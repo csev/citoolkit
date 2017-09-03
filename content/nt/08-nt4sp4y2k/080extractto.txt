@@ -1,0 +1,2 @@
+<!-- file:080extractto-->
+You will be prompted for a directory to store the extracted files.  This directory is as good as any.

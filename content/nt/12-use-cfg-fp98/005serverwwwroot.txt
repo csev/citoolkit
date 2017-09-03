@@ -1,0 +1,3 @@
+<!-- file:005serverwwwroot-->
+First, for reference we look at the contents of the directory
+<b> D:\InetPub\wwwroot</b>.  This is the directory that the new FrontPage98 web will be created in later steps. 

@@ -1,0 +1,2 @@
+<!-- file:280restoreofd-->
+We insert the tape containing the data from the <b>D:</b> drive and select <b>Restore</b>.

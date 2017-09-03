@@ -1,0 +1,2 @@
+<!-- file:030oktocreate-->
+Then press <b>OK</b> again to create the web.

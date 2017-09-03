@@ -1,0 +1,15 @@
+<h2>Working with the BIOS</h2>
+Typically, during the boot sequence you can press a key or key sequence
+ to cause the boot process to be diverted into the CMOS configuration.  
+CMOS contains stored configuration regarding how the system is to be booted.  
+This information is stored in battery-backed up RAM so you do not need to make 
+these changes each time the power is turned on.  The settings available and
+the procedures for manipulating these settings vary widely between manufacturers.  
+Some use graphical interfaces and others use simple text based interfaces.
+
+
+A system administrator should not be afraid of CMOS settings.  
+Before putting a system into production, they need to know the 
+proper settings in case the stored settings are lost.  
+Often, there is a "reset-to-factory-default"
+option which may or may not result in the proper settings for your system.

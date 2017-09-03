@@ -1,0 +1,2 @@
+<!-- file:190diskformatting-->
+Disk formatting may take a few minutes depending on the size and speed of the disk.  When formatting is complete, exit the Disk Manager.

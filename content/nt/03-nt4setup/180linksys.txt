@@ -1,0 +1,7 @@
+<!-- file:180linksys-->
+Each card will have its own installation process. For the LINKSYS, you 
+<ul>
+<li>Give the path to the driver on the floppy <b> A:\NT40 </b>
+<li>Then you select the driver (shown here)
+</ul>
+Again, each card will have its own procedure with more or less than the above steps.

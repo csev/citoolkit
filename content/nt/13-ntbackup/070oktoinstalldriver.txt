@@ -1,0 +1,2 @@
+<!-- file:070oktoinstalldriver-->
+In this example we are using a pretty standard 4mm DAT tape system so it has the driver in the NT distribution CD-ROM.

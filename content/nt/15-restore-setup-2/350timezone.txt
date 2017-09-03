@@ -1,0 +1,4 @@
+<!-- file:350timezone-->
+Now we set the timezone for the computer using the drop-down box.
+<p>
+You can also set this using the cursor keys.  Try hitting the cursor-up key a few times.

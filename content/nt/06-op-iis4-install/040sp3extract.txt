@@ -1,0 +1,2 @@
+<!-- file:040sp3extract-->
+The service pack installer will verify, then extract the service pack.

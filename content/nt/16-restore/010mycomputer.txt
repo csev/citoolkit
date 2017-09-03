@@ -1,0 +1,3 @@
+<!-- file:010mycomputer-->
+After NT comes up and we log in as the Administrator, we see a very simple NT installation without any networking.   The drives are not even shared.
+

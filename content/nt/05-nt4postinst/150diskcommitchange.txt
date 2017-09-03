@@ -1,0 +1,3 @@
+<!-- file:150diskcommitchange-->
+Now we must make the changes permanent - right click on the new partition and select
+<b> Commit Changes Now... </b>

@@ -1,0 +1,2 @@
+<!-- file:130servernone-->
+We do not want to install any of the server software on our client system. Do not select anything and press <b> Next</b>.

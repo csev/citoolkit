@@ -1,0 +1,2 @@
+<!-- file:050siteconfig2-->
+In this next site configuration screen, we continue with the basic information.  We have the URL for the organization's home page which is shown on the main start page.  Later we will have a URL for the <b> Home </b> button on each calendar page.

@@ -1,0 +1,2 @@
+<!-- file:300opnosmtp-->
+Uncheck <B> SMTP Service </B> and make sure the <b> NNTP </B> Services is also unchecked.  Then press <b>OK</b>.

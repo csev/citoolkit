@@ -1,0 +1,2 @@
+<!-- file:070ctkdsninfo-->
+A System DSN is basically a mapping from a name to a file on disk with an indication of what drivers to use to access the file.  Don't make any changes here - simply notice that the proper file name has been placed here by the administration tool.

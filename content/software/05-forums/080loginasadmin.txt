@@ -1,0 +1,2 @@
+<!-- file:080loginasadmin-->
+Before we can post, we need to log in using an account which as the <b>Participate in Forum<b> role.

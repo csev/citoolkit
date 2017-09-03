@@ -1,0 +1,4 @@
+<!-- file:082twopartitions-->
+Because this is a completely configured system, we see two partitions (C: and D:).  Even though it seems a terrible waste - first, we must delete these partitions.  (Remember it is for science and education)
+<p>
+Select the first partition and press <b>D</b>.

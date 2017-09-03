@@ -1,0 +1,2 @@
+<!-- file:250restorecsettings-->
+The settings in this second restore are important.  We do <b>not</b> restore the registry, but we do restore file permissions and do a verify after the restore is complete.

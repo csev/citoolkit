@@ -1,0 +1,2 @@
+<!-- 050scsimain.txt-->
+This is the main SCSI configuration screen.  You can either configure the controller or work with the peripherals attached to the controller.

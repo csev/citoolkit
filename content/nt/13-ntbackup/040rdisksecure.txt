@@ -1,0 +1,2 @@
+<!-- file:040rdisksecure-->
+This disk contains all the accounts and passwords.  Uh - yes you should not leave it laying around.

@@ -1,0 +1,6 @@
+<!-- file:380checkingmywebagain-->
+We updated the page using FrontPage98, lo and behold it appears on the web.
+<p>
+At this point, you have been given a broad introduction to installing and performing basic functions on an NT system.  Before you are comfortable in a production environment, you need to gain more knowledge by purchasing books, taking classes, or simply doing more testing.
+<p>
+Congratulations on getting this far.

@@ -1,0 +1,4 @@
+<!-- file:010load-->
+The system reboots and the initial NT screen shows up.  The delay is set to zero so it immediately continues the boot.
+<p>
+NT Setup formats the C: as a FAT filesystem but on this reboot it gets converted to NTFS as part of the boot process. This conversion does not take much time.  Then the system gets rebooted again.

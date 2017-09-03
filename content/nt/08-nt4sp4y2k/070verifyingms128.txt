@@ -1,0 +1,2 @@
+<!-- file:070verifyingms128-->
+Execute the <b>MS128.exe</b> file.  It will verify and extract the service pack contents.

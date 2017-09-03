@@ -1,0 +1,2 @@
+<!-- file:060requestcomplete-->
+The user information has been updated.  Press <b>Continue</b>.

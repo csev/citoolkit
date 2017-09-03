@@ -1,0 +1,4 @@
+<!-- file:040siteconfig1-->
+The form for site configuration is quite long.  We will view it in parts.
+
+In the first part, you have the basic site information with name, phone, etc.

@@ -1,0 +1,4 @@
+<!-- file:100rolesupdated-->
+When we add the roles, we see the new roles and are given a form to delete the roles.
+
+You may have to hit <b>Refresh</b> to see the updated roles.

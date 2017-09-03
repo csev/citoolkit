@@ -1,0 +1,3 @@
+<!-- file:050settingstape-->
+If you have not yet used the tape drive, you may need to install the driver for the tape drive.  This is done under 
+<b> Start | Settings | Control Panel | Tape Devices</b>

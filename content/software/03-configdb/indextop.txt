@@ -1,0 +1,5 @@
+<h3>A Walkthrough of Your First Use of the Calendar</h3>
+In this exercise, we configure our system, create a calendar event, and then look at the events using the various views.
+
+Then we make a slight reconfiguration of the system to see another view of the data.
+

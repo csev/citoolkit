@@ -1,0 +1,4 @@
+<!-- file:100testasp-->
+This is the contents of the <b>test.asp</b>. As you can see it is a rather short file, setting some session variables and redirecting the user to another file.  The most important value is the <b>ConnectionString</b> value which links this (and other) ASP file(s) to the proper system DSN.  It is this value which allows many databases to be used with this software.
+
+If you get tricky (say by trying to use SQL Server), you should only have to edit these files to get the ODBC connection properly set up.

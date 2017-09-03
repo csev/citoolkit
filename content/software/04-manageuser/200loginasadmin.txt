@@ -1,0 +1,2 @@
+<!-- file:200loginasadmin-->
+We will need to change the site configuration options so we log in as <b>admin</b>.

@@ -1,0 +1,4 @@
+<!-- file:170ftptestannperms-->
+Now we connect and use <b> cd </b> to move into the <b> new</b> directory.  We use <b> mkdir </b> to verify that we indeed have write permission.
+<p>
+This gives a flavor of how you can control the FTP service.

@@ -1,0 +1,4 @@
+<!-- file:104part2size-->
+It computes the remaining size available on the disk as a default.  We accept the default and press <b>Enter</b>.  Because this will be formatted later using the <b>Disk Administration</b> utility, it does not have to be less than 2GB.
+<p>
+Recall that the <b>C:</b> partition is initially formatted as FAT and converted to NTFS as part of a later Setup step.

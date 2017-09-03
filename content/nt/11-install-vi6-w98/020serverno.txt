@@ -1,0 +1,2 @@
+<!-- file:020serverno-->
+Since this is a client install, we will not perform the server application install.  This CD does contain a complete copy of Microsoft IIS 4.0.  If you did not get the option pack when you purchased Windows NT 4.0, you can install IIS (on the server) from this CD.

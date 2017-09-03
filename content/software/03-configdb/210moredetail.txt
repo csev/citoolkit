@@ -1,0 +1,2 @@
+<!-- file:210moredetail-->
+The screen refreshes and we see the same information with more detail.

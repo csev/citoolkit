@@ -1,0 +1,2 @@
+<!-- file:150ie4setup-->
+This is the welcome screen for IE4 setup.

@@ -1,0 +1,2 @@
+<!-- file:020verifyusa-->
+When you request to download the service pack, Microsoft will use your IP address to determine whether or not you are downloading the information from North America.  Sometimes this procedure is problematic.  If you experience problems, try it at least twice before giving up.

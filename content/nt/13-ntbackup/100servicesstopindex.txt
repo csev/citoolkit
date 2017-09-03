@@ -1,0 +1,15 @@
+<!-- file:100servicesstopindex-->
+These next few steps may not seem so important, but we want to make sure all of the files on the disk are backed up.  So we stop some of the running services which have open files.  If these steps are not performed, the backups won't be complete and the restores may not work well.
+<p>
+It would probably be a good idea to reboot your system right before starting this step.
+<p>
+Go to 
+<b> Start | Settings | Control Panel | Services </b>
+<p>
+Stop the <b> Content Index </b> service
+<p>
+You may have noticed that you can stop the FTP, WWW, and IISADMIN services from the IIS console.  We use the Services control panel here because we have to stop several other services as well.
+<p>
+Another reason that you might stop these services is to move their data directories, say from the C: drive to the D: drive.  The pattern to move the directories is to stop the services, move the directories, reconfigure the servers, and then restart them.
+
+You can also stop these services in an MS-DOS command window using <b> net stop &lt;service name></b> and <b> net start &lt;service name></b>

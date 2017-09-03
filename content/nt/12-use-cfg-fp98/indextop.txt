@@ -1,0 +1,6 @@
+<h2>Using and Configuring FrontPage98</h2>
+In this exercise, we will configure and use FrontPage 98 on the client system.  Throughout the exercise we will look at how the actions on the client affect the files and permissions on the server.  
+
+We use the <b>Administrator</b> account to create a FrontPage web and then delegate authoring permission to an end-user account which was created in an earlier exercise.  Then we use FrontPage to make some (very simple) edits on our web site.
+
+In this exercise, the goal is to see how FrontPage (on a client) and IIS (on the server) interact and work together.  The goal is not to teach you the ins and outs of FrontPage.

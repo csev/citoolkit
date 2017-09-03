@@ -1,0 +1,2 @@
+<!-- file:160diskdorsidk-->
+This should only take a moment - it is just updating the partition table.

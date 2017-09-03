@@ -1,0 +1,13 @@
+<!-- file:020adminmainpage-->
+This is the main start page for the program.  There is on-line documentation under <b>Help</b>.
+
+Each database has a <b>Long Name</b> (descriptive) and a <b>short name</b> (used to make files and URLs).
+
+In this example, we set the long name to <b>A Test Library</b> and the short name 
+to <b>test</b>.
+
+To create a database, we press <b>Add Database</b>. After some machinations, it should add
+a DSN called <b>ctk_test</b>, a database file called <b>test.mdb</b>, 
+and four .asp files.  As the last step, it will prompt you for an administrator password for the database.
+
+See the help file for more detail on what this tool can do.

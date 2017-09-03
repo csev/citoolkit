@@ -1,0 +1,2 @@
+<!-- file:140wired-->
+This screen is asking the nature of your network connection.  Uh, well - this <i> is </i> a web server so it is probably permanently connected to the network.

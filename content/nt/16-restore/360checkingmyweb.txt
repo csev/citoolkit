@@ -1,0 +1,2 @@
+<!-- file:360checkingmyweb-->
+Let us see if the web site can be retrieved in a browser  - yes, it can.

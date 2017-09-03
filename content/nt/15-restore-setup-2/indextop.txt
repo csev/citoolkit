@@ -1,0 +1,8 @@
+<h2>Minimal NT Installation - Part 2</h2>
+Continuing with our restore exercise, we have rebooted after the initial floppy-based setup.
+First the system boots and converts the file system from FAT to NTFS.  Then the system
+reboots again and performs the graphical setup and configuration.
+
+Because we only need a subset of NT to work to access the tapes, this procedure is somewhat abbreviated compared to the first exercise.  We don't even install networking support.
+
+We partition the disks slightly differently than in the earlier exercise.  This technique is the better approach than the approach used in the first installation.

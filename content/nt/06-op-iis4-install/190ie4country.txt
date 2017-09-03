@@ -1,0 +1,2 @@
+<!-- file:190ie4country-->
+Even though we are a server, we select our country for active content.

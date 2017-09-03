@@ -1,0 +1,26 @@
+<!-- file:090startdirectory-->
+<CENTER>
+<A HREF=100testasp.htm>
+<IMG SRC=090startdirectory.gif BORDER=0>
+</A>
+<P><FORM>
+<A HREF=080databasesdir.htm>Prev</a>
+<A HREF=100testasp.htm>Next</a>
+<A HREF=index.htm#090startdirectory>Index</a>
+</FORM></CENTER><P>
+<!-- file:090startdirectory-->
+The administrator tool also created five ASP files in the web server hierarchy.  These are the files necessary to set the session variables and launch the proper ASP files to initialize each distinct calendar.
+<P>
+The files in this example are stored in the directory
+<b>C:\InetPut\wwwroot\Community\start\</b>.  They all appear on
+the web server as <b>http://www.blah.net/Community/start/zzz.asp</b>. The files are:
+<ul>
+<P>
+<li><b>test.asp</b> - Goes to the main page, giving the user the choice to go into calendar, forums, or administration.
+<li><b>test-admin.asp</b> - Goes directly to the administration page for the this database
+<li><b>test-calendar.asp</b> - Goes directly to the calendar for this database using the default view for this database
+<li><b>test-forum.asp</b> - Goes directly to the forum page for this database
+<li><b>expire.htm</b> - This is used when the ASP Session variables time-out after 2 minutes. The ASP scripts redirect the user to this file.  It contains a very simple index to  all of the databases stored on the server.  This file is re-built every time you add or remove a database.  You can also rebuild the file using the button provided.
+You may want to hand edit some of these files.  You may want to copy a file to index.asp so there is a default page when the user simply types <b>http://www.blah.net/community/start</b>.
+</ul>
+<!-- Copyright 1999, Library of Michigan Foundation -->

@@ -1,0 +1,8 @@
+<!-- file:040fillintwo-->
+This is the second half of the new user form.  It is a good idea to include an expire date even if it is somewhat in the future.
+
+<b>Last Logon Date</b>, <b>Last Logon Attempt</b> and <b>Failed Logons</b> are used to track accounts to lock them in case someone is trying to break in.  The failed logons value tells how many <i>consecutive</i> bad logon attempts have occurred.  When the system-wide threshold has been reached, the account is locked and the user cannot log-in.
+
+To unlock an account, an administrator must come to this screen and uncheck this field and update the account.
+
+You type the password twice to make sure it matches.

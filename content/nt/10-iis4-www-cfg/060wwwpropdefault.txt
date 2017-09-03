@@ -1,0 +1,4 @@
+<!-- file:060wwwpropdefault-->
+Under the <b> Documents </b> tab, you can specify the default document(s) to be retrieved when a URL points to a directory.  You should probably add <b> index.htm</b>, <b> index.html </b> and <b> index.asp</b> to the existing default files.
+<p>
+It is OK to have more than one default file.  They are checked in order.

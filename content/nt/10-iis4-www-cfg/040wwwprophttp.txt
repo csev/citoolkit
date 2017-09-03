@@ -1,0 +1,2 @@
+<!-- file:040wwwprophttp-->
+Under <b> HTTP Headers </b> you may need to configure the <b> MIME types </b> from time to time.  Typically you will need to do this for certain types of multimedia content.

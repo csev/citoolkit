@@ -1,0 +1,2 @@
+<!-- file:102createpart2-->
+Now we cursor down to the second entry to create the second partition.  Press <b> Enter</b>.

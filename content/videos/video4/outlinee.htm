@@ -1,0 +1,548 @@
+<HTML>
+<BODY >
+
+<P></P><A HREF="JavaScript:parent.ItemClicked(1, 0)"> Web Site Maintenance and Administration </A><br><UL>
+<LI>Community Information Toolkit
+</UL><UL>
+<LI>Video # 4</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(2, 0)"> Agenda </A><br><UL>
+<LI>Choosing a Home for Your Web Site
+<UL>
+<LI>Your own server, or someone else’s?
+</UL></UL><UL>
+<LI>Organizing and Building Your Site
+</UL><UL>
+<LI>Running Your Own Server
+<UL>
+<LI>Choosing hardware and software
+</UL></UL><UL>
+<LI>System Administration
+<UL>
+<LI>Case Study
+</UL></UL><UL>
+<LI>Conclusion</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(3, 0)"> Choosing a Home for Your Web Site </A><br><UL>
+<LI>Basic choice: 
+<UL>
+<LI>Run your own server
+<LI>Obtain space on someone else’s server
+</UL></UL><UL>
+<LI>The most critical choice you face in building a Web site!</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(4, 0)"> Reasons NOT to Run Your Own Server </A><br><UL>
+<LI>Server hardware costs money
+</UL><UL>
+<LI>You’ll need lots of expertise
+<UL>
+<LI>In operating system maintenance
+<LI>In server software maintenance
+<LI>In content provider support
+<UL>
+<LI>E.g. defining permissions, adding users
+</UL></UL></UL><UL>
+<LI>You’ll face daily chores such as backup</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(5, 0)"> Alternatives to Running Your Own Server </A><br><UL>
+<LI>Make a deal with a partner that already runs a server
+<UL>
+<LI>They may offer you space for free
+</UL></UL><UL>
+<LI>Rent space from a service provider
+<UL>
+<LI>Your library cooperative
+<LI>A local or national Internet Service Provider (ISP)
+<LI>Merit Inc. (statewide service provider in Michigan)</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(6, 0)"> PPT Slide </A><br>
+<P></P><A HREF="JavaScript:parent.ItemClicked(7, 0)"> Organizing and Building Your Site </A><br><UL>
+<LI>Domain Name System considerations
+</UL><UL>
+<LI>File System Organization
+</UL><UL>
+<LI>Databases and integrated publishing environments</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(8, 0)"> Your Own Domain </A><br><UL>
+ <BR></UL></P>
+<P><UL>
+nasa.gov<BR></UL></P>
+<P><UL>
+aol.com<BR></UL></P>
+<P><UL>
+umich.edu<BR></UL></P>
+<P><UL>
+msu.edu<BR></UL></P>
+<P><UL>
+merit.edu<BR></UL></P>
+<P><UL>
+smallville.mi.us<BR></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(9, 0)"> Obtaining a Domain </A><br><UL>
+<LI>Your institution may already have one
+</UL><UL>
+<LI>For a domain such as smallville.mi.us:
+<UL>
+<LI>Contact Merit
+</UL></UL><UL>
+<LI>For a domain such as smallville.org or smallville.com:
+<UL>
+<LI>Visit www.internic.net</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(10, 0)"> Domain Names vs. IP Addresses </A><br><UL>
+ <BR></UL></P>
+<P><UL>
+nasa.gov<BR></UL></P>
+<P><UL>
+isp.com<BR></UL></P>
+<P><UL>
+jpl.nasa.gov 
+<BR></UL><UL>
+
+</UL><UL>
+137.78.160.21</UL></P>
+<P><UL>
+The Internet<BR></UL></P>
+<P><UL>
+dialup.isp.com
+<BR></UL><UL>
+
+</UL><UL>
+198.78.3.92</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(11, 0)"> HTTP versus HTML </A><br><UL>
+ <BR></UL></P>
+<P><UL>
+user.isp.com<BR></UL></P>
+<P><UL>
+HTML<BR></UL></P>
+<P><UL>
+docu-
+<BR></UL><UL>
+ment</UL></P>
+<P><UL>
+HTTP
+<BR></UL><UL>
+session</UL></P>
+<P><UL>
+Web Server<BR></UL></P>
+<P><UL>
+User’s Web 
+<BR></UL><UL>
+Browser</UL></P>
+<P><UL>
+The Internet<BR></UL></P>
+<P><UL>
+www.smallville.mi.us<BR></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(12, 0)"> Typical Internet Publishing Scenario </A><br><UL>
+ <BR></UL></P>
+<P><UL>
+www.ci.smallville.mi.us<BR></UL></P>
+<P><UL>
+aol.com<BR></UL></P>
+<P><UL>
+Server Is 
+<BR></UL><UL>
+Directly 
+</UL><UL>
+Connected</UL></P>
+<P><UL>
+The Internet
+<BR></UL></P>
+<P><UL>
+User May Be 
+<BR></UL><UL>
+Dial-up OR
+</UL><UL>
+Directly 
+</UL><UL>
+Connected</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(13, 0)"> Virtual Host Concept </A><br><UL>
+<LI>A single physical server “owns” multiple domain names
+</UL><UL>
+<LI>Multiple organizations share one server
+</UL><UL>
+<LI>Thus smallville.mi.us and bigtown.mi.us could be on one server
+</UL><UL>
+<LI>Users cannot tell the difference
+</UL><UL>
+ </UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(14, 0)"> URL Components  </A><br><UL>
+http://www.merit.edu  
+<BR></UL><UL>
+http://www.ci.east-lansing.mi.us
+</UL><UL>
+ftp://ftp.netscape.com
+</UL><UL>
+
+</UL><UL>
+http://        www.smallville.gov     /events.html</UL></P>
+<P><UL>
+Protocol<BR></UL></P>
+<P><UL>
+Server Address<BR></UL></P>
+<P><UL>
+  Document<BR></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(15, 0)"> Typical Web Server File Structure </A><br><UL>
+ <BR></UL></P>
+<P><UL>
+Web Server<BR></UL></P>
+<P><UL>
+www.smallville.mi.us<BR></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(16, 0)"> Static HTML </A><br><UL>
+<LI>Most sites will mostly serve static HTML
+<UL>
+<LI>Prepared offline by hand or using authoring tool
+<LI>Posted to Web server each time it is updated
+<LI>Posted “by hand” via FTP…
+<LI>…or using “one-button publishing”
+<UL>
+<LI>Frontpage, Netscape Composer, etc</UL></UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(17, 0)"> Alternatives to Static HTML </A><br><UL>
+<LI>Common Gateway Interface
+</UL><UL>
+<LI>Databases
+<UL>
+<LI>Cold Fusion
+<LI>Other Middleware Products
+<LI>Microsoft Active Server Pages (ASP)</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(18, 0)"> The Common Gateway Interface (CGI) </A><br><UL>
+HTTP
+<BR></UL><UL>
+session</UL></P>
+<P><UL>
+Web Server<BR></UL></P>
+<P><UL>
+The Internet<BR></UL></P>
+<P><UL>
+form.
+<BR></UL><UL>
+html
+</UL></P>
+<P><UL>
+CGI<BR></UL></P>
+<P><UL>
+CGI
+<BR></UL><UL>
+script</UL></P>
+<P><UL>
+www.smallville.mi.us<BR></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(19, 0)"> Web Middleware Products </A><br><UL>
+<LI>Cold Fusion from Allaire Corp
+<UL>
+<LI>You write in Cold Fusion Markup Language 
+<LI>Embed your code in HTML
+<LI>You reference a database via embedded code
+<UL>
+<LI>E.g. MS-Access, SQL server</UL></UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(20, 0)"> Microsoft Active Server Pages (ASP) </A><br><UL>
+<LI>Microsoft solution for connecting your server to a database
+</UL><UL>
+<LI>Integrated in Microsoft Internet Information server
+</UL><UL>
+<LI>VB Script language
+<UL>
+<LI>Similar to Visual Basic
+</UL></UL><UL>
+<LI>Easy installation and integration</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(21, 0)"> PPT Slide </A><br>
+<P></P><A HREF="JavaScript:parent.ItemClicked(22, 0)"> Running Your Own Server </A><br><UL>
+<LI>Webmaster vs system administrator?
+</UL><UL>
+<LI>Choosing a hardware platform
+</UL><UL>
+<LI>Server software choices
+</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(23, 0)"> Server Administration Roles </A><br><UL>
+<LI>Two distinct roles:
+<UL>
+<LI>Webmaster: Web content and maintenance
+<LI>System Administration: Installation, Networking, Security, Backup
+</UL></UL><UL>
+<LI>In smaller organizations these roles are often done by the same person</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(24, 0)"> Server System Choices </A><br><UL>
+<LI>Traditional Internet server has been a Unix workstation -- server class
+</UL><UL>
+<LI>Unix server costs about $7500 to $25,000 or more
+</UL><UL>
+<LI>Vendors: Sun, HP, IBM, DEC, etc
+</UL><UL>
+<LI>Many hardware vendors bundle Web server software
+</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(25, 0)"> Low-end Unix Options </A><br><UL>
+<LI>“Wintel” PC can be a great low-cost platform 
+<LI>Can be far cheaper than proprietary hardware
+<LI>Could run a free Unix 
+<UL>
+<LI>Linux 
+<LI>FreeBSD
+</UL><LI>Commercial Unix for Intel (UnixWare, SCO Unix)</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(26, 0)"> Windows Server Platforms </A><br><UL>
+<LI>Windows NT is server-class platform
+<UL>
+<LI>Rugged, robust, high performance
+<LI>Various Netscape servers, Microsoft, O’Reilly’s Web Site Pro
+<LI>Note Microsoft user licensing limit on NT Workstation
+</UL></UL><UL>
+<LI>Not Windows 95 or 98! 
+<UL>
+<LI>Good for personal servers -- not institutional</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(27, 0)"> Server Platform: System Options cont’d </A><br><UL>
+<LI>Macintosh
+<UL>
+<LI>System 7 and later provides multitasking
+<LI>Plug-and-play servers (e.g. WebStar)
+<LI>Very easy setup and administration
+<LI>Little used for high-visibility sites</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(28, 0)"> Server Software Selection </A><br><UL>
+<LI>Many sites still use public domain Unix servers
+</UL><UL>
+<LI>Popular Unix shareware server: Apache
+<UL>
+<LI>Majority of sites on Web use Apache
+<LI>Good for virtual host option
+</UL></UL><UL>
+<LI>Now commercial packages dominate for Windows NT applications</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(29, 0)"> Commercial Web Servers </A><br><UL>
+<LI>Netscape
+<UL>
+<LI>Netscape Commerce Server, Communications Server, and Fasttrack
+<UL>
+<LI>Commerce supports secure encryption  needed for commerce
+</UL></UL></UL><UL>
+<LI>Microsoft Internet Information Server (IIS)
+<UL>
+<LI>Comes free with Windows NT Server Edition
+<LI>Support for Microsoft Active Server Pages 
+</UL></UL><UL>
+<LI>Others</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(30, 0)"> Special Webmaster Duties </A><br><UL>
+<LI>Log Analysis
+</UL><UL>
+<LI>Site Promotion
+</UL><UL>
+<LI>Managing server-side extensions
+<UL>
+<LI>E.g. Frontpage
+<LI>Administering users
+</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(31, 0)"> Log Analysis  </A><br><UL>
+<LI>Learn About Your Site:
+<UL>
+<LI>What pages are most/least popular?
+<LI>Are there dead links within your site?
+<LI>Who visits your site (from what domains?)
+<LI>How do people find your site?
+<UL>
+<LI>What links from other sites?
+<LI>What search engine keywords?</UL></UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(32, 0)"> PPT Slide </A><br>
+<P></P><A HREF="JavaScript:parent.ItemClicked(33, 0)"> Site Promotion </A><br><UL>
+<LI>Learn about and use &#060META&#062 tags
+<UL>
+<LI>Meta Keywords: short words people might type into search engines
+<LI>Meta Description: short (&#060 100 word) description of your site
+<UL>
+<LI>This will be displayed by the search engines
+</UL></UL></UL><UL>
+<LI>Consider a site promotion service
+<UL>
+<LI>Submitit.com 
+<LI>Webpromote.com</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(34, 0)"> Site Doctors </A><br><UL>
+<LI>Check your site for broken links
+</UL><UL>
+<LI>Check your HTML for validity
+</UL><UL>
+<LI>E.g., Doctor HTML
+</UL><UL>
+<LI>Go to webreference.com for pointers to such tools</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(35, 0)"> PPT Slide </A><br>
+<P></P><A HREF="JavaScript:parent.ItemClicked(36, 0)"> System Administration </A><br><UL>
+<LI>Installation
+</UL><UL>
+<LI>Configuration
+</UL><UL>
+<LI>Security
+</UL><UL>
+<LI>Networking
+</UL><UL>
+<LI>Backup</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(37, 0)"> Installation </A><br><UL>
+<LI>If this is a new system it may come with NT 4.0 installed
+</UL><UL>
+<LI>You still may want to start over from the setup disks for experience
+</UL><UL>
+<LI>Toolkit shows setp-by-step approach to installation</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(38, 0)"> Installation Challenges </A><br><UL>
+<LI>Hardware choices - See NT compatibility guide
+</UL><UL>
+<LI>Hardware settings 
+<UL>
+<LI>Interrupt Number (3-15)
+<LI>Input address (e.g. 2F0 or 300)
+</UL></UL><UL>
+<LI>Device drivers - software specific to each piece of hardware</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(39, 0)"> Installation Outline </A><br><UL>
+<LI>Boot Floppies
+</UL><UL>
+<LI>Partition and format the hard disk
+</UL><UL>
+<LI>Reboot
+</UL><UL>
+<LI>NT installs from the CD-ROM</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(40, 0)"> Configuration </A><br><UL>
+<LI>Often configuration errors will appear in the event log
+</UL><UL>
+<LI>
+</UL><UL>
+<LI>Start | ProgramCommonAdmin Tools |Event Log</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(41, 0)"> Networking </A><br><UL>
+<LI>Once the hardware is configured, you will configure the networking and software
+</UL><UL>
+<LI>The network settings will be different for each location</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(42, 0)"> Security </A><br><UL>
+<LI>Security in such a system is very important
+</UL><UL>
+<LI>Hackers will be drawn to such a site
+</UL><UL>
+<LI>General approaches
+<UL>
+<LI>Few accounts - log and disallow repeated attempts
+<LI>Keep the server simple 
+<LI>Look at the logs at least weekly
+</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(43, 0)"> User Accounts </A><br><UL>
+<LI>You will create user accounts for various people
+</UL><UL>
+<LI>Don’t allowaccountsharing
+</UL><UL>
+<LI>Be “paranoid”
+</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(44, 0)"> Backup Considerations </A><br><UL>
+<LI>Backup is critical
+</UL><UL>
+<LI>Hard drives will fail!
+</UL><UL>
+<LI>A single failure can be a catastrophe:
+<UL>
+<LI>Loss of months or years of work
+<LI>Work by many contributors</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(45, 0)"> Backup Strategies </A><br><UL>
+<LI>Daily, weekly, monthly
+<UL>
+<LI>Every day, back up any files that changed during the day
+<LI>Every week, back up all files on the system
+<LI>Every month, back up all files on the system
+</UL></UL><UL>
+<LI>Establish a pool of tapes for each </UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(46, 0)"> Offsite storage </A><br><UL>
+<LI>What if a fire destroys your backup tapes
+</UL><UL>
+<LI>…and your server?
+</UL><UL>
+<LI>Make arrangements to take full dumps off site
+</UL><UL>
+<LI>Once a month is a good idea
+</UL><UL>
+<LI>A safe-deposit box is a good place</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(47, 0)"> Backup Options </A><br><UL>
+<LI>Media
+<UL>
+<LI>DAT (Digital Audio Tape)
+<UL>
+<LI>12/24 holds up to 24 gigabytes
+<LI>Costs up to $1500
+<LI>Each tape costs $5 or so
+</UL><LI>Other tape media
+<UL>
+<LI>Travan
+<UL>
+<LI>Tape holds up to 8 gigabytes
+<LI>Drives cost $300 or so
+<LI>Each tape costs $40 or so</UL></UL></UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(48, 0)"> Backup Software </A><br><UL>
+<LI>NT comes with basic backup software
+<UL>
+<LI>Suitable for standalone system backup
+</UL></UL><UL>
+<LI>If your server is part of a general NT network, you need additional tools
+<UL>
+<LI>Many commercial choices
+<LI>Provide scheduling, catalogs
+<LI>E.g. ARCSERVE product</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(49, 0)"> Community Information Toolkit </A><br><UL>
+<LI>Produced for the Library of Michigan</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(50, 0)"> Running Your Own Server: A Case Study </A><br><UL>
+<LI>Rochester Hills Public Library
+</UL><UL>
+<LI>Demonstration site chosen for Community Information Toolkit Project
+<UL>
+<LI>Focus on history of Rochester Hills area
+<LI>Historical post cards, other documents
+</UL></UL><UL>
+<LI>Larry Neal
+<UL>
+<LI>Head of Technical Systems for RHPL</UL></UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(51, 0)"> In Conclusion </A><br><UL>
+<LI>Plan before you leap!
+</UL><UL>
+<LI>Your own server, or someone else’s?
+<UL>
+<LI>What server hardware / software platform?
+</UL></UL><UL>
+<LI>How will your content providers post their pages?
+</UL><UL>
+<LI>Static HTML only, or static plus dynamic content?</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(52, 0)"> Crawl Before You Walk! </A><br><UL>
+<LI>Content is more important than technology
+</UL><UL>
+<LI>Choose the simplest technology that accomplishes the task
+</UL><UL>
+<LI>Don’t embrace technology for its own sake
+</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(53, 0)"> Community Information Toolkit </A><br><UL>
+<LI>Produced for the Library of Michigan</UL></P>
+<P>
+<P></P><A HREF="JavaScript:parent.ItemClicked(54, 0)"> PPT Slide </A><br>
+</BODY>
+</HTML>

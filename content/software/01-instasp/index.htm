@@ -1,0 +1,381 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h3>Installing the Community Toolkit Software</h3>
+This software is written using Visual Interdev 6.0, and
+Active Server Pages.
+<h3>Outline</h3>
+This documentation covers several steps required to install the toolkit
+software.
+<ul>
+<li>Installing the Active Server Pages in your web server space
+<li>Altering some IIS (Internet Information Server) properties
+<li>Installing the Toolkit Administrator to create and remove databases
+<li>Upgrading your Microsoft scripting libraries
+</ul>
+<h3>Prerequisites</h3>
+The pre-requisites for this software include:
+<ul>
+<li>Windows NT Version 4.0
+<li>IIS 4.0
+<li>Service Pack 4.0 preferred
+</ul>
+Please install these tools before starting.
+<p>
+<BR CLEAR=ALL><HR>
+<A NAME=010launchwinzip> </a>
+<A HREF=010launchwinzip.htm>
+<IMG SRC=010launchwinzip.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010launchwinzip-->
+Once you have downloaded the ZIP file for the Community Toolkit ASP code from the web or have located it on the CD, you use a ZIP program to open the file.  To continue we press <b> Extract</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020extractto> </a>
+<A HREF=020extractto.htm>
+<IMG SRC=020extractto.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020extractto-->
+You must extract this information into a directory in your web hierarchy called
+<b>Community</b> which will appear as
+<b> http://localhost/community/</b>. In a standard configuration this would be
+<b> C:\InetPub\wwwroot\Community\</b> with the appropriate drive letter.
+In this example, you should extract to <b> C:\InetPub\wwwroot\</b>.  The <b> Community\ </b>
+is part of the file name stored in the ZIP.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030aspextracted> </a>
+<A HREF=030aspextracted.htm>
+<IMG SRC=030aspextracted.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030aspextracted-->
+If you navigate into <b> C:\InetPub\wwwroot\Community\</b> you will see the files
+which you have just extracted.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040startiisadmin> </a>
+<A HREF=040startiisadmin.htm>
+<IMG SRC=040startiisadmin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040startiisadmin-->
+Run the IIS Administrator using
+<b>Start | Programs | Windows NT 4.0 Option Pack |
+Microsoft Internet Information Server | Internet Service Manager </b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050properties> </a>
+<A HREF=050properties.htm>
+<IMG SRC=050properties.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050properties-->
+Then select <b>Internet Information Server</b>, <b>www</b> (or other host name),
+and the <b> Default Web Site</b>.  Once you open the <b> Default Web Site</b>
+you should see a list of files, directories, webs, and virtual directories.
+Navigate down until you find <b>community</b>.  Right click on <b>community</b>
+and select <b>Properties</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060appproperties> </a>
+<A HREF=060appproperties.htm>
+<IMG SRC=060appproperties.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060appproperties-->
+Under the <b>Directory</b> tab in Properties,
+first press <b> Create </b> under <b> Application Settings</b>.
+Also select <b>Run in separate memory space</b>.  This increases the overall
+reliability of your web server.  Also de-select <b>Index this Directory</b>
+and <b>Directory Browsing Allowed</b> if they are set.  When this
+is completed press <b>Apply</b> and <b>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070defdoc> </a>
+<A HREF=070defdoc.htm>
+<IMG SRC=070defdoc.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070defdoc-->
+Under the <b> Documents </b> add <b> index.asp </b> as a default document.
+<P>
+Press <b>Apply</b>  and <b>OK</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080unzipadmin> </a>
+<A HREF=080unzipadmin.htm>
+<IMG SRC=080unzipadmin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080unzipadmin-->
+<b>Installing the Toolkit Administration Tool</b>
+<P>
+From the web or from the CD-ROM run the ZIP program on the Toolkit Administration tool.
+This tool creates databases and manages those databases.  You must extract the file to a temporary directory and run the <b> setup.exe</b> from that directory.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090adminextractto> </a>
+<A HREF=090adminextractto.htm>
+<IMG SRC=090adminextractto.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090adminextractto-->
+In this example, we will extract to <b>C:\TEMP\admininst\</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100runadminsetup> </a>
+<A HREF=100runadminsetup.htm>
+<IMG SRC=100runadminsetup.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100runadminsetup-->
+When the extract is complete, we will navigate to <b>C:\TEMP\admininst\</b> and
+run <b> setup.exe</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110setupcopying> </a>
+<A HREF=110setupcopying.htm>
+<IMG SRC=110setupcopying.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110setupcopying-->
+Setup programs are strange creatures.  They have many .DLL and .OCX files which they want to install in addition to the main programs in question.  Often the .DLL files are already installed on the system.  When these files are in use, they may not be updateable until the next reboot.
+<P>
+Setup has two phases - first it copies in a few files necessary for setup to run and then (usually) reboots.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120setupupdatelater> </a>
+<A HREF=120setupupdatelater.htm>
+<IMG SRC=120setupupdatelater.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120setupupdatelater-->
+Sure enough - in this example, some of the files were in use.  So guess what we get to do next...
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130setupreboot> </a>
+<A HREF=130setupreboot.htm>
+<IMG SRC=130setupreboot.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:130setupreboot-->
+You guessed it.  Might as well reboot now to get on with the process.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140runsetupagain> </a>
+<A HREF=140runsetupagain.htm>
+<IMG SRC=140runsetupagain.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140runsetupagain-->
+Once the system is up again, we run <b> setup.exe</b> again.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150setupcopying> </a>
+<A HREF=150setupcopying.htm>
+<IMG SRC=150setupcopying.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150setupcopying-->
+Again it will copy the files but now they are already updated so we won't have to reboot.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160setupsplash> </a>
+<A HREF=160setupsplash.htm>
+<IMG SRC=160setupsplash.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160setupsplash-->
+Now we get into the main event of setup.  We begin the installation of the Toolkit Administration
+Tool.  Press <b>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170pressbutton> </a>
+<A HREF=170pressbutton.htm>
+<IMG SRC=170pressbutton.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170pressbutton-->
+Click on the button with a little computer on it to start the installation.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=180startmenu> </a>
+<A HREF=180startmenu.htm>
+<IMG SRC=180startmenu.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:180startmenu-->
+You can choose to place this somewhere else on the <b> Start</b> menu.  Most folks just leave it in the default location and press <b>Continue</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=185installingmsdac> </a>
+<A HREF=185installingmsdac.htm>
+<IMG SRC=185installingmsdac.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:185installingmsdac-->
+One of the first steps in the process
+is to install the MSDAC (Microsoft Data Access Components 2.1).
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=190installingcaladmin> </a>
+<A HREF=190installingcaladmin.htm>
+<IMG SRC=190installingcaladmin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:190installingcaladmin-->
+Now it will copy the toolkit administration software.   As setup progresses, you may get a dialog box based on a file in use or a version mismatch.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=200versionconf> </a>
+<A HREF=200versionconf.htm>
+<IMG SRC=200versionconf.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:200versionconf-->
+This is an example of a file-related complaint.
+<p>
+Most of the complaints are files which were provided by Microsoft.  In this example, we are looking at the file <b> MSREPL35.DLL</b>.  The key is that these files have version and date information.  Typically files are included in a setup package in case they were missing on the destination system.  In <i>this</i> setup package, the only critical DLL is <b> ODBCTool.DLL</b>.  Generally it is quite safe to keep the existing DLLs on your system.
+<p>
+So for this prompt we want to keep the existing file, so we press <b>Keep</b>.
+<p>
+Normally, these DLLs change quite slowly so these version conflicts hardly ever occur.  But with Windows NT 4.0 and the Y2K problem, many new versions of these files (especially database related files) are released as one or another small bug is fixed.  Generally the versions in the latest service pack are the very best versions.  So it is quite important to re-run your service packs after installation of a program in case the setup process inadvertently dropped you back a level in some DLL.  After Y2K settles down, there will be far less conflicts between setup packages and service packs.  ;)
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=210setupcomplete> </a>
+<A HREF=210setupcomplete.htm>
+<IMG SRC=210setupcomplete.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:210setupcomplete-->
+After a few extraneous, "Keep the existing version" messages, we should be all installed.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=220howtoremove> </a>
+<A HREF=220howtoremove.htm>
+<IMG SRC=220howtoremove.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:220howtoremove-->
+This would not be a good time to actually remove this tool, but if you want to remove it later, it has installed an entry in
+<b> Start | Settings | Control Panel | Add/Remove Programs</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=230scripting> </a>
+<A HREF=230scripting.htm>
+<IMG SRC=230scripting.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:230scripting-->
+If you have not already done so, you will need to upgrade your scripting library.
+<P>
+Go to
+<a href=http://msdn.microsoft.com/scripting/default.htm>
+http://msdn.microsoft.com/scripting/default.htm
+</a> - the file you are looking for is called <b> ste50en.exe </b> and it should
+be 665KB.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=240clicktodownload> </a>
+<A HREF=240clicktodownload.htm>
+<IMG SRC=240clicktodownload.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:240clicktodownload-->
+This is the page (as of the development of this documentation) to download <b>ste50en.exe</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=250saveasbox> </a>
+<A HREF=250saveasbox.htm>
+<IMG SRC=250saveasbox.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:250saveasbox-->
+You will want to save this to disk.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=260savetotemp> </a>
+<A HREF=260savetotemp.htm>
+<IMG SRC=260savetotemp.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:260savetotemp-->
+You can save this anywhere.  You might want to save it to a location that you will retain in case you have to repeat this process.  You might even want to burn a CD-ROM of this software, Service Pack 4, and a few other things for your convenience.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=270launchst50> </a>
+<A HREF=270launchst50.htm>
+<IMG SRC=270launchst50.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:270launchst50-->
+Once it is downloaded, navigate to the directory and launch <b> ste50en.exe </b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=280areyousure> </a>
+<A HREF=280areyousure.htm>
+<IMG SRC=280areyousure.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:280areyousure-->
+Yes, we are sure.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=290screula> </a>
+<A HREF=290screula.htm>
+<IMG SRC=290screula.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:290screula-->
+Yes, we agree.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=300scriptinstalled> </a>
+<A HREF=300scriptinstalled.htm>
+<IMG SRC=300scriptinstalled.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:300scriptinstalled-->
+This install usually is quite smooth (and very quick).  It doesn't even require a reboot.
+<P>
+You might want to reboot anyways.  Your coffee might be getting cold by now.
+<BR CLEAR=ALL>
+This completes the necessary installation tasks.  Up next you will run the toolkit administration tool to create a database.
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

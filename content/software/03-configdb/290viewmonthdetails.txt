@@ -1,0 +1,3 @@
+<!-- file:290viewmonthdetails-->
+Much like in list, the details are expanded.  We can see things like the photo in the URL
+and a hot-link to a map to the fireworks.

@@ -1,0 +1,166 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h3>Running the Toolkit Administration Tool</h3>
+In this section, we will create a database and then take a look around to see how things are placed on the disk.
+<BR CLEAR=ALL><HR>
+<A NAME=010startadmintool> </a>
+<A HREF=010startadmintool.htm>
+<IMG SRC=010startadmintool.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010startadmintool-->
+To create a database, we run the administration tool at
+<b> Start | Programs | Community Toolkit | Administration Tool</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020adminmainpage> </a>
+<A HREF=020adminmainpage.htm>
+<IMG SRC=020adminmainpage.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020adminmainpage-->
+This is the main start page for the program.  There is on-line documentation under <b>Help</b>.
+<P>
+Each database has a <b>Long Name</b> (descriptive) and a <b>short name</b> (used to make files and URLs).
+<P>
+In this example, we set the long name to <b>A Test Library</b> and the short name
+to <b>test</b>.
+<P>
+To create a database, we press <b>Add Database</b>. After some machinations, it should add
+a DSN called <b>ctk_test</b>, a database file called <b>test.mdb</b>,
+and four .asp files.  As the last step, it will prompt you for an administrator password for the database.
+<P>
+See the help file for more detail on what this tool can do.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030oktocreate> </a>
+<A HREF=030oktocreate.htm>
+<IMG SRC=030oktocreate.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030oktocreate-->
+To enhance security, the database files are not stored in the web-accessible part of the hierarchy.  In this example, we use <b>C:\InetPub\databases\community\</b> as the directory for the databases.  The first database you create will cause the directory to be created.  You will not get this prompt for the second and following databases.
+<P>
+There is no reason that all the databases need to be in the same directory.
+<P>
+<h2>Please, Please, Please backup this directory</h2>
+(and when you don't, and you lose the hard disk the data is simply gone)
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040adminpw> </a>
+<A HREF=040adminpw.htm>
+<IMG SRC=040adminpw.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040adminpw-->
+The last step of database creation is to set the password for the <b>admin</b> account.
+<P>
+You can also use this utility later to reset the admin password or unlock the admin account if too many bad password attempts were done by the admin account.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=045databasecreated> </a>
+<A HREF=045databasecreated.htm>
+<IMG SRC=045databasecreated.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:045databasecreated-->
+This is what it should look like when complete.  It has added a database, a DSN, and
+four ASP files.
+<P>
+The toolkit administration tool actually does some pretty basic things.  In a sense
+all of its tasks <i>could</i> be done by hand.  To help you get an idea of where things are stored (in case you have to do some debugging),
+we will look around to see what the tool has actually done.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050controlpanelodbc32> </a>
+<A HREF=050controlpanelodbc32.htm>
+<IMG SRC=050controlpanelodbc32.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050controlpanelodbc32-->
+First we will look for the DSN information.  Go to
+<b>Start | Settings | Control Panel | ODBC32 </b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060systemdsn> </a>
+<A HREF=060systemdsn.htm>
+<IMG SRC=060systemdsn.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060systemdsn-->
+Look under <b> System DSN</b>.  Select <b>ctk_test</b> and press <b>Configure</b>
+to see how the DSN is put together.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070ctkdsninfo> </a>
+<A HREF=070ctkdsninfo.htm>
+<IMG SRC=070ctkdsninfo.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070ctkdsninfo-->
+A System DSN is basically a mapping from a name to a file on disk with an indication of what drivers to use to access the file.  Don't make any changes here - simply notice that the proper file name has been placed here by the administration tool.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080databasesdir> </a>
+<A HREF=080databasesdir.htm>
+<IMG SRC=080databasesdir.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080databasesdir-->
+If we navigate to <b>C:\InetPub\database\community</b>, we see the test.mdb file.  It has the default icon because Access is not installed on our server.  If we had Access, we could open and examine the file.  Be very careful making modifications to the tables in this database.
+<P>
+A good general rule is never to change the schema and spend most of your time in the Events table.  It would be quite natural for you to import events from other sources and place them in the file if you had Access skills.  Be very conservative if you do this and test anything very thoroughly.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090startdirectory> </a>
+<A HREF=090startdirectory.htm>
+<IMG SRC=090startdirectory.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090startdirectory-->
+The administrator tool also created five ASP files in the web server hierarchy.  These are the files necessary to set the session variables and launch the proper ASP files to initialize each distinct calendar.
+<P>
+The files in this example are stored in the directory
+<b>C:\InetPut\wwwroot\Community\start\</b>.  They all appear on
+the web server as <b>http://www.blah.net/Community/start/zzz.asp</b>. The files are:
+<ul>
+<P>
+<li><b>test.asp</b> - Goes to the main page, giving the user the choice to go into calendar, forums, or administration.
+<li><b>test-admin.asp</b> - Goes directly to the administration page for the this database
+<li><b>test-calendar.asp</b> - Goes directly to the calendar for this database using the default view for this database
+<li><b>test-forum.asp</b> - Goes directly to the forum page for this database
+<li><b>expire.htm</b> - This is used when the ASP Session variables time-out after 2 minutes. The ASP scripts redirect the user to this file.  It contains a very simple index to  all of the databases stored on the server.  This file is re-built every time you add or remove a database.  You can also rebuild the file using the button provided.
+You may want to hand edit some of these files.  You may want to copy a file to index.asp so there is a default page when the user simply types <b>http://www.blah.net/community/start</b>.
+</ul>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100testasp> </a>
+<A HREF=100testasp.htm>
+<IMG SRC=100testasp.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100testasp-->
+This is the contents of the <b>test.asp</b>. As you can see it is a rather short file, setting some session variables and redirecting the user to another file.  The most important value is the <b>ConnectionString</b> value which links this (and other) ASP file(s) to the proper system DSN.  It is this value which allows many databases to be used with this software.
+<P>
+If you get tricky (say by trying to use SQL Server), you should only have to edit these files to get the ODBC connection properly set up.
+<BR CLEAR=ALL>
+<hr>
+This tutorial walks you through the toolkit administration tool.  It does a rather simple but important set of tasks in the overall scheme of things.  To run this tool, you must be physically on the server.  This is necessary for security reasons.
+<P>
+Up next, we will do a brief walkthrough on using the toolkit software.  We will set up a database, enter an event and view the events.
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

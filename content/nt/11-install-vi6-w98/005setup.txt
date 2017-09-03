@@ -1,0 +1,4 @@
+<!-- file:005setup-->
+This is the welcome screen for Visual Interdev Setup.  This screen autolaunches when the CD-ROM is put into the drive or when you double click on the CD-ROM icon.
+<p>
+It is a good practice to read the README information before continuing with the installation.

@@ -1,0 +1,4 @@
+<!-- file:070dskfirsttime-->
+Next we will make some disk adjustments which include creating a D: partition. This is done by running
+<b> Start | Programs | Administrative Tools (Common) | Disk Manager</b>. 
+The first time this is run, a small dialog box comes up.  Press <b>OK</b>

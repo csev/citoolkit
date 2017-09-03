@@ -1,0 +1,7 @@
+<!-- file:060appproperties-->
+Under the <b>Directory</b> tab in Properties,
+first press <b> Create </b> under <b> Application Settings</b>.  
+Also select <b>Run in separate memory space</b>.  This increases the overall
+reliability of your web server.  Also de-select <b>Index this Directory</b>
+and <b>Directory Browsing Allowed</b> if they are set.  When this 
+is completed press <b>Apply</b> and <b>OK</b>.

@@ -1,0 +1,2 @@
+<!-- file:120components-->
+Because this is a temporary installation, accept the defaults.

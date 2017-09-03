@@ -1,0 +1,6 @@
+<!-- file:010usermanager-->
+The first of our post-installation tasks is to create a user account.
+<p>
+Use 
+<b>Start | Program | Administrative Tools (Common) | User Manager</b>.  
+Within User Manager run <B> User | New User</b>.

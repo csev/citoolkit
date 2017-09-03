@@ -1,0 +1,4 @@
+<!-- file:040adminpw-->
+The last step of database creation is to set the password for the <b>admin</b> account.
+
+You can also use this utility later to reset the admin password or unlock the admin account if too many bad password attempts were done by the admin account.

@@ -1,0 +1,7 @@
+<!-- file:140bocomesback-->
+Once you log back in, the VI 6.0 setup program will come back to this screen.
+
+We have already done the installation so <i>don't</i> select <b>Launch Backoffice
+Instllation Wizard</b>.
+
+Instead chose <b>Next</b>.

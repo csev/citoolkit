@@ -1,0 +1,2 @@
+<!-- file:060creatingdriverlist-->
+As soon as you click on <b> Tape Devices </b> it may go off and autodetect the tape drives and find the proper driver.

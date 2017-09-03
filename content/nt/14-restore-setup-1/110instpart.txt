@@ -1,0 +1,2 @@
+<!-- file:110instpart-->
+Now we see both partitions.  Lets install an operating system on <b>C:</b>.  This is done by cursoring to it and pressing <b>Enter</b>.

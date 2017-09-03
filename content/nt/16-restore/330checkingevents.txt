@@ -1,0 +1,2 @@
+<!-- file:330checkingevents-->
+We look at the <b> Event Viewer</b>.  The pesky DCOM message is there but the problems with FTP and WWW have been resolved.

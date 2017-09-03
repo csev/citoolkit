@@ -1,0 +1,8 @@
+<!-- file:230scripting-->
+If you have not already done so, you will need to upgrade your scripting library.
+
+Go to 
+<a href=http://msdn.microsoft.com/scripting/default.htm>
+http://msdn.microsoft.com/scripting/default.htm
+</a> - the file you are looking for is called <b> ste50en.exe </b> and it should
+be 665KB.

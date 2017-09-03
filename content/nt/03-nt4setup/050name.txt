@@ -1,0 +1,2 @@
+<!-- file:050name-->
+You must enter the description of the server and the organization who runs the server.  This is NOT the computer name - that will be specified later.  These fields are intended to be descriptive (i.e. for humans to read).

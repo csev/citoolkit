@@ -1,0 +1,2 @@
+<!-- file:130netsetup-->
+Now we move into the network configuration phase of the setup.

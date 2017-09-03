@@ -1,0 +1,289 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h2>Backing Up Windows NT</h2>
+This exercise is designed to do a full backup of all of the material on the system.  We will turn off the servers to make this backup so we get all the open files.  During the exercise, we also install the 4mm DAT tape drivers for the system.
+<p>
+In the next exercise, we will format the hard disks and try to restore the system to see if our backup <i>really</i> works.  In this example we use NT Backup with all its weaknesses.  We demonstrate this because it comes with NT and we do not know which backup solution you will select.
+<p>
+You may choose to purchase a third-party backup system.  A third-party backup system often will have different procedures.  For example, some third party backup systems can backup open files and have their own floppy-based restore process. If you use a third party backup, follow those instructions.
+<p>
+<b>Important:</b>  Regardless of whether or not you use NT backup, it is very important that you go through an complete backup-recovery cycle with a disk-format in between.  Before you put the system into production, you must shake out the problems that you might encounter.  There is no reason to complicate a stressful situation by completely losing all of your user's data after being down for two weeks.
+<BR CLEAR=ALL><HR>
+<A NAME=010rdisk> </a>
+<A HREF=010rdisk.htm>
+<IMG SRC=010rdisk.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010rdisk-->
+Before we start the backup,
+we update the repair information and create an emergency repair disk.
+<p>
+Execute <b> Start | Run | rdisk </b>
+<p>
+Then press <b> Update Repair Info</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=015rdiskupdating> </a>
+<A HREF=015rdiskupdating.htm>
+<IMG SRC=015rdiskupdating.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:015rdiskupdating-->
+Update Repair Info copies critical system configuration information into a directory called <b> C:\WINNT\REPAIR</B>.  We do this so the repair information gets copied onto our backups.  In a moment this information will also be copied onto a floppy disk as well.
+<P>
+This repair information contains the accounts and password for the system so the repair floppy and backup tapes need to be kept in a physically secure location.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020rdiskemerg> </a>
+<A HREF=020rdiskemerg.htm>
+<IMG SRC=020rdiskemerg.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020rdiskemerg-->
+We press <b> Yes </b> to copy the repair information onto a floppy disk.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=025rdiskinsertintoa> </a>
+<A HREF=025rdiskinsertintoa.htm>
+<IMG SRC=025rdiskinsertintoa.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:025rdiskinsertintoa-->
+This floppy will be reformatted <i> each </i> time this process is performed.  RDISK is not taking any chances.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030rdiskcopying> </a>
+<A HREF=030rdiskcopying.htm>
+<IMG SRC=030rdiskcopying.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030rdiskcopying-->
+Now the repair information is being copied onto the disk.  Unfortunately if this process runs out of space on the floppy it does so silently.
+<p>
+It is not a bad idea to go into MS-DOS and do a directory listing on <b> C:\WINNT\REPAIR\ </b> to see how much information is in the directory and see whether or not it will fit on a floppy.
+<p>
+Quite often when you are repairing a system, the repair information can be used from the hard disk.  The floppy is generally a last resort.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040rdisksecure> </a>
+<A HREF=040rdisksecure.htm>
+<IMG SRC=040rdisksecure.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040rdisksecure-->
+This disk contains all the accounts and passwords.  Uh - yes you should not leave it laying around.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050settingstape> </a>
+<A HREF=050settingstape.htm>
+<IMG SRC=050settingstape.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050settingstape-->
+If you have not yet used the tape drive, you may need to install the driver for the tape drive.  This is done under
+<b> Start | Settings | Control Panel | Tape Devices</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060creatingdriverlist> </a>
+<A HREF=060creatingdriverlist.htm>
+<IMG SRC=060creatingdriverlist.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060creatingdriverlist-->
+As soon as you click on <b> Tape Devices </b> it may go off and autodetect the tape drives and find the proper driver.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070oktoinstalldriver> </a>
+<A HREF=070oktoinstalldriver.htm>
+<IMG SRC=070oktoinstalldriver.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070oktoinstalldriver-->
+In this example we are using a pretty standard 4mm DAT tape system so it has the driver in the NT distribution CD-ROM.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080insertntcrdom> </a>
+<A HREF=080insertntcrdom.htm>
+<IMG SRC=080insertntcrdom.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080insertntcrdom-->
+Slick how it prompts with the proper driver letter for the CD-ROM - good thing we learned <b> regedit </b> earlier in a previous exercise.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090tapedriverloaded> </a>
+<A HREF=090tapedriverloaded.htm>
+<IMG SRC=090tapedriverloaded.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090tapedriverloaded-->
+The tape driver has been successfully loaded - exit the dialog by pressing <b> OK </b>.
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100servicesstopindex> </a>
+<A HREF=100servicesstopindex.htm>
+<IMG SRC=100servicesstopindex.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100servicesstopindex-->
+These next few steps may not seem so important, but we want to make sure all of the files on the disk are backed up.  So we stop some of the running services which have open files.  If these steps are not performed, the backups won't be complete and the restores may not work well.
+<p>
+It would probably be a good idea to reboot your system right before starting this step.
+<p>
+Go to
+<b> Start | Settings | Control Panel | Services </b>
+<p>
+Stop the <b> Content Index </b> service
+<p>
+You may have noticed that you can stop the FTP, WWW, and IISADMIN services from the IIS console.  We use the Services control panel here because we have to stop several other services as well.
+<p>
+Another reason that you might stop these services is to move their data directories, say from the C: drive to the D: drive.  The pattern to move the directories is to stop the services, move the directories, reconfigure the servers, and then restart them.
+<P>
+You can also stop these services in an MS-DOS command window using <b> net stop &lt;service name></b> and <b> net start &lt;service name></b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110servicesstopiisadmin> </a>
+<A HREF=110servicesstopiisadmin.htm>
+<IMG SRC=110servicesstopiisadmin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110servicesstopiisadmin-->
+Stop the <b> IISADMIN </b> service which will also stop the FTP and Web services.
+<p>
+These services are down at this time - the system will not respond to web requests during this backup.  The services must be restarted or the system must be rebooted before these services will be available.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120servicesstopmsdtcsure> </a>
+<A HREF=120servicesstopmsdtcsure.htm>
+<IMG SRC=120servicesstopmsdtcsure.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120servicesstopmsdtcsure-->
+Stop the <b>MSDTC</b> service.  It will protest a bit, but go ahead and stop it for this backup.
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130startbackup> </a>
+<A HREF=130startbackup.htm>
+<IMG SRC=130startbackup.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:130startbackup-->
+Go ahead and start the backup under
+<b> Start | Programs | Administrative Tools (Common) | Backup </b>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140backupc> </a>
+<A HREF=140backupc.htm>
+<IMG SRC=140backupc.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140backupc-->
+Once the tape has been loaded, select the C drive, check <b> Verify </b> and <b> Backup Registry</b>.
+<p>
+If your drive supports it, select <b> Hardware Compression</b>
+<p>
+Then press <b> OK </b> to start the backup.
+<p>
+While you wait for the tape to spin, you should add an entry to your backup log.  Later when the system has crashed, you won't want to spend hours scanning tapes to try and figure out which is/are the most "recent" tape(s).
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150backingupc> </a>
+<A HREF=150backingupc.htm>
+<IMG SRC=150backingupc.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150backingupc-->
+During the backup, the backup program may encounter an open file which it cannot backup.  It waits for 25 seconds to see if it can get the file and then continues without including the file.  By stopping the services, we avoid most of these messages.  However, there may still be several files open which do not get backed up.
+<p>
+Make sure to check the backup log by scrolling back when the backup is complete to determine if the files are essential at restore time.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160verifyingc> </a>
+<A HREF=160verifyingc.htm>
+<IMG SRC=160verifyingc.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160verifyingc-->
+After the backup is complete the tape will be rewound and the verify will be performed.
+<p>
+Verify reads the tape, and for each file on the tape checks to see if it matches the disk copy of the file.  Verify will <i>not</i> detect missing files.  You must scroll through the backup log to find missing files.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170verifygreat> </a>
+<A HREF=170verifygreat.htm>
+<IMG SRC=170verifygreat.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170verifygreat-->
+When the verify is complete scroll back through the backup log to see if any essential files were skipped.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=180ejecttape> </a>
+<A HREF=180ejecttape.htm>
+<IMG SRC=180ejecttape.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:180ejecttape-->
+Use <b> Operations | Eject Tape </b> to switch tapes between backups.
+<p>
+Then insert the tape to be used for the backup of D:
+<p>
+Label the tape that you just backed C: up on to.
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=190backupd> </a>
+<A HREF=190backupd.htm>
+<IMG SRC=190backupd.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:190backupd-->
+Once the tape is inserted and ready, select D: and press <b> Backup</b>.  Select <b> Verify After Backup</b> and press <b> OK</b> to begin the backup.
+<p>
+Perhaps this is not a good time to bring this up, but some DAT tape drives do not like you to keep pressing their buttons.  For example, once you press the eject button wait a while.  Don't just keep pressing it.  It takes a few moments for the tape drives to respond to these requests.  If you keep pressing the button (trying to hurry it up) you may get the tape drive hung.  Usually a power cycle clears things up.. But why risk it?
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=200verifyd> </a>
+<A HREF=200verifyd.htm>
+<IMG SRC=200verifyd.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:200verifyd-->
+Once the backup of D: has been completed and verified, you are done with this exercise.
+<p>
+The next exercise is to re-format your hard drive and restore the system from tapes.  While it may be tempting to leave well enough alone, there is no time like the present to practice these skills.
+<p>
+Later when the system has been in production for a few months, folks won't have much of a sense of humor while you polish your restore skills.
+<p>
+It is good to do it once while not under pressure.  Then when you are under pressure you at least know that you have done it once.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

@@ -1,0 +1,2 @@
+<!-- file:320checkingusers-->
+We check our user configurations.  All of the accounts and passwords are the same as before we restored the system.

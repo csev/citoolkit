@@ -1,0 +1,2 @@
+<!-- file:020myweb-->
+Select <b> One Page Web </b> and then press <b> Change </b> to edit the URL of the new web.  Enter the address (Domain or IP) of the server and add the name of the web and press <b>OK</b>.

@@ -1,0 +1,2 @@
+<!-- file:270verifyofciscomplete-->
+The verify completes.  We eject the back up tape for the <b>C:</b> material.

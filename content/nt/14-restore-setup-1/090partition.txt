@@ -1,0 +1,5 @@
+<!-- file:090partition-->
+Now we have a "brand new" disk.  Unlike the first time we installed NT, we will create both the <b>C:</b> and the <b>D:</b>  partitions on the disk at this time. 
+<p>
+You will find this approach makes things much simpler later.  The drive letters will be correct from the beginning and the steps need to format <b>D:</b> will be much simpler.  We did it the other way in the first exercise as an example.
+We press <B>C</B> to create a new partition.

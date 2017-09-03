@@ -1,0 +1,2 @@
+<!-- file:087delpart2-->
+We must perform the same steps to delete the second partition.

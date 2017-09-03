@@ -1,0 +1,4 @@
+<!-- file:220gotobigmonth-->
+We can switch our view even more dramatically by going to the <b>Big Month</b> view. (If you recall, we set List to be default, allowed List and Big Month, and disallowed Month View).
+
+The view is switched the moment you release the button on the drop-down.

@@ -1,0 +1,3 @@
+<!-- file:130ftpnewdirproperties-->
+So, we create a new folder
+<b> D:\InetPub\ftproot\new </b> and then view the new folder's properties.

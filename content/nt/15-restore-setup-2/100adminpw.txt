@@ -1,0 +1,2 @@
+<!-- file:100adminpw-->
+Now you will specify the Administrator password. 

@@ -1,0 +1,2 @@
+<!-- file:070millsapressgoto-->
+The drop-down box can be used for quick navigation.  Select <b>millsa</b> and press <b>Go to</b>.

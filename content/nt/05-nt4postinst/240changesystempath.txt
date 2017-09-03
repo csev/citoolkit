@@ -1,0 +1,6 @@
+<!-- file:240changesystempath-->
+Then you are presented a dialog box to change the value.  Carefully change the D: to E: and press OK.  Then press <b>F3</b> to search for the next occurrence.  When it is found change that value until you have caught all the values.
+<p>
+There should be about 5 values which match "D:" after a fresh install.  This procedure will not work so well after a wide range of other software packages are installed.
+<p>
+Once this is all done, it would be a good time for a reboot and a quick test of the disk drives, CD-ROM and networking.

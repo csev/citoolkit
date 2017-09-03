@@ -1,0 +1,3 @@
+<!-- file:270calgotomonth-->
+We navigate through the database welcome page to the calendar.  Again it shows up in List view.  But when we select the views, we have a new option.  We select the <b> Month </b> 
+view and release the button.

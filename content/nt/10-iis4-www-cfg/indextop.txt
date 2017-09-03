@@ -1,0 +1,2 @@
+<h2>Configuring and Testing WWW</h2>
+In this exercise, we configure and test the World-Wide-Web portion of IIS 4.0.  We look at the properties of the web server, make a few simple changes, and then explore the directory structure of the web space.

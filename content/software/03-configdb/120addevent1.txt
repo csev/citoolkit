@@ -1,0 +1,4 @@
+<!-- file:120addevent1-->
+Much like the site configuration, the events have a significant number of fields.  You don't need to fill in any other than <b>Event Date</b> and <b>Event Name</b>.
+
+Most fields are free-form and not parsed at all except for the <b> Event Date</b>.  This means that you have great flexibility but also plenty of opportunity to make a mistake :).

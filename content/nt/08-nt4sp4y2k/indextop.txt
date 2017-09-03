@@ -1,0 +1,6 @@
+<h2>Installing the Y2K Service Pack</h2>
+Next we will download and install portions of Service Pack 4.  We need to do this to get some Y2K fixes.  You should consult the Microsoft web site to see if there are additional Y2K patches or service packs at the time you are installing the system.
+
+First we download the service pack, then extract it and install two of the four components contained in the service pack.
+
+It is important to remember that for a system to be Y2K compliant, both the hardware and the software must be Y2K compliant.

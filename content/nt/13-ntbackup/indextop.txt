@@ -1,0 +1,8 @@
+<h2>Backing Up Windows NT</h2>
+This exercise is designed to do a full backup of all of the material on the system.  We will turn off the servers to make this backup so we get all the open files.  During the exercise, we also install the 4mm DAT tape drivers for the system.
+<p>
+In the next exercise, we will format the hard disks and try to restore the system to see if our backup <i>really</i> works.  In this example we use NT Backup with all its weaknesses.  We demonstrate this because it comes with NT and we do not know which backup solution you will select.
+<p>
+You may choose to purchase a third-party backup system.  A third-party backup system often will have different procedures.  For example, some third party backup systems can backup open files and have their own floppy-based restore process. If you use a third party backup, follow those instructions.  
+<p>
+<b>Important:</b>  Regardless of whether or not you use NT backup, it is very important that you go through an complete backup-recovery cycle with a disk-format in between.  Before you put the system into production, you must shake out the problems that you might encounter.  There is no reason to complicate a stressful situation by completely losing all of your user's data after being down for two weeks.

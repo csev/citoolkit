@@ -1,0 +1,2 @@
+<!-- file:250manageevents-->
+Now when we enter <b>Manage Events</b>, we are immediately presented with our list of events to approve.  To approve the event, we simply press <b>Approve</b>.

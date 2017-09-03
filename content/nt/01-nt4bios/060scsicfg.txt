@@ -1,0 +1,2 @@
+<!-- 060scsicfg.txt-->
+The controller configuration determines things like boot time options.  For example, if there are multiple bootable SCSI disks, which is to be the boot disk.  In this example, we only have one bootable disk so we leave the defaults.

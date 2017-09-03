@@ -1,0 +1,4 @@
+<!-- file:080databasesdir-->
+If we navigate to <b>C:\InetPub\database\community</b>, we see the test.mdb file.  It has the default icon because Access is not installed on our server.  If we had Access, we could open and examine the file.  Be very careful making modifications to the tables in this database.
+
+A good general rule is never to change the schema and spend most of your time in the Events table.  It would be quite natural for you to import events from other sources and place them in the file if you had Access skills.  Be very conservative if you do this and test anything very thoroughly.

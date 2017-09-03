@@ -1,0 +1,2 @@
+<!-- file:100lookingatmessage-->
+Our message has appeared.

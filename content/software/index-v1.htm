@@ -1,0 +1,113 @@
+<a href=index.htm>
+<img src=logo.gif align=right border=0>
+</a>
+<h2>Community Toolkit Software - Version 1.0</h2>
+This software is written using Visual Interdev 6.0, and 
+Active Server Pages.
+<h3>Prerequisites</h3>
+The pre-requisites for this software include:
+<ul>
+<li>Windows NT Version 4.0
+<li>IIS 4.0
+<li>You will need an updated version of the JSCRIPT library.  This can
+be done by upgrading
+you scripting library from 
+<a href=http://msdn.microsoft.com/scripting/default.htm>
+http://msdn.microsoft.com/scripting/default.htm
+</a> - (as of the writing of this documentation) 
+the file you are looking for is called <b> st50en.exe </b> and it
+is 665KB.
+</ul>
+Please install these tools before starting.
+<h3>Code</h3>
+The following is the code provided:
+<ul>
+<li>
+<a href=commasp-v1.zip>Toolkit ASP Source Code</a> - To be installed
+<li>
+<a href=admin-v1.zip>Toolkit Administrator</a> - To be installed
+<li>
+<a href=adminsrc-v1.zip>Toolkit Administrator Source</a> 
+(Not part of installation process)
+</ul>
+<h3>Installation Instructions</h3>
+If you need more detail, this process is documented in tutorial fashion in:
+<ul>
+<li><a href=01-instasp/index.htm>Installing the Toolkit Software</a>
+<li><a href=02-runadmin/index.htm>Running the Toolkit Administrator</a>
+</ul>
+Steps to take:
+<ul>
+<li>Uninstall previous versions of the toolkit if installed - The software provides
+an uninstall option under <b> Start | Settings | Control Panel | Add/Remove Programs</b>
+<li>Unzip the <a href=commasp-v1.zip>Toolkit ASP Source Code</a>  into a directory in your web hierarchy called 
+<b>Community</b> which will appear as 
+<b> http://localhost/community/</b> In a standard configuration this would be
+<b> C:\InetPub\wwwroot\Community\</b> with the appropriate drive letter.
+<li>
+Now we will alter some settings in your web configuration.
+<b> Start | Programs | Windows NT 4.0 Option Pack | 
+Microsoft Internet Information Server | Internet Service Manager </b>
+Then select <b>Internet Information Server</b>, <b>www</b> (or other host name),
+and the <b> Default Web Site</b>.  Once you open the <b> Default Web Site</b>
+you should see a list of files, directories, webs, and virtual directories.
+Navigate down until you find <b>community</b>.  Right click on <b>community</b> 
+and select <b>Properties</b>.  Under the <b>Directory</b> tab in Properties,
+first press <b> Create </b> under <b> Application Settings</b>.  
+Also select <b>Run in separate memory space</b>.  This increases the overall
+reliability of your web server.  Also de-select <b>Index this Directory</b>
+and <b>Directory Browsing Allowed</b> if they are set.  When this 
+is completed press <b>Apply</b> and <b>OK</b>.  
+Under the <b> Documents </b> tab add <b> index.asp </b> as a default document.
+
+<li>Then unzip the <a href=admin-v1.zip>Toolkit Administrator</a> into a temporary directory and
+run <b> setup.exe </b>  If you are running locally with the toolkit CD-ROM, 
+click <a href=adminsetup/setup.exe>here</a>.
+
+<li>This setup will be a two-step process.  The first step
+will install some DLL files and may need a reboot.  
+The second step looks more like a traditional setup.
+If the setup seems to be unable to update existing files, simply
+write down the files and skip them.  Chances are good that they are not being updated.
+A setup package always contains a number of DLL's just to make sure that the DLL's are
+on your system.  This package does not contain any critical DLL upgrades so if
+you already have a DLL, there is no pressing need to update it.  So feel free to press 
+<b>Ignore</b> or <b>Skip</b> for any of the standard Microsoft DLL files.
+<li>
+If you have not already done so,
+you will need to update the JSCRIPT library by installing the latest
+versions of Microsoft scripting.  This can be done from 
+<a href=http://msdn.microsoft.com/scripting/default.htm>
+http://msdn.microsoft.com/scripting/default.htm
+</a>  - You may also have to stop your web server for this installation
+as well.
+<li>
+Execute the Calendar Administrator 
+under <b> Start | Programs | Community Toolkit | Administration Tool</b>.  
+There is on-line documentation
+available under <b>Help</b>.
+<li>
+You goal is to add a database.  To do this you need a long name and
+a short name.
+The long name is for a human to read - for example "Wiggins Public Library".  
+The short name is used to create several files - for example "rww".  
+The press <b> Add Library</b>.  After some machinations, it should add
+a DSN called <b>ctk_rww</b>, a database file called <b>rww.mdb</b>, 
+and four .asp files.
+<li>
+When this is complete,
+the following URLS will exist:
+<pre>
+http://localhost/community/start/index.asp
+http://localhost/community/start/rww.asp
+http://localhost/community/start/rww-admin.asp
+http://localhost/community/start/rww-calendar.asp
+http://localhost/community/start/rww-forum.asp
+</pre>
+(With "rww" replaced with the "short" name you chose).
+These URLS can be embedded in your other pages to jump to 
+the selector page, admin page, calendar page, and forum page 
+respectively.  
+<li>The first step is to go to the admin page and get things set-up.  The administrator
+account is "admin" and whatever password you set during library creation.
+</ul>

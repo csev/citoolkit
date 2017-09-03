@@ -1,0 +1,2 @@
+<!-- file:370emerg-->
+Now, you finally insert the blank emergency disk and the system formats and copies the critical configuration information to that disk.

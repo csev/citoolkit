@@ -1,0 +1,2 @@
+<!-- file:090extracting-->
+Then the files will be extracted.  Interestingly, most service packs auto install at this point.  This particular service pack requires us to hand execute the service pack.

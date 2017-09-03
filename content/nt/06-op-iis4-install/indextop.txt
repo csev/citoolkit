@@ -1,0 +1,11 @@
+<h2>Installing IIS 4.0</h2>
+The next task is to install Internet Information Server 4.0.  This can come from several places.  The Visual Interdev 6.0 CD has IIS 4.0 and recently purchased Windows NT 4.0 packages have an Option pack CD included.  This example is based on the <b>Microsoft Windows NT 4.0 Option Pack</b> which comes with NT server. 
+
+There are three basic steps in this process:
+<ul>
+<li>Installing Service Pack 3
+<li>Installing Internet Explorer 4.0
+<li>Installing Internet Information Server 4.0
+</ul>
+
+We will reboot the system between each of the steps.

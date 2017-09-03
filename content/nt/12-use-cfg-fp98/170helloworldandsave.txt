@@ -1,0 +1,4 @@
+<!-- file:170helloworldandsave-->
+This is the FrontPage98 editor.  This is a powerful tool for creating web sites.  Many books have been written on how to use this program.  In this tutorial, we have exactly one slide.  So as you might expect, this is a rather abbreviated overview of editing web pages :).
+<p>
+Enter the text "Hello World" and press <b> Save </b> (The little floppy disk icon).  The act of saving the file also updates the file on the server.

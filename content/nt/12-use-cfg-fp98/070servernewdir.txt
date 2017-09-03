@@ -1,0 +1,2 @@
+<!-- file:070servernewdir-->
+Note that a new subdirectory - <b> myweb </b> exists on the server.  We right-click to take a look at the properties.

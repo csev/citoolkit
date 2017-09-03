@@ -1,0 +1,2 @@
+<!-- file:020login-->
+At the login dialog you enter the Administrator password and press <B>OK</b>.

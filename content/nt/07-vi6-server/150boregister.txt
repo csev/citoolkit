@@ -1,0 +1,4 @@
+<!-- file:150boregister-->
+You can register your copy of Visual Interdev on-line using this screen.
+
+Press <b> Finish </b> and the installation is complete.

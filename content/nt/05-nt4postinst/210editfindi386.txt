@@ -1,0 +1,2 @@
+<!-- file:210editfindi386-->
+We search for values in the registry which start with <B> D:\</B>.  Those are the values which point to the former CD-ROM location.

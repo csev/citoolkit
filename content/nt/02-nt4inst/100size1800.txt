@@ -1,0 +1,4 @@
+<!-- file:100size1800-->
+We now must specify the size of the C: partition.  Initially, the C: partition must be below 2GB even though NTFS supports larger filesystems.  The partition is initially formatted using FAT and then converted to NTFS as part of the install process.  With NTFS, partitions can be increased in size as long as there is space available.  Unfortunately, the size of the C: partition cannot easily be increased. 
+<p>
+So we create an 1800 KB partition.  Setting the partition size should only take a moment.

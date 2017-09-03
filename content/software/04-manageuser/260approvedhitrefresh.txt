@@ -1,0 +1,4 @@
+<!-- file:260approvedhitrefresh-->
+Once we approve the event, it should drop off our list.
+
+(You may have to hit <B>Refresh</B> to see the updates)

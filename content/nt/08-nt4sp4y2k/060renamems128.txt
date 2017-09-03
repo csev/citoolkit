@@ -1,0 +1,5 @@
+<!-- file:060renamems128-->
+Depending on how the file was downloaded, you may want to rename the file to <b>MS128.exe</b>.
+<p>
+The size of this file when it was downloaded for the production of this exercise was 
+76,459,232 bytes.

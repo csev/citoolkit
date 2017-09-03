@@ -1,0 +1,3 @@
+<!-- file:150fp98explore-->
+Microsoft FrontPage98 is also on the Visual Interdev CD-ROM.  To install it, we must explore the CD-ROM (If you simply double click) it will reinstall Visual Interdev).
+To explore, we right-click on the CD-ROM icon and select <b>Explore</b>

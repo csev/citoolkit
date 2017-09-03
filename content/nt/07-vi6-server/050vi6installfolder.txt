@@ -1,0 +1,2 @@
+<!-- file:050vi6installfolder-->
+In general it is good to accept the default install folder.

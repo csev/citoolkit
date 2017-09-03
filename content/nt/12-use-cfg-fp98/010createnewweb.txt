@@ -1,0 +1,2 @@
+<!-- file:010createnewweb-->
+Start Microsoft FrontPage98 on the client.  Indicate that would like to create a new frontpage web and press <b> OK</b>.

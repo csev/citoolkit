@@ -1,0 +1,8 @@
+<!-- file:020opinstall-->
+This install takes three steps because there are prerequisites to IIS 4.0.
+<ul>
+<li>Install Service Pack 3 for NT (Later for Y2K we will go to Service Pack 4)
+<li>Install Internet Explorer 4.0
+<li>Install IIS 4.0
+</ul>
+So you launch each in turn by navigating to the CD-ROM.  The installs are done from a web browser.

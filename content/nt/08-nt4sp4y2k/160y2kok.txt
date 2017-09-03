@@ -1,0 +1,4 @@
+<!-- file:160y2kok-->
+If you re-execute the <b> y2ksetup</b> program, it automatically detects that the proper patches have been installed.
+<p>
+Note that it says, "No <i> known </i> Year 2000 issues ...".  Make sure to recheck the Microsoft web site for any new service packs.

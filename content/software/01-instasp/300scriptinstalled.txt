@@ -1,0 +1,4 @@
+<!-- file:300scriptinstalled-->
+This install usually is quite smooth (and very quick).  It doesn't even require a reboot.
+
+You might want to reboot anyways.  Your coffee might be getting cold by now.

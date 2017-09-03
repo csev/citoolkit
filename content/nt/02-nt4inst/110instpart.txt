@@ -1,0 +1,2 @@
+<!-- file:110instpart-->
+When the partition size is set, we are brought back to the partition screen.  Now we simply press enter to install on the partition we just created.

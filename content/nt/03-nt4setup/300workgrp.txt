@@ -1,0 +1,2 @@
+<!-- file:300workgrp-->
+Now we select how this computer will be integrated into the local Windows networking environment.  If you run a domain, enter the domain information here.  If not, use workgroup networking.  In this example we changed the workgroup name to <B>TOOLKIT</B>.

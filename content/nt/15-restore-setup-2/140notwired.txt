@@ -1,0 +1,4 @@
+<!-- file:140notwired-->
+This screen is asking the nature of your network connection.  Since this is a temporary installation, we will not bother to set up any form of networking.  
+<p>
+However if the restore needs the network, you will have to install and configure networking.

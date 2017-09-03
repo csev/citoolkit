@@ -1,0 +1,18 @@
+<!-- file:090addeventsonly-->
+There are many roles which the user can perform.  If you add them all, then this account is another administrator account.
+
+The list of roles is as follows:
+<ul>
+<li>Add Events
+<li>Approve Events
+<li>Delete Events
+<li>Edit Events
+<li>Participate in a forum
+<li>Moderate Forums
+<li>Manage Forums
+<li>Administer the Site
+</ul>
+
+Multiple roles can be selected using the <b>shift</b> or <b>control</b> keys.  
+
+In this example, we will only allow our user to <b>Add Events</b>.

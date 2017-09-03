@@ -1,0 +1,2 @@
+<!-- file:040typical-->
+We will do a typical setup.  Press <b> Typical</b>.

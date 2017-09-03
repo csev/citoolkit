@@ -1,0 +1,2 @@
+<!-- file:020startuserspressnew-->
+To create a new user, we press the <b>New</b> button.

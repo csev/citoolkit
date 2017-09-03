@@ -1,0 +1,7 @@
+<!-- file:060diskadminfirsttime-->
+Now we want to format the D: drive.  Remember that we created the partition
+during setup.
+<p>
+Run <b> Start | Programs | Administrative Tools (Common) | Disk Administrator </b>
+<p>
+The first time the disk administrator it does some initial setup.  Press <b>OK</b>

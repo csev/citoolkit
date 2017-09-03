@@ -1,0 +1,107 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h2>Working with the BIOS</h2>
+Typically, during the boot sequence you can press a key or key sequence
+ to cause the boot process to be diverted into the CMOS configuration.
+CMOS contains stored configuration regarding how the system is to be booted.
+This information is stored in battery-backed up RAM so you do not need to make
+these changes each time the power is turned on.  The settings available and
+the procedures for manipulating these settings vary widely between manufacturers.
+Some use graphical interfaces and others use simple text based interfaces.
+<P>
+<P>
+A system administrator should not be afraid of CMOS settings.
+Before putting a system into production, they need to know the
+proper settings in case the stored settings are lost.
+Often, there is a "reset-to-factory-default"
+option which may or may not result in the proper settings for your system.
+<BR CLEAR=ALL><HR>
+<A NAME=001delkey> </a>
+<A HREF=001delkey.htm>
+<IMG SRC=001delkey.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 001delkey.txt-->
+For this particular motherboard,  you press DEL during the first 10 seconds of the boot sequence  to go to the CMOS Setting screen.  Some systems use F2 while others use F9 or F10.
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=010cmos> </a>
+<A HREF=010cmos.htm>
+<IMG SRC=010cmos.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 010cmos.txt-->
+This is the main screen for one particular CMOS setting for the M6TBA Biostar Motherboard used in these examples.  This is an example of a "non-graphical" interface.  It allows you to control a wide range of settings.  The most common settings which need to be manipulated are in the "Standard CMOS Setup" area.
+<P>
+The more modern (Pentium-II) systems tend to have more forgiving requirements for BIOS settings.  For example, in 386 and some 486 systems, you had to set the precise disk drive configuration into the CMOS.  Most modern CMOS setting can automatically detect disk drive geometry.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020cmstd> </a>
+<A HREF=020cmstd.htm>
+<IMG SRC=020cmstd.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 020cmstd.txt-->
+This shows the more common BIOS settings. They include the date and time and the IDE disk drive configuration.  Because this is a SCSI system, we have no IDE  hard drives.  In 486 and earlier computers, you often had to know a "drive number".  In more recent IDE arrangements there is an "auto-detect" of the drive geometry.  This BIOS even has a diagnostic mode where it will query the IDE drives and report the drive geometry.  The drive geometry only applies to hard drives.  CD-ROMs and drives like ZIP’s generally do not need any drive geometry settings.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030cmperi> </a>
+<A HREF=030cmperi.htm>
+<IMG SRC=030cmperi.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 030cmperi.txt-->
+This shows the built-in peripheral screen.   Generally, the only thing you would do is enable or disable on-board peripherals such as serial or parallel ports.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040scctrla> </a>
+<A HREF=040scctrla.htm>
+<IMG SRC=040scctrla.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 040scctrla.txt-->
+In this example, we have an Adaptec 2940UW SCSI disk controller.  Generally, SCSI controllers have their own BIOS which which allows the operating system to boot from SCSI devices.  This BIOS may also have a configuration option.  In this example, pressing CTRL-A at the right moment will interrupt the standard boot sequence and enter a SCSI diagnostic and configuration utility.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050scsimain> </a>
+<A HREF=050scsimain.htm>
+<IMG SRC=050scsimain.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 050scsimain.txt-->
+This is the main SCSI configuration screen.  You can either configure the controller or work with the peripherals attached to the controller.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060scsicfg> </a>
+<A HREF=060scsicfg.htm>
+<IMG SRC=060scsicfg.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 060scsicfg.txt-->
+The controller configuration determines things like boot time options.  For example, if there are multiple bootable SCSI disks, which is to be the boot disk.  In this example, we only have one bootable disk so we leave the defaults.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070scsidev> </a>
+<A HREF=070scsidev.htm>
+<IMG SRC=070scsidev.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- 070scsidev.txt-->
+In the SCSI disk utility, all of the SCSI IDs are scanned and it reports the devices attached to the controller.  In this example, we have a disk at 3, tape at 6, and the controller is at 7.  You should not attach a peripheral to SCSI with a SCSI ID of 7.    You can also low-level format a disk from this menu.  There is very seldom a good reason to low-level format a SCSI disk.  However, if you suspect hardware problems, if a low level format fails, then either (1) the disk is bad (2) the cables are bad (3) the cables or controller is not properly seated, or (4) the controller is bad.
+<P>
+Make sure to check the cables and seating of the card before declaring the disk bad.  Especially when you have done some hardware work in the system.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

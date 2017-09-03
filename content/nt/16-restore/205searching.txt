@@ -1,0 +1,2 @@
+<!-- file:205searching-->
+We query for the string <B> IISADMIN instance already running </b> asking the search to examine the Knowledge Base and look for articles with all of the four words in the article.  Then we press <b> Search</b>.

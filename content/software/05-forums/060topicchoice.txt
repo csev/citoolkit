@@ -1,0 +1,2 @@
+<!-- file:060topicchoice-->
+We see the <b>Pets</b> topic we just added.  We select this topic.

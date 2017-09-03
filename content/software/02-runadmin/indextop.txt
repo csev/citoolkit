@@ -1,0 +1,2 @@
+<h3>Running the Toolkit Administration Tool</h3>
+In this section, we will create a database and then take a look around to see how things are placed on the disk.

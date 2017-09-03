@@ -1,0 +1,2 @@
+<!-- file:360opinstalling-->
+This installation takes some time.  It may take around five minutes before it completes.

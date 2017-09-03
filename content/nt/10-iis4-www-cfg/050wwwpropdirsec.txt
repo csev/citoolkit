@@ -1,0 +1,6 @@
+<!-- file:050wwwpropdirsec-->
+Like FTP, we must determine what type of authentication we will accept for password-protected web pages.  We will have to enable "Basic Authentication" to maintain backwards compatibility with a wide variety of browsers.
+<p>
+Like FTP, we will receive a dialog from the system concerned with plain text passwords being transmitted across the net.  Again, the security is no different than any other Web server using basic authentication.
+<p>
+If you are not doing any password protected material used by the general public and guarantee that all users needing password access have the latest copies of Internet Explorer, FrontPage, and Visual Interdev, you may be able to leave "Basic Authentication" turned off, which will be a better security arrangement.

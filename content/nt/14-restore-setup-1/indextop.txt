@@ -1,0 +1,7 @@
+<H2>Minimal NT Install - Part 1</h2>
+In this exercise, we are going to destroy a perfectly good working system and restore it from tape.
+<p>
+To access the tape, we must perform a minimal install, and then reload the tapes. 
+There are subtle differences between our minimal installation and a standard installation. Those differences will be noted as we go through the exercise.
+<p>
+Like the initial installation, this installation is broken into two parts.  The first part is the non-graphical installation from the floppies (or SCSI CD-ROM) and the second part is the graphical installation and configuration of the system.

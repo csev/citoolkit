@@ -1,0 +1,2 @@
+<!-- file:090toolspermissions-->
+To alter the permissions, we go back to the client in FrontPage98 and go to <b> Tools | Permissions</b>.

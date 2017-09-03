@@ -1,0 +1,2 @@
+<!-- file:170verifygreat-->
+When the verify is complete scroll back through the backup log to see if any essential files were skipped.

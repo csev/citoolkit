@@ -1,0 +1,2 @@
+<!-- file:080diskadmin-->
+This is the disk administrator.  We can see the C: partition and empty space on the hard-drive.  We can also see the CD-ROM drive at the D: drive letter.

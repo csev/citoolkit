@@ -1,0 +1,19 @@
+<!-- file:090siteconfig6-->
+<b>Site Custom Field #1:</b> A field that can be defined by the site
+-- used in the calendar to prompt for additional information about events. (e.g., if
+<b>language</b> were used as a custom field, then events where Spanish (or
+French) is primarily spoken could be grouped. 
+
+<b>Site Custom Field #2</b>: A field that can be defined by the site
+-- used in the calendar to prompt for additional information about events.
+
+<b>Site Custom Field #3:</b> A field that can be defined by the site
+-- used in the calendar to prompt for additional information about events.
+
+<b>Home Button URL (bottom of Calendar pages):</b> Home URL for the
+organizations web presence.This is only used if the organization has an existing
+web site.  If this is set to "None" the <b>Home</b> button will not be shown.  If this is not set (default), the <b>Home</b> button will point to the
+main start page for the database showing the user the choices of calendar, forum, or administration.
+
+When you have filled in the information for this form, press the 
+<b>Change Site Information</b> button.

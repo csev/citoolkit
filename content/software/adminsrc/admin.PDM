@@ -1,0 +1,141 @@
+[Root]
+Most Recent Package=Admin Tool
+
+
+[Package|Admin Tool|Community Toolkit Administration Tool]
+Icon1=admin.exe
+Title1=Community Toolkit Administration Tool
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Admin Tool|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\My Documents\CRS\merit_cd\community\adminsetup
+
+[Package|Admin Tool|Configure DAO ISAMs]
+Applicable=Yes
+Xbase=No
+Paradox=No
+Text=No
+Excel=No
+Jet 2.x=No
+
+[Package|Admin Tool|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=Yes
+
+[Package|Admin Tool|Files Found]
+base.mdb=C:\My Documents\CRS\merit_cd\community\adminsrc\base.mdb
+
+[Package|Admin Tool|Files Released]
+Kernel.DLL=
+
+[Package|Admin Tool|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\Community.dll=
+C:\WINDOWS\SYSTEM\ODBCTool.dll=
+
+[Package|Admin Tool|Out-of-Date Dependency Information]
+
+[Package|Admin Tool|Files Added]
+base.mdb=
+
+[Package|Admin Tool|Files Removed]
+c:\windows\system\community.dll=
+
+[Package|Admin Tool|Files In Project]
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\ODBCTool.dll=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINDOWS\SYSTEM\MSJET35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSJTER35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSJINT35.DLL=Yes
+C:\WINDOWS\SYSTEM\VBAJET32.DLL=Yes
+C:\WINDOWS\SYSTEM\EXPSRV.DLL=Yes
+C:\WINDOWS\SYSTEM\MSRD2X35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSREPL35.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\SYSTEM\VB5DB.DLL=Yes
+C:\WINDOWS\SYSTEM\MSRDO20.DLL=Yes
+C:\WINDOWS\SYSTEM\RDOCURS.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\My Documents\CRS\merit_cd\community\adminsrc\admin.exe=Yes
+C:\My Documents\CRS\merit_cd\community\adminsrc\base.mdb=Yes
+
+[Package|Admin Tool|Configure Registry Files]
+Applicable=No
+
+[Package|Admin Tool|Configure Remote Servers]
+Applicable=No
+
+[Package|Admin Tool|Install Locations]
+C:\My Documents\CRS\merit_dev\vbtools\caladmin\admin.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ODBCTool.dll=$(WinSysPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\SYSTEM\MSJET35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VBAJET32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\EXPSRV.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VB5DB.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSRDO20.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\RDOCURS.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\My Documents\CRS\merit_dev\vbtools\caladmin\base.mdb=$(AppPath)
+C:\My Documents\CRS\merit_cd\community\adminsrc\admin.exe=$(AppPath)
+C:\My Documents\CRS\merit_cd\community\adminsrc\base.mdb=$(AppPath)
+
+[Package|Admin Tool|Configure Shared Files]
+Applicable=Yes
+C:\My Documents\CRS\merit_dev\vbtools\caladmin\admin.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\My Documents\CRS\merit_dev\vbtools\caladmin\base.mdb=No
+C:\My Documents\CRS\merit_cd\community\adminsrc\admin.exe=No
+C:\My Documents\CRS\merit_cd\community\adminsrc\base.mdb=No
+
+[Package|Admin Tool|Distribution]
+Type=single
+Size=
+Title=Community Toolkit Administration Tool
+
+[Package|Admin Tool|IconGroups]
+Group0=Community Toolkit
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Admin Tool|Community Toolkit]
+Icon1=admin.exe
+Title1=Administration Tool
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Admin Tool|Package]
+PackageFolder=C:\My Documents\CRS\merit_cd\community\adminsetup
+ProjectFolder=C:\My Documents\CRS\merit_cd\community\adminsrc
+ServerSideCab=
+File1=C:\My Documents\CRS\merit_cd\community\adminsetup\setup.exe
+File2=C:\My Documents\CRS\merit_cd\community\adminsetup\Setup.Lst
+File3=C:\My Documents\CRS\merit_cd\community\adminsetup\admin.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

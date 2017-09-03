@@ -1,0 +1,210 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h2>Configuring and Testing FTP</h2>
+Now we will configure and test the FTP service.  This exercise is a very brief introduction to the FTP service but should give you a good outline of how FTP works.
+<BR CLEAR=ALL><HR>
+<A NAME=010iisrunmgr> </a>
+<A HREF=010iisrunmgr.htm>
+<IMG SRC=010iisrunmgr.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010iisrunmgr-->
+First, run the Internet Service Manager available under
+<b>Start | Programs | Windows NT 4.0 Option Pack | Microsoft Internet Information Server | Internet Service Manager</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020iis4mmc> </a>
+<A HREF=020iis4mmc.htm>
+<IMG SRC=020iis4mmc.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030iis4mmc-->
+The <b> Microsoft Management Console </b> is new in this release of IIS.  The MMC is designed to provide a generic, extensible way to manage all kinds of areas of the system.  The MMC has "snap-ins" which are pieces of software which extend the MMC.
+<p>
+We have the Internet Information Server and Microsoft Transaction Server "snap-ins".
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030ftpproperties> </a>
+<A HREF=030ftpproperties.htm>
+<IMG SRC=030ftpproperties.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030ftpproperties-->
+If you go to the IIS and select the <b> www </b> host you see the IIS services running on that host.   To manage the FTP site, we right-click on the FTP site and select <b>Properties</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040ftpanonymous> </a>
+<A HREF=040ftpanonymous.htm>
+<IMG SRC=040ftpanonymous.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040ftpanonymous-->
+The FTP Properties are shown in a tabbed dialog box.  The first property window that we will work with is the
+<b> Security Accounts </b> portion.
+<p>
+We will turn <i> off </i> the anonymous FTP.  Anonymous FTP does not use a password and is used to distribute materials to folks on the Internet.  If you want Anonymous FTP, leave it enabled.  Otherwise it is an unnecessary security hole.
+<p>
+When you turn off anonymous FTP, users must enter an account and password.  Because the official FTP protocol does not support any type of encrypted password, those passwords will be transmitted in plaintext across the net.  While this sounds like a big security hole, it is no different than any other FTP server on the Internet.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050ftpallowwrite> </a>
+<A HREF=050ftpallowwrite.htm>
+<IMG SRC=050ftpallowwrite.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050ftpallowwrite-->
+In the <b> Home Directory </b> portion of the dialog, we can select that we want users to be able to write (or upload) to the FTP server.  So we select <b>Write</b>
+<p>
+Again, incoming FTP may not be required in this situation - if not, do not select "Write".
+<p>
+After the configuration changes have been made, exit the dialog by pressing <b>OK</b>.  You changes will be applied.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060ftpmkdir> </a>
+<A HREF=060ftpmkdir.htm>
+<IMG SRC=060ftpmkdir.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060ftpmkdir-->
+Next we test our newly reconfigured FTP server by starting an MS-DOS session and connecting to our FTP server.  We log in as example (Ann Example Person) with the appropriate password.
+<p>
+We use the <b> mkdir </b> command to create a directory called <b> testme </b> insure that we can write to the server.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070ftpwhereondisk> </a>
+<A HREF=070ftpwhereondisk.htm>
+<IMG SRC=070ftpwhereondisk.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070ftpwhereondisk-->
+Just for yucks, we go and look for the directory on the system.
+it shows up on:
+<p>
+<b>D:\InetPub\ftproot\testme</b>
+<p>
+Go ahead and delete the directory and <b> QUIT </b> your ftp session.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080ftprootproperties> </a>
+<A HREF=080ftprootproperties.htm>
+<IMG SRC=080ftprootproperties.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080ftprootproperties-->
+At this moment, you might be thinking, "Wait a second - just a plain-old user created a directory in the FTP root space."
+<p>
+Our security is a little loose at this point so we need to crank it down a bit.  FTP uses the NTFS security system so we right click on <b>ftproot</b> and select <b> Properties</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090ftppropertiessecurity> </a>
+<A HREF=090ftppropertiessecurity.htm>
+<IMG SRC=090ftppropertiessecurity.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090ftppropertiessecurity-->
+In Properties, we select the <b> Security</b> tab and press <b>Permissions</b>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100ftporigpermissions> </a>
+<A HREF=100ftporigpermissions.htm>
+<IMG SRC=100ftporigpermissions.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100ftporigpermissions-->
+Wow, by default any valid user has total and complete control over the entire ftp hierarchy.  Lets tighten that down just a bit.
+<p>
+First, press <b> Add </b> and then allow the Administrators group Full Access.  Then when you come back to this screen, modify the Everyone group to have Read and Execute permission.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110ftpgoodpermissions> </a>
+<A HREF=110ftpgoodpermissions.htm>
+<IMG SRC=110ftpgoodpermissions.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110ftpgoodpermissions-->
+This is the proper set of permissions for the
+<b> D:\InetPub\ftproot</b> directory.  Press <b>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120ftpnotwideopen> </a>
+<A HREF=120ftpnotwideopen.htm>
+<IMG SRC=120ftpnotwideopen.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120ftpnotwideopen-->
+Just to be sure, we try to log in as our example user and we can no longer perform write operations in the main directory.
+<p>
+Now we want to make a subdirectory which the user can use to upload information.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130ftpnewdirproperties> </a>
+<A HREF=130ftpnewdirproperties.htm>
+<IMG SRC=130ftpnewdirproperties.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:130ftpnewdirproperties-->
+So, we create a new folder
+<b> D:\InetPub\ftproot\new </b> and then view the new folder's properties.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140ftpnewoldperms> </a>
+<A HREF=140ftpnewoldperms.htm>
+<IMG SRC=140ftpnewoldperms.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140ftpnewoldperms-->
+Initially it inherits its permissions from its parent directory.  We press <b>Add</b> to give our example user permission on the directory.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150ftpgiveannfullcontrol> </a>
+<A HREF=150ftpgiveannfullcontrol.htm>
+<IMG SRC=150ftpgiveannfullcontrol.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150ftpgiveannfullcontrol-->
+First press <b> Show Users </b> so the users appear in the top window.  then scroll down the top window until you find "Ann Example Person" and press <b>Add</b>.
+<p>
+Then at the bottom use the drop down to give Ann "Full Control" and press <b>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160ftpannhasfullcontrol> </a>
+<A HREF=160ftpannhasfullcontrol.htm>
+<IMG SRC=160ftpannhasfullcontrol.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160ftpannhasfullcontrol-->
+This is how the permissions should look.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170ftptestannperms> </a>
+<A HREF=170ftptestannperms.htm>
+<IMG SRC=170ftptestannperms.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170ftptestannperms-->
+Now we connect and use <b> cd </b> to move into the <b> new</b> directory.  We use <b> mkdir </b> to verify that we indeed have write permission.
+<p>
+This gives a flavor of how you can control the FTP service.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 1999, Library of Michigan Foundation -->

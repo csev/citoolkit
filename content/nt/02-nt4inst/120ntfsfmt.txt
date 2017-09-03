@@ -1,0 +1,2 @@
+<!-- file:120ntfsfmt-->
+Now we will indicate that our C: partition will be formatted using NTFS.  For a dedicated server there is no other choice.  FAT is primarily used to allow dual booting between Windows-95 and Windows-NT.

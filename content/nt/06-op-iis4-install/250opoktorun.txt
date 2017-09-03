@@ -1,0 +1,5 @@
+<!-- file:250opoktorun-->
+Again we are prompted if it is OK to run the program.
+<p>
+You can check the box so it stops prompting you  but that probably is <i>not</i>
+a good idea (especially on a server).

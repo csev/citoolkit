@@ -1,0 +1,3 @@
+<!-- file:185installingmsdac-->
+One of the first steps in the process
+is to install the MSDAC (Microsoft Data Access Components 2.1).

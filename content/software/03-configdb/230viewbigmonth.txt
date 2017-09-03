@@ -1,0 +1,5 @@
+<!-- file:230viewbigmonth-->
+The Big Month view is designed to look like a calendar.  Each day is a hyper-link back to List View.  This view also prints quite well.
+At the bottom is the drop-down for view and the <b>Home</b> button.
+
+Now we will reconfigure the site configuration a bit so we go down to the bottom and press the <b>Home</b> button.

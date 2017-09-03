@@ -1,0 +1,4 @@
+<!-- file:070emptytopic-->
+There are currently no messages so we press <b>Post</b>.
+
+Note that the frames can be resized by dragging the horizontal bars between the three screen areas.

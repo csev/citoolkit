@@ -1,0 +1,2 @@
+<!-- file:090diskcdassign-->
+First we must move the CD-ROM to a new drive.  We right-click and select <b>Assign Drive Letter</b>

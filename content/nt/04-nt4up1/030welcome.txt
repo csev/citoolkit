@@ -1,0 +1,7 @@
+<!-- file:030welcome-->
+Congratulations, you are logged in to your brand new NT system.
+<p>
+At this point, you should also wait a few moments to let the disk activity subside.  You may see more dialog boxes.
+<p>
+If by this point you have not seen any dialog boxes, you are in pretty good shape.  
+But before we get too happy, we should do a little testing.

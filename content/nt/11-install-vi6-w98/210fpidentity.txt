@@ -1,0 +1,8 @@
+<!-- file:210fpidentity-->
+You set an identity to be used for modifying server content.  This account is on the web server (Ann Example Person).  
+<p>
+You may want to use the <b>Administrator</b> account for this purpose.  You may want to create a special account called something like <b>fpadmin</b> for this purpose.  
+<p>
+To later change this information, go to 
+<b>
+Start | Programs | Windows NT 4.0 Option Pack | Internet Information Server | FrontPage Server Administrator </b>

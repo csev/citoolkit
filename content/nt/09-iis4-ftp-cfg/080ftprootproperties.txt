@@ -1,0 +1,4 @@
+<!-- file:080ftprootproperties-->
+At this moment, you might be thinking, "Wait a second - just a plain-old user created a directory in the FTP root space."
+<p>
+Our security is a little loose at this point so we need to crank it down a bit.  FTP uses the NTFS security system so we right click on <b>ftproot</b> and select <b> Properties</b>.

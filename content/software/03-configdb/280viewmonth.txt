@@ -1,0 +1,5 @@
+<!-- file:280viewmonth-->
+Now we are shown a split-screen view of the calendar with a small monthly calendar on the left and a display of the events on the right.
+
+This is the low-detail view, we can see more detail by clicking on the <b> More Detail</b>
+button.

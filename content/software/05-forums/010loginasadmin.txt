@@ -1,0 +1,2 @@
+<!-- file:010loginasadmin-->
+To begin our forum exercise, we will log in as <b>admin</b>.

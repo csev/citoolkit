@@ -1,0 +1,3 @@
+<!-- file:120servicesstopmsdtcsure-->
+Stop the <b>MSDTC</b> service.  It will protest a bit, but go ahead and stop it for this backup.
+

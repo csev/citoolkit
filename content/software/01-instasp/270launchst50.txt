@@ -1,0 +1,2 @@
+<!-- file:270launchst50-->
+Once it is downloaded, navigate to the directory and launch <b> ste50en.exe </b>

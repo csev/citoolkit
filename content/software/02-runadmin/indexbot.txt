@@ -1,0 +1,4 @@
+<hr>
+This tutorial walks you through the toolkit administration tool.  It does a rather simple but important set of tasks in the overall scheme of things.  To run this tool, you must be physically on the server.  This is necessary for security reasons.
+
+Up next, we will do a brief walkthrough on using the toolkit software.  We will set up a database, enter an event and view the events.

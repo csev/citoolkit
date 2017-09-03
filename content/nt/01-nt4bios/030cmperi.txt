@@ -1,0 +1,2 @@
+<!-- 030cmperi.txt-->
+This shows the built-in peripheral screen.   Generally, the only thing you would do is enable or disable on-board peripherals such as serial or parallel ports.
