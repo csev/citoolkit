@@ -1,0 +1,174 @@
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Win">
+  <TITLE>Community Information Toolkit</TITLE>
+  <SCRIPT language="JavaScript">
+<!-- Hide this script from pre javascript browsers
+// code by Greg Baluch baluchgr@pilot.msu.edu
+// these functions display messages in the status bar of the 
+// browser and picture swapping when a visitor points at a picture
+ON=1;
+OFF=0;
+function Home(state)
+{
+	if(state==ON)
+	{ 
+		display(0,ON);
+		window.status="Return to the Home Page";
+	}
+	else
+		display(0,OFF);
+}
+function Overview(state)
+{
+	if(state==ON)
+	{ 
+		display(1,ON);
+		window.status="Overview";
+	}
+	else
+		display(1,OFF);
+}
+function Book(state)
+{
+	if(state==ON)
+	{ 
+		display(2,ON);
+		window.status="About the book";
+	}
+	else
+		display(2,OFF);
+}
+function Videos(state)
+{
+	if(state==ON)
+	{ 
+		display(3,ON);
+		window.status="Online videos";
+	}
+	else
+		display(3,OFF);
+}
+function Training(state)
+{
+	if(state==ON)
+	{ 
+		display(4,ON);
+		window.status="Training";
+	}
+	else
+		display(4,OFF);
+}
+function Software(state)
+{
+	if(state==ON)
+	{ 
+		display(5,ON);
+		window.status="Software";
+	}
+	else
+		display(5,OFF);
+}
+
+bName = navigator.appName;
+bVer = parseInt(navigator.appVersion);
+
+if (bName == "Netscape" && bVer >= 3) ver = "n3";
+else if (bName == "Netscape" && bVer == 2) ver = "n2";
+else if (bName == "Microsoft Internet Explorer" && bVer == 2) ver = "e3";
+else if (bName == "Microsoft Internet Explorer" && bVer == 3) ver = "e3";
+else if (bName == "Microsoft Internet Explorer" && bVer >= 4) ver = "n3";
+	
+// menu item base file names, "_hl" and/or ".jpg" are added by the code automatically
+// to load the images for swapping durring mouse hovers	
+names=new Array("home","overview","book","video","training","software");
+				
+links=new Array(names.length);
+
+function preLoad()
+{
+	
+	if (ver == "n3")   
+	{ 
+		for(var x=0; x<names.length; x++)
+		{
+			links[x]=new Array(2);
+			links[x][0]=new Image();
+			links[x][0].src=names[x]+"_button.gif";
+			links[x][1]=new Image();
+			links[x][1].src=names[x]+"_button_hl.gif";
+		}
+	}
+}		
+
+function display(num,state) 
+{
+	if (ver == ("n3"))    
+		document['nav'+num].src=links[num][state].src;
+}
+preLoad();
+
+// stop hiding -->
+  </SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#edc15a">
+
+<TABLE BORDER="0" CELLSPACING="2" CELLPADDING="0">
+  <TR>
+    <TD HEIGHT="100">
+    <P><CENTER><B><FONT FACE="Copperplate Gothic Bold">Community<BR>
+    Information<BR>
+    Toolkit</FONT></B></CENTER></TD>
+  </TR>
+  <TR>
+    <TD>
+    <A HREF="../home.html" TARGET="content" onMouseOver="Home(ON);"
+    onMouseOut="Home(OFF);"><IMG SRC="home_button.gif" NAME="nav0"
+    WIDTH="137" HEIGHT="31" BORDER="0" ALT="Home" NATURALSIZEFLAG="0"
+    ALIGN="BOTTOM"></A>
+</TD>
+  </TR>
+  <TR>
+    <TD>
+    <A HREF="../content/overview.html" TARGET="content" onMouseOver="Overview(ON);"
+    onMouseOut="Overview(OFF);"><IMG SRC="overview_button.gif" NAME="nav1"
+    WIDTH="137" HEIGHT="31" BORDER="0" ALT="Overview" NATURALSIZEFLAG="0"
+    ALIGN="BOTTOM"></A>
+</TD>
+  </TR>
+  <TR>
+    <TD>
+    <A HREF="http://afs.dr-chuck.com/citoolkit//content/book/index.html" TARGET="content" onMouseOver="Book(ON);"
+    onMouseOut="Book(OFF);"><IMG SRC="book_button.gif" NAME="nav2"
+    WIDTH="137" HEIGHT="31" BORDER="0" ALT="Book" NATURALSIZEFLAG="0"
+    ALIGN="BOTTOM"></A>
+</TD>
+  </TR>
+  <TR>
+    <TD>
+    <A HREF="http://afs.dr-chuck.com/citoolkit//content/videos/index.html" TARGET="content" onMouseOver="Videos(ON);"
+    onMouseOut="Videos(OFF);"><IMG SRC="video_button.gif" NAME="nav3"
+    WIDTH="137" HEIGHT="31" BORDER="0" ALT="Videos" NATURALSIZEFLAG="0"
+    ALIGN="BOTTOM"></A>
+</TD>
+  </TR>
+  <TR>
+    <TD>
+    <A HREF="http://afs.dr-chuck.com/citoolkit//content/training/index.html" TARGET="content" onMouseOver="Training(ON);"
+    onMouseOut="Training(OFF);"><IMG SRC="training_button.gif" NAME="nav4"
+    WIDTH="137" HEIGHT="31" BORDER="0" ALT="Training Materials" 
+    NATURALSIZEFLAG="0" ALIGN="BOTTOM"></A>
+</TD>
+  </TR>
+  <TR>
+    <TD>
+    <A HREF="http://afs.dr-chuck.com/citoolkit//content/software/index.html" TARGET="content" onMouseOver="Software(ON);"
+    onMouseOut="Software(OFF);"><IMG SRC="software_button.gif" NAME="nav5"
+    WIDTH="137" HEIGHT="31" BORDER="0" ALT="Software" NATURALSIZEFLAG="0"
+    ALIGN="BOTTOM"></A>
+</TD>
+  </TR>
+</TABLE>
+
+</BODY>
+</HTML>
